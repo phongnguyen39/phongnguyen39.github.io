@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- ADD MEEEE http://kenwheeler.github.io/slick/ -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script>
+    </script>
+    <title>Phong's Web Designs</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        padding: 5%;
+    }
+
+    * {
+        font-family: 'Montserrat', sans-serif;
+        color: black;
+        border-radius: 10px;
+
+    }
+
+    .bd-example {
+        display: block;
+    }
+
+    .jumbotron {
+        background: rgba(236, 236, 236, 0.144);
+        margin: 2% 0% 15% 0%;
+        padding: 0px auto;
+        box-shadow: 1px 1px 1px 1px gray;
+    }
+
+    .jumbotron:hover {
+        background: rgba(25, 152, 236, 0.144);
+        margin: 2% 0% 15% 0%;
+        padding: 0px auto;
+        box-shadow: 1px 3px 3px 1px gray;
+        transition: 1s;
+
+    }
+
+    #bottom_nav {
+        background: rgba(255, 255, 255, 0.075);
+        margin-bottom: 5%;
+    }
+
+    h3 {}
+
+    a {
+        font-size: 30px;
+        color: black;
+    }
+
+    .logos {
+        /* display: inline-block; */
+        width: 50px;
+        height: 50px;
+    }
+
+    /* .text_rotate{
+        transform: rotate(-90deg);
+        font-size: 500px;
+        vertical-align: top;
+    } */
+
+    img {
+        height: 50%;
+        width: 100%;
+        margin-bottom: 5%;
+        box-shadow: 1px 1px 1px 1px gray;
+    }
+    img:hover{
+        box-shadow: 2px 2px 2px 2px gray;
+        color: white;
+        /* background-color: rgba(22, 34, 56, 0.418); */
+        height: 50%;
+        width: 100%;
+        transform: unset;
+    }
+
+    
+
+    .navbar {
+        background: rgba(255, 255, 255, 0.26);
+
+    }
+
+    .bottombox {
+        vertical-align: top;
+
+    }
+
+    a:hover {
+        color: goldenrod;
+    }
+
+    
+
+    h1:hover{
+        font-size: 2em;
+    }
+
+    #parallax_portfolio{
+        z-index: 100;
+        height: 30%;
+        width: 100%;
+        transo
+    }
+</style>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="nav justify-content-center">
+            <!-- <h1 style="text-align: center;">Phong's Web Designs</h1><br> -->
+            <h1 style="font-size: 50px; text-align: center; vertical-align: text-bottom"><strong>Phong</strong> |
+                Web
+                Designs</h1>
+
+        </div>
+        <ul id="bottom_nav" class="nav nav-justified">
+            <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link" href="#about_jump">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact_jump">Contact</a>
+            </li>
+        </ul>
+
+        <!-- <div class="jumbotron" style="margin-bottom: 5%;"> -->
+
+            <div id="parallax_projects"><h1>Portfolio</h1></div>
+            <h3 class="text_rotate">SPORTS CHAT</h3>
+            <h5 class="text_rotate">Tech Stack | Express, NodeJS, Web Sockets and APIs</h5>
+            <img src="./img/sportschat.JPG" alt="Card image" data-toggle="tooltip" data-placement="top" title="Express, NodeJS, Web Sockets and APIs">
+
+            <h3 class="text_rotate">MESSAGING</h3>
+            <h5 class="text_rotate">Tech Stack | MongoDB, Express, NodeJS</h5>
+            <img src="./img/writing.jpg" alt="Card image">
+
+            <h3 class="text_rotate">WILDLIFE REGISTRY</h3>
+            <h5 class="text_rotate">Tech Stack | MongoDB, Express, NodeJS</h5>
+            <img src="./img/dolphin_dash.JPG" alt="Card image">
+
+            <h3 class="text_rotate">STACK-LITE</h3>
+            <h5 class="text_rotate">Tech Stack | Spring MVC, Maven, Java, MySQL, CodeSandBox and Stackoverflow API</h5>
+            <img src="./img/clearly_project.JPG" alt="Card image">
+
+            <h3 class="text_rotate">STACK-LITE (cont.)</h3>
+            <h5 class="text_rotate">Tech Stack | Spring MVC, Maven, Java, MySQL, CodeSandBox and Stackoverflow API</h5>
+            <img src="./img/clearly3_project.JPG" alt="Card image">
+
+            <h3 style="">Web Design Elements</h3>
+            <div class="jumbotron">
+                <p style="">Restful API</p>
+                <p style="">Responsive sites (Mobile-friendly)</p>
+                <p style="">Object-Oriented Programming (OOP)</p>
+                <p style="">Web Security</p>
+                <p style="">User Authentication and Validation</p>
+            </div>
+
+
+            <h3>Programming Languages</h3>
+            <div class="jumbotron" style="margin-bottom: 5%;">
+                <table class="table table-borderless justify-content-center">
+                    <thead>
+                        <th>Front-End</th>
+                        <th>Back-End</th>
+                        <th>Developer Tools</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>React</td>
+                            <td>API</td>
+                            <td>GitHub</td>
+                        </tr>
+                        <tr>
+                            <td>Angular</td>
+                            <td>AJAX</td>
+                            <td>Virtual Environments</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>MySQL / SQL</td>
+                            <td>Java Spring Boot | Maven | Apache</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>MongoDB</td>
+                            <td>AWS Deployment</td>
+
+                        </tr>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <td>Express</td>
+                            <td>Python</td>
+                        </tr>
+                        <tr>
+                            <td>JQuery</td>
+                            <td>Flask</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>NodeJS</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 style="" id="about_jump">About</h3>
+            <div id="aboutbox" class="jumbotron" style="margin-bottom: 5%;">
+                <h5>Texan located in San Francisco Bay Area.</h5><br>
+                <h5>Consumed over 216 cups of coffee through the course of my coding bootcamp</h5><br>
+                <h5>FullStack Software Engineering Bootcamp Program | Coding Dojo</h5><br>
+                <p>Data Analysis Certificate | General Assembly</p>
+                <p>M.S. in Healthcare Administration | UT of Arlington</p>
+                <p>B.S. in Biology minor Chem. | Baylor University</p>
+                <p>Prof. Experience | Healthcare Project Management and Operational Analytics</p>
+            </div>
+            
+
+            <h3 id="contact_jump">Contact</h3>
+            
+            <ul id="bottom_nav" class="nav nav-justified">
+                <li class="nav-item">
+                    <!-- <p style="display: inline;">Linkedin</p> -->
+                    <a href="https://www.linkedin.com/in/phongnguyenmha">Linkedin</a>
+                    
+                </li>
+                <li class="nav-item">
+                    <!-- <p style="display: inline;">Email</p> -->
+                    <a href="mailto:developer.phong@gmail.com">Email</img></a>
+                    
+                </li>
+                <li class="nav-item">
+                    <!-- <p style="display: inline;">GitHub</p> -->
+                    <a href="https://github.com/phongnguyen39">GitHub</img></a>
+                </li>
+            </ul>
+
+        <!-- </div> -->
+
+</body>
+</div>
+</div>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122477728-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122477728-2');
+</script>
+
+<script>
+
+
+</script>
+
+
+</html>
