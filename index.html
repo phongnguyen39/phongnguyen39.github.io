@@ -22,7 +22,7 @@
     this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
-    this.period = parseInt(period, 10) || 2000;
+    this.period = parseInt(period, 10) || 50000;
     this.txt = '';
     this.tick();
     this.isDeleting = false;
@@ -74,6 +74,7 @@
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };</script>
+
 <style>
     html {
         scroll-behavior: smooth;
@@ -196,7 +197,7 @@
             <h1 style="font-size: 50px; text-align: center; vertical-align: text-bottom">
                 <span
      class="txt-rotate"
-     data-period="2000"
+     data-period="50000"
      data-rotate='[ "PHONG NGUYEN"]'></span></h1>
             
 
