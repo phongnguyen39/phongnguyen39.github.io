@@ -18,67 +18,68 @@
     </script>
     <title>Phong Nguyen</title>
 </head>
-<script>var TxtRotate = function(el, toRotate, period) {
-    this.toRotate = toRotate;
-    this.el = el;
-    this.loopNum = 0;
-    this.period = parseInt(period, 10) || 50000;
-    this.txt = '';
-    this.tick();
-    this.isDeleting = false;
-  };
-  
-  TxtRotate.prototype.tick = function() {
-    var i = this.loopNum % this.toRotate.length;
-    var fullTxt = this.toRotate[i];
-  
-    if (this.isDeleting) {
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-  
-    this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-  
-    var that = this;
-    var delta = 300 - Math.random() * 100;
-  
-    if (this.isDeleting) { delta /= 2; }
-  
-    if (!this.isDeleting && this.txt === fullTxt) {
-      delta = this.period;
-      this.isDeleting = true;
-    } else if (this.isDeleting && this.txt === '') {
-      this.isDeleting = false;
-      this.loopNum;
-      delta = 500;
-    }
-  
-    setTimeout(function() {
-      that.tick();
-    }, delta);
-  };
-  
-  window.onload = function() {
-    var elements = document.getElementsByClassName('txt-rotate');
-    for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-rotate');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtRotate(elements[i], JSON.parse(toRotate), period);
-      }
-    }
-    // INJECT CSS
-    var css = document.createElement("style");
-    css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-    document.body.appendChild(css);
-  };</script>
+<script>var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 50000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 300 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function () {
+        var elements = document.getElementsByClassName('txt-rotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        document.body.appendChild(css);
+    };</script>
 
 <style>
     html {
         scroll-behavior: smooth;
     }
+
     body {
         width: 100vw;
         height: 100vh;
@@ -148,7 +149,8 @@
         margin-bottom: 5%;
         box-shadow: 1px 1px 1px 1px gray;
     }
-    img:hover{
+
+    img:hover {
         box-shadow: 2px 2px 2px 2px gray;
         color: white;
         /* background-color: rgba(22, 34, 56, 0.418); */
@@ -157,7 +159,7 @@
         transform: unset;
     }
 
-    
+
 
     .navbar {
         background: rgba(255, 255, 255, 0.26);
@@ -173,13 +175,13 @@
         color: goldenrod;
     }
 
-    
 
-    h1:hover{
+
+    h1:hover {
         font-size: 2em;
     }
 
-    #parallax_portfolio{
+    #parallax_portfolio {
         z-index: 100;
         height: 30%;
         width: 100%;
@@ -195,15 +197,11 @@
         <div class="nav justify-content-center">
             <!-- <h1 style="text-align: center;">Phong's Web Designs</h1><br> -->
             <h1 style="font-size: 50px; text-align: center; vertical-align: text-bottom">
-                <span
-     class="txt-rotate"
-     data-period="50000"
-     data-rotate='[ "PHONG NGUYEN"]'></span></h1>
-            
-
+                <span class="txt-rotate" data-period="50000" data-rotate='[ "PHONG NGUYEN"]'></span></h1>
         </div>
+
         <ul id="bottom_nav" class="nav nav-justified">
-    
+
             <li class="nav-item">
                 <a class="nav-link" href="#about_jump">About</a>
             </li>
@@ -214,118 +212,119 @@
 
         <!-- <div class="jumbotron" style="margin-bottom: 5%;"> -->
 
-            
-            <h3 class="text_rotate">SPORTS CHAT</h3>
-            <h5 class="text_rotate">Tech Stack | Express, NodeJS, Web Sockets and APIs</h5>
-            <img src="./img/sportschat.JPG" alt="Card image" data-toggle="tooltip" data-placement="top" title="Express, NodeJS, Web Sockets and APIs">
 
-            <h3 class="text_rotate">MESSAGING</h3>
-            <h5 class="text_rotate">Tech Stack | MongoDB, Express, NodeJS</h5>
-            <img src="./img/writing.jpg" alt="Card image">
+        <h3 class="text_rotate">SPORTS CHAT</h3>
+        <h5 class="text_rotate">Tech Stack | Express, NodeJS, Web Sockets and APIs</h5>
+        <img src="./img/sportschat.JPG" alt="Card image" data-toggle="tooltip" data-placement="top" title="Express, NodeJS, Web Sockets and APIs">
 
-            <h3 class="text_rotate">WILDLIFE REGISTRY</h3>
-            <h5 class="text_rotate">Tech Stack | MongoDB, Express, NodeJS</h5>
-            <img src="./img/dolphin_dash.JPG" alt="Card image">
+        <h3 class="text_rotate">MESSAGING</h3>
+        <h5 class="text_rotate">Tech Stack | MongoDB, Express, NodeJS</h5>
+        <img src="./img/writing.jpg" alt="Card image">
 
-            <h3 class="text_rotate">STACK-LITE</h3>
-            <h5 class="text_rotate">Tech Stack | Spring MVC, Maven, Java, MySQL, CodeSandBox and Stackoverflow API</h5>
-            <img src="./img/clearly_project.JPG" alt="Card image">
+        <h3 class="text_rotate">WILDLIFE REGISTRY</h3>
+        <h5 class="text_rotate">Tech Stack | MongoDB, Express, NodeJS</h5>
+        <img src="./img/dolphin_dash.JPG" alt="Card image">
 
-            <h3 class="text_rotate">STACK-LITE (cont.)</h3>
-            <h5 class="text_rotate">Tech Stack | Spring MVC, Maven, Java, MySQL, CodeSandBox and Stackoverflow API</h5>
-            <img src="./img/clearly3_project.JPG" alt="Card image">
+        <h3 class="text_rotate">STACK-LITE</h3>
+        <h5 class="text_rotate">Tech Stack | Spring MVC, Maven, Java, MySQL, CodeSandBox and Stackoverflow API</h5>
+        <img src="./img/clearly_project.JPG" alt="Card image">
 
-            <h3 style="">Web Design Elements</h3>
-            <div class="jumbotron">
-                <p style="">Restful API</p>
-                <p style="">Responsive sites (Mobile-friendly)</p>
-                <p style="">Object-Oriented Programming (OOP)</p>
-                <p style="">Web Security</p>
-                <p style="">User Authentication and Validation</p>
-            </div>
+        <h3 class="text_rotate">STACK-LITE (cont.)</h3>
+        <h5 class="text_rotate">Tech Stack | Spring MVC, Maven, Java, MySQL, CodeSandBox and Stackoverflow API</h5>
+        <img src="./img/clearly3_project.JPG" alt="Card image">
+
+        <h3 style="">Web Design Elements</h3>
+        
+        <div class="jumbotron">
+            <p style="">Restful API</p>
+            <p style="">Responsive sites (Mobile-friendly)</p>
+            <p style="">Object-Oriented Programming (OOP)</p>
+            <p style="">Web Security</p>
+            <p style="">User Authentication and Validation</p>
+        </div>
 
 
-            <h3>Programming Languages</h3>
-            <div class="jumbotron" style="margin-bottom: 5%;">
-                <table class="table table-borderless justify-content-center">
-                    <thead>
-                        <th>Front-End</th>
-                        <th>Back-End</th>
-                        <th>Developer Tools</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>React</td>
-                            <td>API</td>
-                            <td>GitHub</td>
-                        </tr>
-                        <tr>
-                            <td>Angular</td>
-                            <td>AJAX</td>
-                            <td>Virtual Environments</td>
-                        </tr>
-                        <tr>
-                            <td>JavaScript</td>
-                            <td>MySQL / SQL</td>
-                            <td>Java Spring Boot | Maven | Apache</td>
-                        </tr>
-                        <tr>
-                            <td>CSS</td>
-                            <td>MongoDB</td>
-                            <td>AWS Deployment</td>
+        <h3>Programming Languages</h3>
+        <div class="jumbotron" style="margin-bottom: 5%;">
+            <table class="table table-borderless justify-content-center">
+                <thead>
+                    <th>Front-End</th>
+                    <th>Back-End</th>
+                    <th>Developer Tools</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>React</td>
+                        <td>API</td>
+                        <td>GitHub</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>AJAX</td>
+                        <td>Virtual Environments</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>MySQL / SQL</td>
+                        <td>Java Spring Boot | Maven | Apache</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>MongoDB</td>
+                        <td>AWS Deployment</td>
 
-                        </tr>
-                        <tr>
-                            <td>HTML</td>
-                            <td>Java</td>
-                        </tr>
-                        <tr>
-                            <td>Express</td>
-                            <td>Python</td>
-                        </tr>
-                        <tr>
-                            <td>JQuery</td>
-                            <td>Flask</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td>NodeJS</td>
-                        </tr>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td>Express</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <td>JQuery</td>
+                        <td>Flask</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>NodeJS</td>
+                    </tr>
 
-                    </tbody>
-                </table>
-            </div>
+                </tbody>
+            </table>
+        </div>
 
-            <h3 style="" id="about_jump">About</h3>
-            <div id="aboutbox" class="jumbotron" style="margin-bottom: 5%;">
-                <h5>Texan located in San Francisco Bay Area.</h5><br>
-                <h5>Consumed over 216 cups of coffee through the course of my coding bootcamp</h5><br>
-                <h5>FullStack Software Engineering Bootcamp Program | Coding Dojo</h5><br>
-                <p>Data Analysis Certificate | General Assembly</p>
-                <p>M.S. in Healthcare Administration | UT of Arlington</p>
-                <p>B.S. in Biology minor Chem. | Baylor University</p>
-                <p>Prof. Experience | Healthcare Project Management and Operational Analytics</p>
-            </div>
-            
+        <h3 style="" id="about_jump">About</h3>
+        <div id="aboutbox" class="jumbotron" style="margin-bottom: 5%;">
+            <h5>Texan located in San Francisco Bay Area.</h5><br>
+            <h5>Consumed over 216 cups of coffee through the course of my coding bootcamp</h5><br>
+            <h5>FullStack Software Engineering Bootcamp Program | Coding Dojo</h5><br>
+            <p>Data Analysis Certificate | General Assembly</p>
+            <p>M.S. in Healthcare Administration | UT of Arlington</p>
+            <p>B.S. in Biology minor Chem. | Baylor University</p>
+            <p>Prof. Experience | Healthcare Project Management and Operational Analytics</p>
+        </div>
 
-            <h3 id="contact_jump">Contact</h3>
-            
-            <ul id="bottom_nav" class="nav nav-justified">
-                <li class="nav-item">
-                    <!-- <p style="display: inline;">Linkedin</p> -->
-                    <a href="https://www.linkedin.com/in/phongnguyenmha">Linkedin</a>
-                    
-                </li>
-                <li class="nav-item">
-                    <!-- <p style="display: inline;">Email</p> -->
-                    <a href="mailto:developer.phong@gmail.com">Email</img></a>
-                    
-                </li>
-                <li class="nav-item">
-                    <!-- <p style="display: inline;">GitHub</p> -->
-                    <a href="https://github.com/phongnguyen39">GitHub</img></a>
-                </li>
-            </ul>
+
+        <h3 id="contact_jump">Contact</h3>
+
+        <ul id="bottom_nav" class="nav nav-justified">
+            <li class="nav-item">
+                <!-- <p style="display: inline;">Linkedin</p> -->
+                <a href="https://www.linkedin.com/in/phongnguyenmha">Linkedin</a>
+
+            </li>
+            <li class="nav-item">
+                <!-- <p style="display: inline;">Email</p> -->
+                <a href="mailto:developer.phong@gmail.com">Email</img></a>
+
+            </li>
+            <li class="nav-item">
+                <!-- <p style="display: inline;">GitHub</p> -->
+                <a href="https://github.com/phongnguyen39">GitHub</img></a>
+            </li>
+        </ul>
 
         <!-- </div> -->
 
