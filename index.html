@@ -94,11 +94,13 @@
 
     .container {
         display: grid;
-        grid-auto-rows: auto;
+        grid-auto-rows: max-content auto;
+        grid-row-gap: 2%;
         height: 100vh;
         width: 100vw;
         padding: 0;
         z-index: 0;
+        margin-top: 60px;
         justify-content: center;
     }
 
@@ -182,7 +184,7 @@
     .fixedLinks {
         display: inline-block;
         position: fixed;
-        top: 50px;
+        top: 60px;
         width: 10%;
     }
 
