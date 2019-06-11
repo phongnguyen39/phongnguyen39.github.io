@@ -97,6 +97,7 @@
         height: 100vh;
         width: 100vw;
         padding: 5%;
+        z-index: 0;
     }
 
     * {
@@ -104,9 +105,6 @@
         color: #F0F3BD;
     }
 
-    .bd-example {
-        display: block;
-    }
 
     .jumbotron {
         background: rgba(236, 236, 236, 0.144);
@@ -191,7 +189,6 @@
     }
 
     .fixedLinks {
-        display: inline-block;
         position: fixed;
         bottom: 0;
         width: 50%;
@@ -264,7 +261,7 @@
 
 
         <h3>Programming Languages</h3>
-        <div class="jumbotron" style="margin-bottom: 5%;">
+        <div class="jumbotron">
             <table class="table table-borderless justify-content-center">
                 <thead>
                     <th>Front-End</th>
