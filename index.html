@@ -126,7 +126,9 @@
     }
 
     #bottom_nav {
-        background: rgba(255, 255, 255, 0.075);
+        /* background: rgba(255, 255, 255, 0.075); */
+        position: fixed;
+        justify-content: right;
         margin-bottom: 5%;
     }
 
@@ -169,16 +171,8 @@
         transform: unset;
     } */
 
-
-
-    .navbar {
-        background: rgba(255, 255, 255, 0.26);
-
-    }
-
     .bottombox {
         vertical-align: top;
-
     }
 
     a:hover {
@@ -230,10 +224,10 @@
     <div id="fixedNav" class="nav justify-content-left">
         <!-- <h1 style="text-align: center;">Phong's Web Designs</h1><br> -->
         <h1 id="title">
-            <span class="txt-rotate" data-period="50000" data-rotate='[ "PHONG NGUYEN"]'></span>
+            <span class="txt-rotate" data-period="50000" data-rotate='["PHONG NGUYEN"]'></span>
         </h1>
 
-        <ul id="bottom_nav" class="nav nav-justified">
+        <ul id="bottom_nav" class="nav justify-content-right">
 
             <li class="nav-item">
                 <a class="nav-link" href="#about_jump">About</a>
