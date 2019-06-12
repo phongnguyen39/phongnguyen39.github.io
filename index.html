@@ -83,6 +83,8 @@
         background: #0b132b;
         /* background: linear-gradient(#05668D, rgb(42, 118, 148), #05668D); */
         padding: 2em 1em 2em 1em;
+        height: 100vh;
+        width: 100vw;
     }
 
     body {
@@ -92,13 +94,14 @@
     }
 
 
+
     .container {
         display: grid;
         grid-auto-rows: max-content auto;
         grid-row-gap: 2%;
-        height: 100vh;
+        height: 100px;
         width: 100vw;
-        padding: 0;
+        padding-top: 3em;
         z-index: 0;
         margin-top: 5%;
         justify-content: center;
@@ -139,8 +142,9 @@
     }
 
     .lg_name,
-    #about_jump, #languages {
-        font-size: 7em;
+    #about_jump,
+    #languages {
+        font-size: 6em;
         font-weight: bold;
     }
 
@@ -175,8 +179,9 @@
     }
 
     #fixedNav {
+        padding-top: 1%;
         /* border-bottom: 1px solid white; */
-        box-shadow: 0px  0px  50px 0px #0b132b; 
+        box-shadow: 0px 0px 50px 0px #0b132b;
         display: block;
         background: #0b132b;
         position: fixed;
@@ -188,7 +193,7 @@
     #title {
         color: white;
         /* font-family: 'Kaushan Script', cursive; */
-        font-size: 70px;
+        font-size: 50px;
         text-align: left;
         vertical-align: text-bottom;
     }
@@ -200,23 +205,20 @@
     hr {
         background: white;
     }
-    span{
+
+    span {
         color: rgb(255, 50, 50);
         font-weight: bold;
     }
-
 </style>
 <header>
     <div id="fixedNav" class="nav justify-content-left">
-        <h1 id="title" style="color:white;">PHONG NGUYEN
-            
-        </h1>
+        <h1 id="title" style="color:white;">PHONG NGUYEN</h1>
     </div>
     <div class="fixedLinks">
         <hr>
         <h4><a href="#about_jump">About Me</a></h4>
         <ul>
-
             <li><a href="mailto:developer.phong@gmail.com" target="_blank">Email</a></li>
             <li><a href="#languages">Languages | Tech</a></li>
             <li><a href="https://www.linkedin.com/in/phongnguyenmha" target="_blank">Linkedin</a></li>
@@ -236,11 +238,63 @@
 
 
     <div class="container">
+        <div class="graphic_box"></div>
+        <div class="boxes">
+            <h4 id="about_jump">Full stack developer with interests in <span class="txt-rotate" data-period="0"
+                    data-rotate='["web dev, health care, data analysis, & data viz"]'></span></h4>
+        </div>
 
         <div class="boxes">
-            <h1 id="about_jump">Phong Nguyen</h1>
-            <h5>Full stack developer with interests in <span class="txt-rotate" data-period="0" data-rotate='["web dev, health care, data analysis, & data viz"]'></span></h5>
-        </div>
+                <h3 id="languages">Languages | Tech</h3>
+                <table class="table table-borderless justify-content-center">
+                    <thead>
+                        <th>Front-End</th>
+                        <th>Back-End</th>
+                        <th>Tech</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img class='icons' src="/img/react.PNG"> React</td>
+                            <td>API</td>
+                            <td><img class='icons' src="/img/github.PNG"> GitHub</td>
+                        </tr>
+                        <tr>
+                            <td><img class='icons' src="/img/angular.png"> Angular</td>
+                            <td><img class='icons' src="/img/ajax.png"> AJAX</td>
+                            <td>Virtual Environments</td>
+                        </tr>
+                        <tr>
+                            <td><img class='icons' src="/img/JavaScript.png"> JavaScript</td>
+                            <td><img class='icons' src="/img/mysql.png"> MySQL</td>
+                            <td>Java Spring Boot | Maven | Apache</td>
+                        </tr>
+                        <tr>
+                            <td><img class='icons' src="/img/css.png"> CSS</td>
+                            <td><img class='icons' src="/img/mongodb.png"> MongoDB</td>
+                            <td>AWS Deployment</td>
+    
+                        </tr>
+                        <tr>
+                            <td><img class='icons' src="/img/HTML.png"> HTML</td>
+                            <td>Java</td>
+                        </tr>
+                        <tr>
+                            <td><img class='icons' src='/img/expressjs.png'> Express</td>
+                            <td><img class='icons' src='/img/python.png'> Python</td>
+                        </tr>
+                        <tr>
+                            <td><img class='icons' src='/img/jQuery.png'> JQuery</td>
+                            <td>Flask</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><img class='icons' src='/img/nodejs.png'> NodeJS</td>
+                        </tr>
+    
+                    </tbody>
+                </table>
+            </div>
+    
 
         <div class="boxes">
             <h1 id="safe_beacon" class="lg_name"><a href="https://github.com/phongnguyen39/emergency" target="_blank">SAFE
@@ -251,57 +305,8 @@
             <iframe frameborder="0" width="100%" height="400px" src="https://eager-turing-d0382a.netlify.com/"></iframe>
         </div>
 
-        <h3 id="languages">Languages | Tech</h3>
-        <div class="boxes">
-            <table class="table table-borderless justify-content-center">
-                <thead>
-                    <th>Front-End</th>
-                    <th>Back-End</th>
-                    <th>Tech</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img class='icons' src="/img/react.PNG"> React</td>
-                        <td>API</td>
-                        <td><img class='icons' src="/img/github.PNG"> GitHub</td>
-                    </tr>
-                    <tr>
-                        <td><img class='icons' src="/img/angular.png"> Angular</td>
-                        <td><img class='icons' src="/img/ajax.png"> AJAX</td>
-                        <td>Virtual Environments</td>
-                    </tr>
-                    <tr>
-                        <td><img class='icons' src="/img/JavaScript.png"> JavaScript</td>
-                        <td><img class='icons' src="/img/mysql.png"> MySQL</td>
-                        <td>Java Spring Boot | Maven | Apache</td>
-                    </tr>
-                    <tr>
-                        <td><img class='icons' src="/img/css.png"> CSS</td>
-                        <td><img class='icons' src="/img/mongodb.png"> MongoDB</td>
-                        <td>AWS Deployment</td>
 
-                    </tr>
-                    <tr>
-                        <td><img class='icons' src="/img/HTML.png"> HTML</td>
-                        <td>Java</td>
-                    </tr>
-                    <tr>
-                        <td><img class='icons' src='/img/expressjs.png'> Express</td>
-                        <td><img class='icons' src='/img/python.png'> Python</td>
-                    </tr>
-                    <tr>
-                        <td><img class='icons' src='/img/jQuery.png'> JQuery</td>
-                        <td>Flask</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><img class='icons' src='/img/nodejs.png'> NodeJS</td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </div>
-
+       
 
 
 </body>
