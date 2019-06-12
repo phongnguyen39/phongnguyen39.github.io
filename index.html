@@ -108,15 +108,13 @@
         font-family: 'Montserrat', sans-serif;
         color: white;
     }
-    a:hover{
+
+    a:hover {
         color: #6FFFe9;
     }
 
     .boxes {
-        
-        margin: 2% 0% 100% 0%;
-        padding: 0px auto;
-        
+        margin: 0% 0% 100% 0%;
     }
 
     /* .boxes:hover {
@@ -141,7 +139,7 @@
     }
 
     .lg_name,
-    #about_jump {
+    #about_jump, #languages {
         font-size: 7em;
         font-weight: bold;
     }
@@ -179,6 +177,7 @@
 
     #fixedNav {
         /* border-bottom: 1px solid white; */
+        box-shadow: 0px  0px  50px 0px #0b132b; 
         display: block;
         background: #0b132b;
         position: fixed;
@@ -203,7 +202,6 @@
         background: white;
     }
 
-    
 </style>
 <header>
     <div id="fixedNav" class="nav justify-content-left">
@@ -215,7 +213,7 @@
         <hr>
         <h4><a href="#about_jump">About Me</a></h4>
         <ul>
-            
+
             <li><a href="mailto:developer.phong@gmail.com" target="_blank">Email</a></li>
             <li><a href="#languages">Languages | Tech</a></li>
             <li><a href="https://www.linkedin.com/in/phongnguyenmha" target="_blank">Linkedin</a></li>
@@ -238,16 +236,19 @@
 
         <div class="boxes">
             <h1 id="about_jump">Phong Nguyen</h1>
-            <h5>Full stack developer with interests in web development, health care and data                visualization</h5>
+            <h5>Full stack developer with interests in web development, health care, data analytics and data visualization</h5>
         </div>
 
-        <h1 id="safe_beacon" class="lg_name"><a href="https://github.com/phongnguyen39/emergency" target="_blank">SAFE
-                BEACON</a></h1>
-        <h5>Tech Stack | Angular7, Google Maps API, MongoDB</h5>
-        <p>Web application that sends vital information about user to selected contacts in the event of an emergency.</p>
-        <iframe frameborder = "0" width="100%" height="400px" src="https://eager-turing-d0382a.netlify.com/"></iframe>
+        <div class="boxes">
+            <h1 id="safe_beacon" class="lg_name"><a href="https://github.com/phongnguyen39/emergency" target="_blank">SAFE
+                    BEACON</a></h1>
+            <h5>Tech Stack | Angular7, Google Maps API, MongoDB</h5>
+            <p>Web application that sends vital information about user to selected contacts in the event of an
+                emergency.</p>
+            <iframe frameborder="0" width="100%" height="400px" src="https://eager-turing-d0382a.netlify.com/"></iframe>
+        </div>
 
-        <h3 id="languages">Programming Languages</h3>
+        <h3 id="languages">Languages | Tech</h3>
         <div class="boxes">
             <table class="table table-borderless justify-content-center">
                 <thead>
