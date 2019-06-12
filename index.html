@@ -106,24 +106,26 @@
 
     * {
         font-family: 'Montserrat', sans-serif;
+        color: white;
+    }
+    a:hover{
         color: #6FFFe9;
     }
 
-
     .boxes {
-        border: .5px solid #1c254186;
-        margin: 2% 0% 2% 0%;
+        
+        margin: 2% 0% 100% 0%;
         padding: 0px auto;
-        box-shadow: 1px 1px 1px 1px gray;
+        
     }
 
-    .boxes:hover {
+    /* .boxes:hover {
         background: #3a506b;
         margin: 2% 0% 5% 0%;
         padding: 0px auto;
-        box-shadow: 1px 3px 3px 1px gray;
+        
         transition: 1s;
-    }
+    } */
 
 
     a,
@@ -176,7 +178,7 @@
     }
 
     #fixedNav {
-        border-bottom: 1px solid white;
+        /* border-bottom: 1px solid white; */
         display: block;
         background: #0b132b;
         position: fixed;
@@ -200,6 +202,8 @@
     hr {
         background: white;
     }
+
+    
 </style>
 <header>
     <div id="fixedNav" class="nav justify-content-left">
@@ -209,13 +213,19 @@
     </div>
     <div class="fixedLinks">
         <hr>
+        <h4><a href="#about_jump">About Me</a></h4>
         <ul>
-            <li><a href="#about_jump">About Me</a></li>
-            <li><a href="mailto:developer.phong@gmail.com" target="_blank">Email Me</a></li>
-            <li><a href="#languages">Languages</a></li>
+            
+            <li><a href="mailto:developer.phong@gmail.com" target="_blank">Email</a></li>
+            <li><a href="#languages">Languages | Tech</a></li>
             <li><a href="https://www.linkedin.com/in/phongnguyenmha" target="_blank">Linkedin</a></li>
-            <li><a href="img/Phong Nguyen 2019.06.pdf">Resume</a></li>
+            <li><a href="img/Phong Nguyen 2019.06.pdf" target="_blank">Resume</a></li>
             <li><a href="https://github.com/phongnguyen39" target="_blank">See My Code</a></li>
+        </ul>
+        <hr>
+        <h4><a href="#safe_beacon">Projects</a></h4>
+        <ul>
+            <li><a href="#safe_beacon">Safe Beacon</a></li>
         </ul>
 
     </div>
@@ -226,10 +236,9 @@
 
     <div class="container">
 
-        <div>
+        <div class="boxes">
             <h1 id="about_jump">Phong Nguyen</h1>
-            <h5>Full stack developer with an interest in web development, health care and data
-                visualization</h5>
+            <h5>Full stack developer with interests in web development, health care and data                visualization</h5>
         </div>
 
         <h1 id="safe_beacon" class="lg_name"><a href="https://github.com/phongnguyen39/emergency" target="_blank">SAFE
