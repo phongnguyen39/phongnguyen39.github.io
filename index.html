@@ -126,11 +126,21 @@
     }
 
 
-    a, h1,
+    a,
+    h1,
     h2,
     h3,
+    h4,
+    h5,
+    h6,
     p {
-        color: #6FFFe9;
+        /* color: #6FFFe9; */
+        color: white;
+    }
+
+    .lg_name, #about_jump {
+        font-size: 8em;
+        font-weight: bold;
     }
 
     .logos {
@@ -181,6 +191,14 @@
         text-align: left;
         vertical-align: text-bottom;
     }
+
+    ul {
+        list-style-type: none;
+    }
+
+    hr {
+        background: white;
+    }
 </style>
 <header>
     <div id="fixedNav" class="nav justify-content-left">
@@ -189,11 +207,15 @@
         </h1>
     </div>
     <div class="fixedLinks">
-        <a href="#about_jump">About Me</a><br>
-        <a href="#languages">Languages</a><br>
-        <a href="https://www.linkedin.com/in/phongnguyenmha" target = "_blank">Linkedin</a><br>
-        <a href="mailto:developer.phong@gmail.com" target = "_blank">Email Me</a><br>
-        <a href="https://github.com/phongnguyen39" target = "_blank">See My Code</a>
+        <hr>
+        <ul>
+            <li><a href="#about_jump">About Me</a></li>
+            <li><a href="mailto:developer.phong@gmail.com" target="_blank">Email Me</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="https://www.linkedin.com/in/phongnguyenmha" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/phongnguyen39" target="_blank">See My Code</a></li>
+        </ul>
+
     </div>
 </header>
 
@@ -201,8 +223,16 @@
 
 
     <div class="container">
-    
-        <h1><a href="https://github.com/phongnguyen39/emergency">Safe Beacon</a></h1>
+
+        <h1 id="about_jump">Phong Nguyen</h1>
+        <div id="aboutbox" class="boxes">
+            <h5>Texan located in San Francisco Bay Area. Full stack developer with an interest in data analysis and
+                visualization</h5><br>
+            <a href="img/Phong Nguyen 2019.06.pdf">Resume</a>
+        </div>
+
+        <h1 id="safe_beacon" class="lg_name"><a href="https://github.com/phongnguyen39/emergency" target="_blank">SAFE
+                BEACON</a></h1>
         <h5>Tech Stack | Angular7, Google Maps API, MongoDB</h5>
         <p>Web application that sends vital information about user to selected contacts in the event of an emergency.</p>
         <iframe width="100%" height="400px" src="https://eager-turing-d0382a.netlify.com/"></iframe>
@@ -258,12 +288,7 @@
             </table>
         </div>
 
-        <h3 id="about_jump">About</h3>
-        <div id="aboutbox" class="boxes">
-            <h5>Texan located in San Francisco Bay Area. Full stack developer with an interest in data analysis and
-                visualization</h5><br>
-            <a href="img/Phong Nguyen 2019.06.pdf">Resume</a>
-        </div>
+
 
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
