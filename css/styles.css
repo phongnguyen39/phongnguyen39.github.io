@@ -33,34 +33,26 @@
         border: 1px dotted red;
     }
 
+    a {
+        color: white;
+    }
+
     a:hover {
         color: #6FFFe9;
         text-decoration: none;
     }
 
 
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-        /* color: #6FFFe9; */
+  
+
+    
+    #aboutme,#resume,
+    #languages, #safe_beacon, #stack,  #onev{
+        font-size: 5em;
+        font-weight: bold;
         color: white;
     }
 
-    #lg_name, #resume h1,
-    #aboutme h1,
-    #languages h1{
-        font-size: 3em;
-        font-weight: bold;
-    }
-
-    #lg_name{
-        color: red;
-    }
 
     img {
         height: 100%;
@@ -116,6 +108,9 @@
     
     .boxes {
         margin: 0% 0% 100% 0%;
+    }
+    .innerbox{
+        margin: 0% 0% 0% %;
     }
 
     span {
