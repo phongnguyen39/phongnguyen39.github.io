@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -15,11 +16,12 @@
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
     <script>
     </script>
     <title>Phong Nguyen</title>
 </head>
-<script>var TxtRotate = function (el, toRotate, period) {
+<!-- <script>var TxtRotate = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
         this.loopNum = 0;
@@ -69,147 +71,14 @@
                 new TxtRotate(elements[i], JSON.parse(toRotate), period);
             }
         }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-        document.body.appendChild(css);
-    };</script>
+        // // INJECT CSS
+        // var css = document.createElement("style");
+        // css.type = "text/css";
+        // css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+        // document.body.appendChild(css);
+    };</script> -->
 
 <style>
-    /* Color Palette:  #05668D, #028090, #00A896, #02C39A, #F0F3BD */
-    html {
-        scroll-behavior: smooth;
-        background: #0b132b;
-        /* background: linear-gradient(#05668D, rgb(42, 118, 148), #05668D); */
-        padding: 2em 1em 2em 1em;
-        height: 100vh;
-        width: 100vw;
-    }
-
-    body {
-        background: #0b132b;
-        width: 100%;
-        height: 100%;
-    }
-
-
-
-    .container {
-        display: grid;
-        grid-auto-rows: max-content auto;
-        grid-row-gap: 2%;
-        height: 100vh;
-        width: 80%;
-        padding-top: 3em;
-        z-index: 0;
-        margin-top: 5%;
-        justify-content: center;
-    }
-
-    * {
-        font-family: 'Montserrat', sans-serif;
-        color: white;
-    }
-
-    a:hover {
-        color: #6FFFe9;
-        text-decoration: none;
-    }
-
-    .boxes {
-        margin: 0% 0% 100% 0%;
-    }
-
-    /* .boxes:hover {
-        background: #3a506b;
-        margin: 2% 0% 5% 0%;
-        padding: 0px auto;
-        
-        transition: 1s;
-    } */
-
-
-    a,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p {
-        /* color: #6FFFe9; */
-        color: white;
-    }
-
-    .lg_name,
-    #about_jump,
-    #languages {
-        font-size: 80%;
-        font-weight: bold;
-    }
-
-    img {
-        height: 100%;
-        width: 100%;
-        margin-bottom: 5%;
-    }
-
-    .bottombox {
-        vertical-align: top;
-    }
-
-    .icons{
-        height: 20%;
-        width: 14%;
-    }
-
-    .fixedLinks {
-        display: inline-block;
-        position: fixed;
-        top: 90px;
-        width: 15%;
-        margin-top: 2%;
-    }
-
-    #fixedNav {
-        padding-top: 1%;
-        /* border-bottom: 1px solid white; */
-        box-shadow: 0px 0px 30px 30px #0b132b;
-        display: block;
-        background: #0b132b;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        justify-items: left;
-    }
-
-    #title {
-        color: white;
-        /* font-family: 'Kaushan Script', cursive; */
-        font-size: 50px;
-        text-align: left;
-        vertical-align: text-bottom;
-    }
-
-    ul {
-        list-style-type: none;
-    }
-
-    hr {
-        background: white;
-    }
-
-    span {
-        color: rgb(255, 50, 50);
-        font-weight: bold;
-    }
-
-    #resumeimg{
-        height: 100%;
-        width: 80%;
-        align-content: center;
-    }
 </style>
 <header>
     <div id="fixedNav" class="nav justify-content-left">
@@ -217,7 +86,7 @@
     </div>
     <div class="fixedLinks">
         <hr>
-        <h4><a href="#about_jump">About Me</a></h4>
+        <h4><a href="#aboutme">About Me</a></h4>
         <ul>
             <li><a href="#languages">Languages | Tech</a></li>
             <li><a href="#resume">Resume</a></li>
@@ -233,6 +102,8 @@
         <h4><a href="#safe_beacon">Projects</a></h4>
         <ul>
             <li><a href="#safe_beacon">Safe Beacon</a></li>
+            <li><a href="#stack">Stack Lite</a></li>
+            <li><a href="#onev">Google One View</a></li>
         </ul>
 
     </div>
@@ -242,79 +113,89 @@
 
 
     <div class="container">
-        <div class="graphic_box"></div>
+
         <div class="boxes">
-            <h4 id="about_jump">Full stack developer with interests in <span class="txt-rotate" data-period="0"
-                    data-rotate='["web dev, health care, data analysis, & data viz"]'></span></h4>
+            <h1 id="aboutme" class="lg_name">Full stack developer with interests in <span class="txt-rotate" data-period="0"
+                    data-rotate='["web dev, health care, data analysis, & data viz"]'></span></h1>
         </div>
 
         <div class="boxes">
-                <h3 id="languages">Languages | Tech</h3>
-                <table class="table table-borderless justify-content-center">
-                    <thead>
-                        <th>Front-End</th>
-                        <th>Back-End</th>
-                        <th>Tech</th>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><img class='icons' src="/img/react.PNG"> React</td>
-                            <td>API</td>
-                            <td><img class='icons' src="/img/github.PNG"> GitHub</td>
-                        </tr>
-                        <tr>
-                            <td><img class='icons' src="/img/angular.png"> Angular</td>
-                            <td><img class='icons' src="/img/ajax.png"> AJAX</td>
-                            <td>Virtual Environments</td>
-                        </tr>
-                        <tr>
-                            <td><img class='icons' src="/img/JavaScript.png"> JavaScript</td>
-                            <td><img class='icons' src="/img/mysql.png"> MySQL</td>
-                            <td>Java Spring Boot | Maven | Apache</td>
-                        </tr>
-                        <tr>
-                            <td><img class='icons' src="/img/css.png"> CSS</td>
-                            <td><img class='icons' src="/img/mongodb.png"> MongoDB</td>
-                            <td>AWS Deployment</td>
-    
-                        </tr>
-                        <tr>
-                            <td><img class='icons' src="/img/HTML.png"> HTML</td>
-                            <td>Java</td>
-                        </tr>
-                        <tr>
-                            <td><img class='icons' src='/img/expressjs.png'> Express</td>
-                            <td><img class='icons' src='/img/python.png'> Python</td>
-                        </tr>
-                        <tr>
-                            <td><img class='icons' src='/img/jQuery.png'> JQuery</td>
-                            <td>Flask</td>
-                        </tr>
-                        <tr>
-                            <td></td>
-                            <td><img class='icons' src='/img/nodejs.png'> NodeJS</td>
-                        </tr>
-    
-                    </tbody>
-                </table>
-            </div>
-        <div class="boxes" id="resume">
-            <h1 class="lg_name">RESUME</h1>
+            <h1 id="languages">Languages | Tech</h1>
+            <table class="table table-borderless justify-content-center">
+                <thead>
+                    <th>Front-End</th>
+                    <th>Back-End</th>
+                    <th>Tech</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img class='icons' src="/img/react.PNG"> React</td>
+                        <td>API</td>
+                        <td><img class='icons' src="/img/github.PNG"> GitHub</td>
+                    </tr>
+                    <tr>
+                        <td><img class='icons' src="/img/angular.png"> Angular</td>
+                        <td><img class='icons' src="/img/ajax.png"> AJAX</td>
+                        <td>Virtual Environments</td>
+                    </tr>
+                    <tr>
+                        <td><img class='icons' src="/img/JavaScript.png"> JavaScript</td>
+                        <td><img class='icons' src="/img/mysql.png"> MySQL</td>
+                        <td>Java Spring Boot | Maven | Apache</td>
+                    </tr>
+                    <tr>
+                        <td><img class='icons' src="/img/css.png"> CSS</td>
+                        <td><img class='icons' src="/img/mongodb.png"> MongoDB</td>
+                        <td>AWS Deployment</td>
+
+                    </tr>
+                    <tr>
+                        <td><img class='icons' src="/img/HTML.png"> HTML</td>
+                        <td>Java</td>
+                    </tr>
+                    <tr>
+                        <td><img class='icons' src='/img/expressjs.png'> Express</td>
+                        <td><img class='icons' src='/img/python.png'> Python</td>
+                    </tr>
+                    <tr>
+                        <td><img class='icons' src='/img/jQuery.png'> JQuery</td>
+                        <td>Flask</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><img class='icons' src='/img/nodejs.png'> NodeJS</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="boxes">
+            <h1 id="resume">Resume</h1>
             <img id="resumeimg" src="./img/resume.jpg">
         </div>
-    
 
         <div class="boxes" id="safe_beacon">
-            <h1 class="lg_name"><a href="https://github.com/phongnguyen39/emergency" target="_blank">SAFE
-                    BEACON</a></h1>
+            <h1 class="lg_name"><a href="https://github.com/phongnguyen39/emergency" target="_blank">Safe Beacon</a></h1>
             <h5>Tech Stack | Angular7, Google Maps API, MongoDB</h5>
             <p>Web application that sends vital information about user to selected contacts in the event of an
                 emergency.</p>
             <iframe frameborder="0" width="100%" height="400px" src="https://eager-turing-d0382a.netlify.com/"></iframe>
         </div>
 
+        <div class="boxes" id="stack">
+                <h1><a href="#" target="_blank">Stack Lite</a></h1>
+                <h5>Tech Stack | Angular7, StackOverflow API</h5>
+                <iframe frameborder="0" width="100%" height="400px" src=""></iframe>
+            </div>
 
-       
+        <div class="boxes" id="onev">
+            <h1>Google One View</h1>
+            <h5>Tech Stack | Angular7, Google OAuth</h5>
+            <p></p>
+        </div>
+
+    </div>
 
 
 </body>
