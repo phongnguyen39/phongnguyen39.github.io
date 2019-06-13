@@ -1,3 +1,4 @@
+/* STYLING FOR LARGER DESKTOP SCREENS */
 @media only screen and (max-width: 2000px) {
     html {
         scroll-behavior: smooth;
@@ -115,12 +116,24 @@
         align-content: center;
     }
 
-    iframe{
-        height: 200%;
-        width: 100%;
-        border: red;
+    .iframeContainer{
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+
     }
 
+    .iframeContainer iframe{
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border: 0;
+    }
+
+/* STYLING FOR LARGER MOBILE SCREENS */
     @media only screen and (max-width: 600px) {
         html {
             scroll-behavior: smooth;
@@ -238,10 +251,21 @@
             width: 80%;
             align-content: center;
         }
-    
-        iframe{
-            height: 200%;
-            width: 100%;
-            border: red;
+
+        .iframeContainer{
+            position: relative;
+            overflow: hidden;
+            padding-top: 56.25%;
         }
-      }
+
+        .iframeContainer iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border: 0;
+        }
+    
+        
+    
