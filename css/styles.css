@@ -118,13 +118,15 @@
 
     .iframeContainer{
         position: relative;
-        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
         padding-top: 56.25%;
 
     }
 
     .iframeContainer iframe{
-        overflow: hidden;
+        overflow-y: hidden;
+        overflow-x: hidden;
         position: absolute;
         top: 0;
         left: 0;
