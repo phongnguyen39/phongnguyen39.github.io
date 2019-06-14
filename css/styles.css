@@ -102,9 +102,7 @@
 
     
     .boxes {
-        margin: 0% 0% 100% 0%;
-        border: 1px solid red;
-        padding-top: 35%;
+        margin: 10% 0% 100% 0%;
     }
 
     span {
