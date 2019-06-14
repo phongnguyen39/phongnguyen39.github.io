@@ -103,6 +103,8 @@
     
     .boxes {
         margin: 0% 0% 100% 0%;
+        border: 1px solid red;
+        padding-top: 35%;
     }
 
     span {
@@ -111,8 +113,8 @@
     }
 
     #resumeimg{
-        height: 50%;
-        width: 80%;
+        height: 40%;
+        width: 70%;
         align-content: center;
     }
 
@@ -133,6 +135,13 @@
         height: 100%;
         width: 100%;
         border: 0;
+    }
+
+    .downarrow{
+        display: block;
+        margin: 0 auto;
+        height: 10%;
+        width: 14%;
     }
 
 /* STYLING FOR LARGER MOBILE SCREENS */
@@ -249,8 +258,8 @@
         }
     
         #resumeimg{
-            height: 50%;
-            width: 80%;
+            height: 40%;
+            width: 70%;
             align-content: center;
         }
 
@@ -269,5 +278,11 @@
             border: 0;
         }
     
+
+        .downarrow{
+            margin: 0 auto;
+            height: 10%;
+            width: 14%;
+        }
         
     
