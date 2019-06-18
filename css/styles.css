@@ -142,7 +142,152 @@
         width: 14%;
     }
 
-/* STYLING FOR LARGER MOBILE SCREENS */
+    /* STYLING FOR LAPTOP SCREENS */
+    @media only screen and (max-width: 1400px) {
+        html {
+            scroll-behavior: smooth;
+            background: #0b132b;
+            /* background: linear-gradient(#05668D, rgb(42, 118, 148), #05668D); */
+            padding: 2em 1em 2em 1em;
+            height: 100vh;
+            width: 100vw;
+        }
+    
+        body {
+            background-color: #0b132b;
+            width: 100vw;
+            height: 100vh;
+        }
+    
+        .container {
+            display: grid;
+            grid-auto-rows: max-content auto;
+            grid-row-gap: 2%;
+            height: 100vh;
+            width: 80%;
+            padding-top: 3em;
+            z-index: 0;
+            margin: 5% 0% 0% 20%;
+            justify-content: center;
+        }
+    
+        * {
+            font-family: 'Montserrat', sans-serif;
+            color: white;
+            /* border: 1px dotted red; */
+        }
+    
+        a {
+            color: white;
+        }
+    
+        a:hover {
+            color: #6FFFe9;
+            text-decoration: none;
+        }
+        
+        #aboutme,#resume, #languages, #safe_beacon, #stack,  #onev{
+            font-size: 5em;
+            font-weight: bold;
+            color: white;
+        }
+    
+    
+        img {
+            height: 100%;
+            width: 100%;
+            margin-bottom: 5%;
+        }
+    
+        .bottombox {
+            vertical-align: top;
+        }
+    
+        .icons{
+            height: 20%;
+            width: 14%;
+        }
+    
+        .fixedLinks {
+            display: inline-block;
+            position: fixed;
+            top: 90px;
+            width: 15%;
+            margin-top: 0%;
+        }
+    
+        #fixedNav {
+            padding-top: 1%;
+            /* border-bottom: 1px solid white; */
+            box-shadow: 0px 0px 30px 30px #0b132b;
+            display: block;
+            background: #0b132b;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            justify-items: left;
+        }
+    
+        #title {
+            color: white;
+            /* font-family: 'Kaushan Script', cursive; */
+            font-size: 2em;
+            text-align: left;
+    
+        }
+    
+        ul {
+            list-style-type: none;
+        }
+    
+        hr {
+            background: white;
+        }
+    
+        
+        .boxes {
+            margin: 0% 0% 100% 0%;
+        }
+    
+        span {
+            color: rgb(255, 50, 50);
+            font-weight: bold;
+        }
+    
+        #resumeimg{
+            height: 40%;
+            width: 70%;
+            align-content: center;
+        }
+    
+        .iframeContainer{
+            position: relative;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            padding-top: 56.25%;
+    
+        }
+    
+        .iframeContainer iframe{
+            overflow-y: hidden;
+            overflow-x: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            border: 0;
+        }
+    
+        .downarrow{
+            display: block;
+            margin: 0 auto;
+            height: 10%;
+            width: 14%;
+        }
+    
+
+/* STYLING FOR MOBILE SCREENS */
     @media only screen and (max-width: 600px) {
         html {
             scroll-behavior: smooth;
