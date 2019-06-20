@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0078)file:///C:/Users/phong/Google%20Drive/Phong/Coding%20Dojo/Hatchways/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="file:///C:/Users/phong/Google%20Drive/Phong/Coding%20Dojo/Hatchways/static/styles.css">
+    <title>Hatchways</title>
+</head>
+
+<body><div id="root"></div>
+
+
+
+    <script>
+
+        // API CALL TO STUDENT JSON ENDPOINT
+        var request = new XMLHttpRequest();
+
+        request.open("Get", 'https://www.hatchways.io/api/assessment/students', true)
+        request.onload = function () {
+
+            var data = JSON.parse(this.response);
+
+            // CREATE CONTAINER FOR ALL STUDENTS //
+            const app = document.getElementById('root');
+            const container = document.createElement("div");
+            container.setAttribute('class', 'container');
+            app.appendChild(container);
+
+            // APPEND EACH STUDENT TO THE CONTAINER ABOVE
+            for (var i = 0; i < data.students.length; i++) {
+                const students = document.createElement('div');
+                students.setAttribute('class', 'students');
+
+                const studentsInfo = document.createElement('p');
+                studentsInfo.setAttribute('class', 'studentsInfo');
+
+                const studentsPic = document.createElement('img');
+                studentsPic.setAttribute('class','pic');
+                studentsPic.src = data.students[i].pic;
+
+                const studentsName = document.createElement('h1');
+                studentsName.setAttribute('class', 'studentName');
+
+          
+                var sum = 0;
+
+                // CALCULATE AVG GRADE FOR EACH STUDENT
+                for(var j = 0; j < data.students[i].grades.length ; j++){
+                    sum += parseInt(data.students[i].grades[j]);                    
+                    var avgGrade = Math.round((sum /  parseInt(data.students[i].grades.length)*100))/100 + "%";
+                }
+
+                // OUTPUTTING STUDENT INFO
+                studentsPic.innerHTML = data.students[i].pic
+                studentsName.innerText =  data.students[i].firstName + ' ' + data.students[i].lastName; 
+                studentsInfo.innerText =  
+                    "Email: " + data.students[i].email + '\n' + 
+                    "Company: " + data.students[i].company + '\n' + 
+                    "Skill: " + data.students[i].skill + '\n' + 
+                    "Average: " + avgGrade;
+
+                container.appendChild(students);
+                students.appendChild(studentsPic);
+                students.appendChild(studentsName);
+                students.appendChild(studentsInfo);
+            }
+        }
+
+        request.send()
+
+    </script>
+
+
+</body></html>

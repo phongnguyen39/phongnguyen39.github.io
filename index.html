@@ -227,6 +227,9 @@
 
     </div>
 
+    <!-- <div id="favorite_resources">
+        <a href="https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc/related?hl=en">JSON Viewer Extension</a>
+    </div> -->
 
 </body>
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -238,6 +241,16 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-122477728-2');
+</script>
+
+<script>
+    var request = new XMLHttpRequest();
+    request.open('get','https://api.github.com/users/phongnguyen39',true);
+    request.onload = function(){
+        var data = JSON.parse(this.response);
+        console.log(data);
+    }
+    request.send();
 </script>
 
 
