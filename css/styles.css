@@ -145,10 +145,6 @@
         width: 14%;
     }
 
-    p.hovereffect:hover{
-        transform: perspective();
-    }
-
     /* STYLING FOR LAPTOP SCREENS */
     @media only screen and (max-width: 1400px) {
         html {
