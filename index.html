@@ -169,7 +169,7 @@
     request.open('get', 'https://api.github.com/users/phongnguyen39', true);
     request.onload = function () {
         var data = JSON.parse(this.response);
-        console.log(data);
+        // console.log(data);
         document.getElementById("funStat").innerHTML = data.public_repos + " repos";
         /////  come back to this and show it on the page
     }
