@@ -62,6 +62,7 @@
     }
 
     .icons{
+        display: inline-block;
         height: 20%;
         width: 14%;
     }
@@ -142,6 +143,10 @@
         margin: 0 auto;
         height: 10%;
         width: 14%;
+    }
+
+    p.hovereffect:hover{
+        transform: perspective();
     }
 
     /* STYLING FOR LAPTOP SCREENS */
