@@ -166,6 +166,13 @@
             </div>
         </div>
 
+        <div class="boxes">
+            <h1 id="pacman">"NINJAMAN" A PACMAN EMULATOR</h1>
+            <div class="iframeContainer">
+                <iframe src="https://wizardly-heisenberg-c9105e.netlify.com/"></iframe>
+            </div>
+        </div>
+
     </div>
 
     <!-- <div id="favorite_resources">
@@ -190,7 +197,7 @@
     request.onload = function () {
         var data = JSON.parse(this.response);
         console.log(data);
-        document.getElementById("funStat").innerHTML = data.public_repos+" repos";
+        document.getElementById("funStat").innerHTML = data.public_repos + " repos";
         /////  come back to this and show it on the page
     }
     request.send();
