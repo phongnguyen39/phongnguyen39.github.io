@@ -45,3 +45,10 @@ openRequest.onsuccess = function(){
     console.log(db)
 }
 
+function ratingUp(){
+    console.log("Rating Up")
+}
+
+function ratingDown(){
+    console.log("Rating Down")
+}
