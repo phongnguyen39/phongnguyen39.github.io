@@ -254,7 +254,7 @@
         text-decoration: none;
     }
     
-    #aboutme,#resume, #languages, #safe_beacon, #stack,  #onev{
+    #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
         font-size: 5em;
         font-weight: bold;
         color: white;
@@ -455,7 +455,7 @@
         text-decoration: none;
     }
     
-    #aboutme,#resume, #languages, #safe_beacon, #stack,  #onev{
+    #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
         font-size: 2em;
         font-weight: bold;
         color: white;
