@@ -1,5 +1,5 @@
 /* STYLING FOR LARGER DESKTOP SCREENS ******************************************/
-@media only screen and (max-width: 2000px) {
+@media only screen and (max-width: 8000px) {
     html {
         scroll-behavior: smooth;
         background: #0b132b;
@@ -572,7 +572,7 @@
 
     
     .boxes {
-        margin: 0% 0% 50% 0%;
+           margin: 0% 0% 25% 0%;
     }
 
     span {
