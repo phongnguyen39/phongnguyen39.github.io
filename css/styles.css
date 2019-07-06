@@ -1,5 +1,18 @@
 /* STYLING FOR LARGER DESKTOP SCREENS ******************************************/
 @media only screen and (max-width: 8000px) {
+    .parallax{
+        /* text-orientation: sideways; */
+        display: grid;
+        transform: rotate(270deg);
+        color: gray;
+        z-index: 10;
+        position: fixed;
+        justify-content: right;
+        border: 1px solid red;
+    
+    }
+
+
     html {
         scroll-behavior: smooth;
         background: #0b132b;

@@ -1,7 +1,7 @@
 // GIT HUB WEB API ////////////////////////
 var request = new XMLHttpRequest();
 request.open('get', 'https://api.github.com/users/phongnguyen39', true);
-request.onload :/l function () {
+request.onload = function () {
     var data = JSON.parse(this.response);
     if (data.message == "API rate limit exceeded for 73.71.99.20. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)") {
         console.log("API Calls to GitHub exceeded")
