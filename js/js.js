@@ -7,7 +7,7 @@ request.onload = function () {
         console.log("API Calls to GitHub exceeded")
     }
     else {
-        document.getElementById("funStat").innerHTML = " | " + data.public_repos + " repos";
+        document.getElementById("funStat").innerHTML = " Just for fun... API call to Github | " + data.public_repos + " repos";
     }
 }
 request.send();

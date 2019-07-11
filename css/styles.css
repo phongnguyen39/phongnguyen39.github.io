@@ -22,7 +22,7 @@
         grid-auto-rows: max-content auto;
         grid-row-gap: 2%;
         height: 100vh;
-        width: 80%;
+        width: 100%;
         padding-top: 3em;
         z-index: 0;
         margin: 5% 0% 0% 20%;
@@ -44,7 +44,7 @@
         text-decoration: none;
     }
     
-    #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
+    #git, #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
         font-size: 3em;
         font-weight: bold;
         color: white;
@@ -168,14 +168,24 @@
     }
 
     .projects-card{
-        width: 30%;
+        width: 40%;
         text-align: center;
         display: inline-block;
         vertical-align: top;
-        
         box-shadow: 5px 5px 20px rgb(1, 6, 15);
         margin: 1%;
         border: 1px solid black;
+    }
+
+    .projects-card:hover{
+        position: relative;
+        width: 40%;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        box-shadow: 5px 5px 20px rgb(6, 35, 88);
+        margin: 1%;
+    
     }
 
     .sectionHeader{
@@ -184,7 +194,7 @@
     
     .boxes {
         margin: 0% 0% 25% 0%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         display: inline-block;
     }
 
@@ -392,7 +402,7 @@
     
     .boxes {
         margin: 0% 0% 25% 0%;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
     span {
