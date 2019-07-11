@@ -1,18 +1,5 @@
 /* STYLING FOR LARGER DESKTOP SCREENS ******************************************/
 @media only screen and (max-width: 8000px) {
-    .parallax{
-        /* text-orientation: sideways; */
-        display: grid;
-        transform: rotate(270deg);
-        color: gray;
-        z-index: 10;
-        position: fixed;
-        justify-content: right;
-        border: 1px solid red;
-    
-    }
-
-
     html {
         scroll-behavior: smooth;
         background: #0b132b;
@@ -21,6 +8,8 @@
         height: 99vh;
         width: 100vw;
     }
+
+
 
     body {
         background-color: #0b132b;
@@ -55,8 +44,8 @@
         text-decoration: none;
     }
     
-    #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
-        font-size: 5em;
+    #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
+        font-size: 3em;
         font-weight: bold;
         color: white;
     }
@@ -178,9 +167,25 @@
         background: white;
     }
 
+    .projects-card{
+        width: 30%;
+        text-align: center;
+        display: inline-block;
+        vertical-align: top;
+        
+        box-shadow: 5px 5px 20px rgb(1, 6, 15);
+        margin: 1%;
+        border: 1px solid black;
+    }
+
+    .sectionHeader{
+        font-size: 5em;
+    }
     
     .boxes {
         margin: 0% 0% 25% 0%;
+        border: 1px solid red;
+        display: inline-block;
     }
 
     span {
@@ -216,8 +221,8 @@
     .downarrow{
         display: block;
         margin: 0 auto;
-        height: 10%;
-        width: 14%;
+        height: 8%;
+        width: 10%;
     }
 
     #invertedarrow{
@@ -269,8 +274,8 @@
         text-decoration: none;
     }
     
-    #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
-        font-size: 5em;
+    #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
+        font-size: 3em;
         font-weight: bold;
         color: white;
     }
@@ -387,6 +392,7 @@
     
     .boxes {
         margin: 0% 0% 25% 0%;
+        border: 1px solid red;
     }
 
     span {
@@ -471,7 +477,7 @@
         text-decoration: none;
     }
     
-    #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
+    #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
         font-size: 2em;
         font-weight: bold;
         color: white;
