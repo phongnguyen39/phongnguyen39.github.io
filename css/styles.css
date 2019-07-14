@@ -168,6 +168,8 @@
     }
 
     .projects-card{
+        background-color: #0b132b;
+        padding: 1%;
         width: 40%;
         text-align: center;
         display: inline-block;
@@ -175,14 +177,17 @@
         box-shadow: 5px 5px 20px rgb(1, 6, 15);
         margin: 1%;
         border: 1px solid black;
+        min-height: 550px;
     }
 
     .projects-card:hover{
+        background-color: #192a5f;
         position: relative;
         width: 40%;
         text-align: center;
         display: inline-block;
         vertical-align: top;
+        border: none;
         box-shadow: 5px 5px 20px rgb(6, 35, 88);
         margin: 1%;
     
