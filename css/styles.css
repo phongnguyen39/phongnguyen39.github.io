@@ -7,6 +7,29 @@
         padding: 2em 1em 2em 1em;
         height: 99vh;
         width: 100vw;
+    }   
+
+    .hover{
+        /* display: none; */
+        height: 100%;
+        width: 1%;
+        padding-left: 1%;
+        margin: 0%;
+        /* background: red; */
+    }
+
+    .hover:hover{
+        
+        padding-left: 5%;
+        margin: 0%;
+        display: block;
+        z-index: 10;
+        width: 100%;
+        background: rgba(255, 0, 0, 0.801) ;
+        -webkit-transition-property: width; /* Safari */
+        -webkit-transition-duration: 3s; /* Safari */
+        transition-property: width;
+        transition-duration: 3s;
     }
 
 
@@ -75,7 +98,7 @@
         position: fixed;
         top: 90px;
         width: 15%;
-        margin-top: 2%;
+        /* margin-top: 2%; */
     }
 
     #fixedNav {
@@ -204,6 +227,8 @@
     }
 
     span {
+        margin: 0%;
+        padding: 0%;
         color: rgb(255, 50, 50);
         font-weight: bold;
     }

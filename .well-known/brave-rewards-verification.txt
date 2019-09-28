@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: phongnguyendev.com
+Token: d4da41a3bf8bea7961f596cb0162c8f7c426d477ebec00cce8fa23519999b7ca
