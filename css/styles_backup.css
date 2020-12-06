@@ -35,6 +35,7 @@
     } 
 
 
+
     body {
         background-color: #0b132b;
         width: 99vw;
@@ -63,7 +64,10 @@
         color: white;
     }
 
-
+    a:hover {
+        color: #6FFFe9;
+        text-decoration: none;
+    }
     
     #git, #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
         font-size: 3em;
@@ -306,6 +310,11 @@
     a {
         color: white;
     }
+
+    a:hover {
+        color: #6FFFe9;
+        text-decoration: none;
+    }
     
     #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
         font-size: 3em;
@@ -505,7 +514,10 @@
         color: white;
     }
 
-
+    a:hover {
+        color: #6FFFe9;
+        text-decoration: none;
+    }
     
     #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
         font-size: 2em;
