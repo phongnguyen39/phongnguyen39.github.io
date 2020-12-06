@@ -9,7 +9,8 @@
         width: 100vw;
     }   
 
-    .hover{
+    /* DEPRECATED THE HOVER FUNCTIONALITY OVER THE MENU PANE */
+    /* .hover{
         /* display: none; */
         height: 100%;
         width: 1%;
@@ -30,7 +31,7 @@
         -webkit-transition-duration: 3s; /* Safari */
         transition-property: width;
         transition-duration: 3s;
-    }
+    } */
 
 
 
