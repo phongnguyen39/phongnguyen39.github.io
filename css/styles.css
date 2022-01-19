@@ -140,6 +140,7 @@
         /* font-family: 'Kaushan Script', cursive; */
         font-size: 2em;
         text-align: left;
+        position: fixed;
 
     }
 
