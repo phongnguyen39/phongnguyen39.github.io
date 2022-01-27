@@ -89,26 +89,76 @@
                 services as of today</p>
 
             <p><i>Credit goes to BackSpace Academy's Udemy course, <a
-                    href="https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884#overview">link,
-                    here</a> for making all of this easier to learn.</i></p>
+                        href="https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884#overview">link,
+                        here</a> for making all of this easier to learn.</i></p>
 
 
-
+            <h3>Data Services</h3><hr>
             <table border='1'>
                 <tr>
-                    <th>Category</th>
                     <th>AWS Service</th>
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td>Storage</td>
+                    <td>RDS</td>
+                    <td>This provides AWS-hosted relational databases, which you can pick to use MySQL, PostgreSQL, Microsoft SQL Server, Oracle, and/or Aurora.  Aurora is AWS' own homegrown SQL database engine.  It is also the most expensive option. </td>
+                </tr>
+                <tr>
+                    <td>DynamoDB</td>
+                    <td>AWS's NoSQL database-as-a-service. It is a serverless service like Amazon S3, and as such, you don't need to worry about the underlying infrastructure behind it.   </td>
+                </tr>
+                <tr>
+                    <td>Redshift</td>
+                    <td>This is a fast, fully-managed, petabyte-scale <strong><i>data warehouse</i></strong> that is based upon the PostgreSQL database engine.  This is meant for <strong><i>big data</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+            </table>
+
+            <h3>Pricing Services</h3><hr>
+            <table border='1'>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Pricing</td>
+                    <td>AWS Pricing Calculator</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h3>Storage Services</h3><hr>
+            <table border='1'>
+
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+
                     <td>S3</td>
                     <td>This is a serverless storage <strong><i>service</i></strong> that is hosted on the cloud. S3
                         buckets store objects and objects are simply files. S3 is not storage alone, but it is a service
                         that handles the movement of files around, deletions, and manages the files overall</td>
                 </tr>
                 <tr>
-                    <td>Storage</td>
+
                     <td>S3 - Glacier</td>
                     <td>This is where S3 objects are moved to for long-term storage. Its purpose is to archive content.
                         This is not a great option if retrieval performance is required in an application. As a
@@ -116,7 +166,7 @@
                         the storage services.</td>
                 </tr>
                 <tr>
-                    <td>Storage</td>
+
                     <td>Elastic Block Storage (EBS)</td>
                     <td>This is a low-latency, highly available, block-type storage. It is purpose is to connect to EC2
                         compute servers.
@@ -133,7 +183,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Storage</td>
+
                     <td>Elastic File System (EFS)</td>
                     <td>This is a network-attached storage (NAS). Meaning that multiple servers can connect to the same
                         data source. NAS' are storage devices that can be access by multiple devices. There is usually
@@ -145,24 +195,20 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Storage</td>
+
                     <td>Storage Gateway</td>
                     <td>This is a hybrid storage environment. Meaning it is a mix between on-premise data centers and
                         cloud data centers. This service systematically moves data from the "on-prem" data center to the
                         cloud.</td>
                 </tr>
                 <tr>
-                    <td>Storage</td>
+
                     <td>Snowball</td>
                     <td>This is a petabytes, portable storage device used to physically migrate on-prem data to the
                         cloud. A customer of AWS would download the data and then send it to AWS for upload to a desired
                         AWS storage service</td>
                 </tr>
-                <tr>
-                    <td>Pricing</td>
-                    <td>AWS Pricing Calculator</td>
-                    <td></td>
-                </tr>
+
             </table>
 
         </div>
