@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+ 
+    <meta http-equiv="refresh" content="1">
+
+
+    <script>
+    </script>
+    <title>Phong Nguyen</title>
+</head>
+
+
+
+<header>
+    <div id="fixedNav">
+        <h1 id="title" style="color:white;">PHONG NGUYEN</h1>
+    </div>
+    <div class="fixedLinks">
+        <hr>
+        <h4>About Me</h4>
+        <div>
+            <ul>
+                <span>
+                    <li><a href="https://github.com/phongnguyen39" target="_blank">Github </li>
+                </span>
+                <span>
+                    <li><a href="./img/Phong Nguyen 2019.07.pdf">Resume</a></li>
+                </span>
+                <span>
+                    <li><a href="#languages">Tech</a></li>
+                </span>
+                <span>
+                    <li><a href="html\blogs.html">Blog</a></li>
+                </span>
+            </ul>
+
+        </div>
+
+
+        <hr>
+        <h4>Contact</h4>
+        <ul>
+            <span>
+                <li><a href="mailto:developer.phong@gmail.com" target="_blank">Email</a></li>
+            </span>
+            <span>
+                <li><a href="https://www.linkedin.com/in/phongnguyenmha" target="_blank">Linkedin</a></li>
+            </span>
+        </ul>
+
+        <hr>
+
+    </div>
+</header>
+
+<body>
+
+
+
+
+    <div class="container">
+
+        <div class="boxes">
+            <h2 id="aboutme" class="lg_name">AWS Cloud Practitioner Certification</h2>
+            <!-- <p id="funStat"></p> -->
+            <p>The sheer number of AWS services within its ecosystem is a lot to absorb in one go. Especially if you
+                have not worked with the tools directly. I created this table as a summary of services for all the
+                services as of today</p>
+            
+ 
+            
+                <table border = '1'>
+                <tr>
+                    <th>Category</th>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>S3</td>
+                    <td>This is a serverless storage <strong><i>service</i></strong> that is hosted on the cloud.  S3 buckets store objects and objects are simply files.  S3 is not storage alone, but it is a service that handles the movement of files around, deletions, and manages the files overall</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>S3 - Glacier</td>
+                    <td>This is where S3 objects are moved to for long-term storage. Its purpose is to archive content. This is not a great option if retrieval performance is required in an application. As a developer you can create life-cycle rules to move S3 objects to Glacier.  This is the cheapest of the storage services.</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>Elastic Block Storage (EBS)</td>
+                    <td>This is a low-latency, highly available, block-type storage. It is purpose is to connect to EC2 compute servers. 
+                        <hr>
+                        More on block storage:  Block storage, sometimes referred to as block-level storage, is a technology that is used to store data files on Storage Area Networks (SANs) or cloud-based storage environments. Developers favor block storage for computing situations where they require fast, efficient, and reliable data transportation.
+                        Block storage breaks up data into blocks and then stores those blocks as separate pieces, each with a unique identifier. The SAN places those blocks of data wherever it is most efficient. That means it can store those blocks across different systems and each block can be configured (or partitioned) to work with different operating systems. <a href="https://www.ibm.com/cloud/learn/block-storage">IBM Block Storage</a> </td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>Elastic File System (EFS)</td>
+                    <td>This is a network-attached storage (NAS).  Meaning that multiple servers can connect to the same data source.   NAS' are storage devices that can be access by multiple devices.  There is usually some target drive like E:// or F://  
+                        <hr>
+                        Here's the difference between EBS (SAN) vs EFS (NAS).  SAN's is a cloud of multiple storage devices where blocks of data stored. NAS' are a single storage device that can be access across a network.  
+                    </td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>Storage Gateway</td>
+                    <td>test1</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>Snowball</td>
+                    <td>test1</td>
+                </tr>
+            </table>
+ 
+        </div>
+
+
+
+
+
+
+</body>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122477728-2"></script>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-122477728-2');
+</script>
+
+<script src="js/js.js" type="text/javascript"></script>
+<!-- <script src="js/email.js" type="text/ajavascript"></script> -->
+
+</html>
