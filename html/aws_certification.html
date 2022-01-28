@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <meta http-equiv="refresh" content='3'>
 
     <script>
     </script>
@@ -93,45 +94,178 @@
                         here</a> for making all of this easier to learn.</i></p>
 
 
-            <h3>Data Services</h3><hr>
-            <table border='1'>
+            <h3>Data Services</h3>
+            <hr>
+            <table >
                 <tr>
                     <th>AWS Service</th>
                     <th>Description</th>
                 </tr>
                 <tr>
                     <td>RDS</td>
-                    <td>This provides AWS-hosted relational databases, which you can pick to use MySQL, PostgreSQL, Microsoft SQL Server, Oracle, and/or Aurora.  Aurora is AWS' own homegrown SQL database engine.  It is also the most expensive option. </td>
+                    <td>This provides AWS-hosted relational databases, which you can pick to use MySQL, PostgreSQL,
+                        Microsoft SQL Server, Oracle, and/or Aurora. Aurora is AWS' own homegrown SQL database engine.
+                        It is also the most expensive option. </td>
                 </tr>
                 <tr>
                     <td>DynamoDB</td>
-                    <td>AWS's NoSQL database-as-a-service. It is a serverless service like Amazon S3, and as such, you don't need to worry about the underlying infrastructure behind it.   </td>
+                    <td>AWS's NoSQL database-as-a-service. It is a serverless service like Amazon S3, and as such, you
+                        don't need to worry about the underlying infrastructure behind it. </td>
                 </tr>
                 <tr>
                     <td>Redshift</td>
-                    <td>This is a fast, fully-managed, petabyte-scale <strong><i>data warehouse</i></strong> that is based upon the PostgreSQL database engine.  This is meant for <strong><i>big data</td>
+                    <td>This is a fast, fully-managed, petabyte-scale <strong><i>data warehouse</i></strong> that is
+                        based upon the PostgreSQL database engine. This is meant for <strong><i>big data</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>ElastiCache</td>
+                    <td>This is an in-memory data store that is cached on the cloud. It allows you to retrieve data that
+                        is often requested quickly.</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
+                    <td>Neptune</td>
+                    <td>This is a graph database service. It has a purpose-built, high-performance graph database engine
+                        optimized for storing billions of relationships and traversing the graph in milliseconds.</td>
                 </tr>
 
             </table>
 
-            <h3>Pricing Services</h3><hr>
-            <table border='1'>
+            <h3>Compute Services</h3>
+            <hr>
+            <table >
+                <tr>
+                    <th>Elastic Compute Cloud (EC2)</th>
+                    <th>Cloud Compute (2) => EC2. This service provides virtual servers upt to thousands of servers at a
+                        time. Pay-as-you-use</th>
+                </tr>
+                <tr>
+                    <td>EC2 Autoscaling</td>
+                    <td>This service scales the number of servers based on set parameters and demand. It also does
+                        monitoring, tearing down, and spinning up of EC2 servers as-needed.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>LightSail</td>
+                    <td>Provides compute, storage, and networking capacity and capabilities to deploy and manage
+                        websites and web applications in the cloud. It includes everything you need to launch your
+                        project quickly – virtual machines, containers, databases, CDN, load balancers, DNS management
+                        etc</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Elastic Container Service (ECS)</td>
+                    <td>This is a container management service using <strong><i>Docker</i></strong>.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Lambda</td>
+                    <td>serverless service that runs code <strong>(think functions)</strong> in the AWS cloud. You
+                        either upload or write some code and it will run it for you. This is similar to Google Scripts.
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h3>Networking & Content Delivery Services (CDN)</h3>
+            <hr>
+            <table >
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>CloudFront</td>
+                    <td>This is a global content delivery network (CDN) that has over 100 endpoints all over the world.
+                        It also protects against DDOS attacks. This service caches your data or application at an
+                        endpoint closer to your users.</td>
+                </tr>
+                <tr>
+                    <td>Virtual Private Cloud (VPC)</td>
+                    <td>This service provisions logically, isolated sections of the AWS cloud. AWS resources/services
+                        can be launched within the VPC. This is how the services stay secure because they're all
+                        encapsulated from the world wide web in these VPC's.</td>
+                </tr>
+                <tr>
+                    <td>Direct Connect</td>
+                    <td>This is a dedicated, highspeed, fiber optic internet connection that enterprise businesses
+                        requiring stability and security can use.</td>
+                </tr>
+                <tr>
+                    <td>Elastic Load Balancing (ELB)</td>
+                    <td>This service automatically distributes network traffic (incoming HTTP/HTTPS requests) across EC2
+                        compute instances and across multiple availability zones. This is highly avaialble and increases
+                        fault tolerances by balancing network volume. <strong><i>This service is not to be confused with
+                                EC2 Autoscaler. ELB distributes network traffic (and checks for the health of the server
+                                it's sending traffic to). Autoscaler manages the servers by spinning them up or tearing
+                                them down. </i></strong></td>
+                </tr>
+                <tr>
+                    <td>Route53</td>
+                    <td>This is a highly available, scalable Domain Name System (DNS) service. It routes network traffic
+                        to the AWS cloud</td>
+                </tr>
+                <tr>
+                    <td>API Gateway</td>
+                    <td>This service creates and secures API's. It can handle thousands of concurrent API calls and is
+                        serverless. <i>APIs act as the "front door" for applications to access data, business logic, or
+                            functionality from your backend services. Using API Gateway, you can create RESTful APIs and
+                            WebSocket APIs that enable real-time two-way communication applications.</i> <a
+                            href="https://aws.amazon.com/api-gateway/">AWS website</a></td>
+                </tr>
+            </table>
+
+            <h3>Management Services</h3>
+            <hr>
+            <table >
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>CloudFormation</td>
+                    <td>This service uses text files to define infrastructure and these files are used to deploy reswources on the AWS cloud.  Version control tools can be used to manage the code.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>CloudTrail</td>
+                    <td>AWS Pricing Calculator</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>CloudWatch</td>
+                    <td>AWS Pricing Calculator</td>
+                    <td></td>
+                </tr>        
+                <tr>
+                    <td>Services Catalog</td>
+                    <td>AWS Pricing Calculator</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Systems Manager</td>
+                    <td>AWS Pricing Calculator</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Config</td>
+                    <td>AWS Pricing Calculator</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>OpsWorks</td>
+                    <td>AWS Pricing Calculator</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Trusted Advisor</td>
+                    <td>AWS Pricing Calculator</td>
+                    <td></td>
+                </tr>
+            </table>
+
+            <h3>Pricing Services</h3>
+            <hr>
+            <table >
                 <tr>
                     <th>AWS Service</th>
                     <th>Description</th>
@@ -143,8 +277,9 @@
                 </tr>
             </table>
 
-            <h3>Storage Services</h3><hr>
-            <table border='1'>
+            <h3>Storage Services</h3>
+            <hr>
+            <table >
 
                 <tr>
                     <th>AWS Service</th>
@@ -171,15 +306,18 @@
                     <td>This is a low-latency, highly available, block-type storage. It is purpose is to connect to EC2
                         compute servers.
                         <hr>
-                        More on block storage: Block storage, sometimes referred to as block-level storage, is a
-                        technology that is used to store data files on Storage Area Networks (SANs) or cloud-based
-                        storage environments. Developers favor block storage for computing situations where they require
-                        fast, efficient, and reliable data transportation.
-                        Block storage breaks up data into blocks and then stores those blocks as separate pieces, each
-                        with a unique identifier. The SAN places those blocks of data wherever it is most efficient.
-                        That means it can store those blocks across different systems and each block can be configured
-                        (or partitioned) to work with different operating systems. <a
-                            href="https://www.ibm.com/cloud/learn/block-storage">IBM Block Storage</a>
+                        <i>More on block storage: Block storage, sometimes referred to as block-level storage, is a
+                            technology that is used to store data files on Storage Area Networks (SANs) or cloud-based
+                            storage environments. Developers favor block storage for computing situations where they
+                            require
+                            fast, efficient, and reliable data transportation.
+                            Block storage breaks up data into blocks and then stores those blocks as separate pieces,
+                            each
+                            with a unique identifier. The SAN places those blocks of data wherever it is most efficient.
+                            That means it can store those blocks across different systems and each block can be
+                            configured
+                            (or partitioned) to work with different operating systems. <a
+                                href="https://www.ibm.com/cloud/learn/block-storage">IBM Block Storage</a></i>
                     </td>
                 </tr>
                 <tr>
