@@ -76,17 +76,100 @@
                 is difficult to absorb in one go. Below is a summary of all of the AWS services. Along with this,
                 I'll provide some clarification on the subjects that I had trouble with too.</p>
 
-            <p>Credit goes to BackSpace Academy's Udemy course for making all of this easier to learn.  https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884</p>
+            <p>Credit goes to BackSpace Academy's Udemy course for making all of this easier to learn.
+                https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884
+            </p>
             <!-- <a
                 href="https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884#overview">Udemy link
                 </a>
           -->
+
         </div>
+        <!-- 
+        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group mr-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-secondary">Data Services</button>
+              <button type="button" class="btn btn-secondary">2</button>
+              <button type="button" class="btn btn-secondary">3</button>
+              <button type="button" class="btn btn-secondary">4</button>
+            </div>
+            <div class="btn-group mr-2" role="group" aria-label="Second group">
+              <button type="button" class="btn btn-secondary">5</button>
+              <button type="button" class="btn btn-secondary">6</button>
+              <button type="button" class="btn btn-secondary">7</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+              <button type="button" class="btn btn-secondary">8</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Third group">
+                <button type="button" class="btn btn-secondary">8</button>
+              </div>
+          </div> -->
 
-
+        <button type='button' class="collapsible">Business Case Services</button>
+        <p id='business_case'>Using AWS affords an organization using its services six advantages:</p>
+        <ol>
+            <li>Trade capital expense for variable expense.</li>
+            <li>Benefit from massive economies of scale.</li>
+            <li>Stop guessing capacity.</li>
+            <li>Increase speed and agility.</li>
+            <li>Stop spending money on running and maintaining data centers</li>
+            <li>Go global in minutes</li>
+        </ol>
+        <p>There are four key values for building a business case for an organization to migrate to AWS:</p>
+        <ol>
+            <li>Cost Savings - an organization's budget could be used for other elsewhere</li>
+            <li>Staff productivity - an organization's IT team can work on higher-value objectives</li>
+            <li>Operational resilience - AWS is more reliable, available and secure</li>
+            <li>Business agility - AWS allows an organization more time to innovate and reduce the time to go-to-market
+                with these innovations.</li>
+        </ol>
+        <p>The Business Case services below help an organization to plan a migration and see AWS' values.</p>
+        <div class='table-content'>
+            <table>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Pricing Calculator</td>
+                    <td>This service calculates the monthly and annual cost of potentially using AWS resources. Formerly called,
+                        'Simple Monthly Calculator'</td>
+                </tr>
+                <tr>
+                    <td>Price List API</td>
+                    <td>
+                        There are two API's used to query prices of your AWS resources:
+                        <hr>
+                        AWS Price List Bulk (query API) - This is a bulk pull of all AWS services. It's output is a
+                        JSON/CSV file. It retains a history of versions of the price list.
+                        <hr>
+                        AWS Price List Query API (bulk API) - This API can pull information about specific AWS resources
+                        that the query API above cannot, such as EC2 instances with 64 vCPUs, 256 GB of memory,
+                        installed on SQL Server in Mumbai. It doesn't retain historical prices
+                    </td>
+                </tr>
+                <tr>
+                    <td>Total Cost of Ownership (TCO)</td>
+                    <td>This service estimates all of the expenses involved in purchasing and operating equipment over
+                        its life cycle. This includes:
+                        <hr>server (software, licensing)
+                        <hr>storage (hardware, backware, and administrative)
+                        <hr>network (load balancing, administrative costs)
+                        <hr>IT labor costs (Server Admin. and Virtualization Admin)
+                        <hr>power and space.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Migration Evaluator (formerly TSO Logic)</td>
+                    <td>This is a complimentary service.  It logs all of an organization's on-prem systems.  The logs are then used to to create data-driven business case for migrating to AWS.</td>
+                </tr>
+            </table>
+        </div>
+        <p>For a summary of the cost management tools see:
+            https://aws.amazon.com/blogs/publicsector/tco-cost-optimization-best-practices-for-managing-usage/</p>
 
         <button type='button' class='collapsible'>Data Services</button>
-
         <div class='table-content'>
             <table class='table-content'>
                 <tr>
@@ -675,39 +758,7 @@
             </table>
         </div>
 
-        <button type='button' class="collapsible">Business Case Services</button>
-        <p>Using AWS affords an organization using its services six advantages:</p>
-        <ol>
-            <li>
-                Trade capital expense for variable expense.
-            </li>
-            <li>Benefit from massive economies of scale.</li>
-            <li>Stop guessing capacity.</li>
-            <li>Increase speed and agility.</li>
-            <li>Stop spending money on running and maintaining data centers</li>
-            <li>Go global in minutes</li>
-        </ol>
-        <p>There are four key values for building a business case for an organization to migrate to AWS:</p>
-        <ol>
-            <li>Cost Savings - an organization's budget could be used for other elsewhere</li>
-            <li>Staff productivity - an organization's IT team can work on higher-value objectives</li>
-            <li>Operational resilience - AWS is more reliable, available and secure</li>
-            <li>Business agility - AWS allows an organization more time to innovate and reduce the time to go-to-market
-                with these innovations.</li>
-        </ol>
-        <p>The Business Case services below help an organization to plan a migration and see AWS' values.</p>
-        <div class='table-content'>
-            <table>
-                <tr>
-                    <th>Service</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </table>
-        </div>
+
 
         <p>Last updated: 2022-01-30</p>
     </div>

@@ -37,8 +37,9 @@
     a {
         color: white;
     }
+    
 
-    .aws-button-group {
+    .inline-button-group {
         display: inline;
     }
 
