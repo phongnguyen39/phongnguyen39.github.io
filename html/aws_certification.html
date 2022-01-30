@@ -75,7 +75,7 @@
             <!-- <p id="funStat"></p> -->
             <p>While I was studying for my AWS CPC certification, the sheer number of AWS services within its ecosystem
                 is difficult to absorb in one go. Below is a summary of all of the AWS services. Along with this,
-                I'll provide some clarification on the subjects that I had trouble with too.</p>
+                I'll provide some clarification on the subjects that I had trouble with too. Take note, I may mention an AWS service more than once because it serves mutliple services and AWS services work in conjunction with each other.</p>
 
             <p>Credit goes to BackSpace Academy's Udemy course for making all of this easier to learn.
                 https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884
@@ -543,7 +543,7 @@
             </table>
         </div>
 
-        <button type='button' class="collapsible">Analytics and Machine Learning</button>
+        <button type='button' class="collapsible">Analytics</button>
         <div class='table-content'>
             <table class='table-content'>
                 <tr>
@@ -551,8 +551,74 @@
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
+                    <td>Elastic Map Reduce (EMR)</td>
+                    <td>This is a Hadoop framework as a service used for big data analysis of S3 or DynamoDB data stores.  Other frames that can be used too, such as Apache Spark, Hive, HBase, Presto and Flink.</td>
+                </tr>
+                <tr>
+                    <td>Athena</td>
+                    <td>This service analyses date stored in S3 using SQL</td>
+                </tr>
+                <tr>
+                    <td>FinSpace</td>
+                    <td>This is a petabyte scale data management and analytics service built for the financial industry.  It includes a library of over 1000 financial analysis functions.</td>
+                </tr>
+                <tr>
+                    <td>Kinesis</td>
+                    <td>This service collects, processes, and analyses <strong><i>real-time streaming data</i></strong>.</td>
+                </tr>
+                <tr>
+                    <td>QuickSight</td>
+                    <td>This is a business-intelligence (BI) reporting tool like Tableau or Bert.</td>
+                </tr>
+                <tr>
+                    <td>CloudSearch</td>
+                    <td>This is a search engine service that supports up to 34 languages.  It provides a search solution for your website or application.</td>
+                </tr>
+                <tr>
+                    <td>OpenSearch (formerly ElastiSearch)</td>
+                    <td>This is a fully managed service for Elastic.Co's ElasticSearch framework (another search engine solution).</td>
+                </tr>
+            </table>
+        </div>
+
+        <button type='button' class="collapsible">Machine Learning</button>
+        <div class='table-content'>
+            <table class='table-content'>
+                <tr>
+                    <th>Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>DeepLens</td>
+                    <td>This is a deep learning enabled video camera (hardware).  It has a SDK that is integrated AWS ML services.</td>
+                </tr>
+                <tr>
+                    <td>SageMaker</td>
+                    <td>This service is used to build and train ML models and deploy them to the cloud. It can be used as a backend to your application.</td>
+                </tr>
+                <tr>
+                    <td>Rekognition</td>
+                    <td>This service offers deep learning analysis of images and videos</td>
+                </tr>
+                <tr>
+                    <td>Lex</td>
+                    <td>This service builds conversational chatbots.  It is used for things like level 1 customer support.</td>
+                </tr>
+                <tr>
+                    <td>Polly</td>
+                    <td>This service provides natural-sounding text-to-speech for your applications.</td>
+                </tr>
+                <tr>
+                    <td>Comprehend</td>
+                    <td>This service analyses text for insights and relationships, like customer data or advanced searching of documents.</td>
+                </tr>
+                <tr>
+                    <td>Translate</td>
+                    <td>This is service that provides machine learning for translating different languages.</td>
+                </tr>
+                <tr>
+                    <td>Transcribe</td>
+                    <td>This is service that provides automatic speech recognition that analyses audio files stored on S3 and returns transcribed text.</td>
                 </tr>
             </table>
         </div>
@@ -565,9 +631,52 @@
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-
+                    <td>Artifact</td>
+                    <td>This service provides guidance on compliance and security documentation.</td>
+                </tr>
+                <tr>
+                    <td>Certificate Manager</td>
+                    <td>This service issues Secure Socket Layer (SSL)'s for HTTPS websites. This is used as part of Route53.</td>
+                </tr>
+                <tr>
+                    <td>Cloud Directory</td>
+                    <td>This is AWS' cloud-based directory service that offers hierarchies in multiple dimensions.  Unlike LDAP-based directories that have a single hierarchy.  Similar services are Microsoft Active Directory.</td>
+                </tr>
+                <tr>
+                    <td>Directory Service</td>
+                    <td>This is a fully managed Microsoft Active Directory in the AWS Cloud.</td>
+                </tr>
+                <tr>
+                    <td>Cloud HSM (hardware security module)</td>
+                    <td>This is a dedicated hardware security module in the AWS cloud.  It is fully managed by AWS, so it reduces the costs instead of managing a HSM.</td>
+                </tr>
+                <tr>
+                    <td>Cognito</td>
+                    <td>This service adds single-sign on (SSO) authentication to your application.</td>
+                </tr>
+                <tr>
+                    <td>Identity and Access Management (IAM)</td>
+                    <td>This service manages user access to your AWS services/resources on your account.  Users, roles, and groups have individual permissions.</td>
+                </tr>
+                <tr>
+                    <td>Organizations</td>
+                    <td>This offers policy-based management for multiple AWS accounts.  This service works for large organizations with multiple accounts that want to manage them centrally.</td>
+                </tr>
+                <tr>
+                    <td>Inspector</td>
+                    <td>This is an automated security assessment service. It helps identify vulnerabilities within your AWS account.</td>
+                </tr>
+                <tr>
+                    <td>Key Management Services (KMS)</td>
+                    <td>This service creates and controls encryption keys for your data.  It uses the HSM's to secure your keys.  It used with S3, Redshift, and EBS.</td>
+                </tr>
+                <tr>
+                    <td>Shield</td>
+                    <td>This service protects a customer against distributed denial of service (DDoS) attacks. The standard version is automatically implemented on all AWS accounts.</td>
+                </tr>
+                <tr>
+                    <td>Web Application Firewall (WAF)</td>
+                    <td>This service provides a firewall that sits in front of a customers application to protect it against SQL injections and cross-site scripting.</td>
                 </tr>
             </table>
         </div>
