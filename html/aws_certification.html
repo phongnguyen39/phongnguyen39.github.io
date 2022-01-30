@@ -81,445 +81,423 @@
                         here</a> for making all of this easier to learn.</i></p>
         </div>
 
-        <div class="boxes">
-            <div class="btn-group">
-                <button class="btn btn-secondary" href='#data_services' aria-expanded="false">
-                    Data
-                </button>
-            </div>
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-secondary" aria-expanded="false"><a
-                        href='#compute_services'>Compute</a>
-                </button>
-            </div>
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-secondary" href='#network_services' aria-expanded="false">
-                    Network & CDN
-                </button>
-            </div>
+        <button type='button' class='collapsible'>Data Services</button>
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-secondary" href='#management_services' aria-expanded="false">
-                    Management
-                </button>
-            </div>
+        <div class='table-content'>
+            <table class='table-content'>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>RDS</td>
+                    <td>This provides AWS-hosted relational databases, which you can pick to use MySQL, PostgreSQL,
+                        Microsoft SQL Server, Oracle, and/or Aurora. Aurora is AWS' own homegrown SQL database engine.
+                        It is also the most expensive option. </td>
+                </tr>
+                <tr>
+                    <td>DynamoDB</td>
+                    <td>AWS's NoSQL database-as-a-service. It is a serverless service like Amazon S3, and as such, you
+                        don't need to worry about the underlying infrastructure behind it. </td>
+                </tr>
+                <tr>
+                    <td>Redshift</td>
+                    <td>This is a fast, fully-managed, petabyte-scale <strong><i>data warehouse</i></strong> that is
+                        based upon the PostgreSQL database engine. This is meant for <strong><i>big data</td>
+                </tr>
+                <tr>
+                    <td>ElastiCache</td>
+                    <td>This is an in-memory data store that is cached on the cloud. It allows you to retrieve data that
+                        is often requested quickly.</td>
+                </tr>
+                <tr>
+                    <td>Neptune</td>
+                    <td>This is a graph database service. It has a purpose-built, high-performance graph database engine
+                        optimized for storing billions of relationships and traversing the graph in milliseconds.</td>
+                </tr>
 
-            <div class="btn-group">
-                <button type="button" class="btn btn-secondary" href='#application_services' aria-expanded="false">
-                    Application
-                </button>
-            </div>
-
-            <div class="btn-group">
-                <button class="btn btn-secondary" href='#storage_services' aria-expanded="false">
-                    Storage
-                </button>
-            </div>
-
-            <div class="btn-group">
-                <button class="btn btn-secondary" href='#analytics_services' aria-expanded="false">
-                    Analytics and ML
-                </button>
-            </div>
-
-            <div class="btn-group">
-                <button class="btn btn-secondary" href='#analytics_services' aria-expanded="false">
-                    Developer
-                </button>
-            </div>
-
-            <div class="btn-group">
-                <button class="btn btn-secondary" href='#analytics_services' aria-expanded="false">
-                    Media
-                </button>
-            </div>
-
-            <div class="btn-group">
-                <button class="btn btn-secondary" href='#analytics_services' aria-expanded="false">
-                    Mobile
-                </button>
-            </div>
-
-            <div class="btn-group">
-                <button class="btn btn-secondary" href='#analytics_services' aria-expanded="false">
-                    Migration
-                </button>
-            </div>
-
-            <div class="btn-group">
-                <button class="btn btn-secondary" href='#analytics_services' aria-expanded="false">
-                    IOT
-                </button>
-            </div>
+            </table>
         </div>
 
-        <h3 id='data_services'>Data Services</h3>
-        <hr>
-        <table>
-            <tr>
-                <th>AWS Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>RDS</td>
-                <td>This provides AWS-hosted relational databases, which you can pick to use MySQL, PostgreSQL,
-                    Microsoft SQL Server, Oracle, and/or Aurora. Aurora is AWS' own homegrown SQL database engine.
-                    It is also the most expensive option. </td>
-            </tr>
-            <tr>
-                <td>DynamoDB</td>
-                <td>AWS's NoSQL database-as-a-service. It is a serverless service like Amazon S3, and as such, you
-                    don't need to worry about the underlying infrastructure behind it. </td>
-            </tr>
-            <tr>
-                <td>Redshift</td>
-                <td>This is a fast, fully-managed, petabyte-scale <strong><i>data warehouse</i></strong> that is
-                    based upon the PostgreSQL database engine. This is meant for <strong><i>big data</td>
-            </tr>
-            <tr>
-                <td>ElastiCache</td>
-                <td>This is an in-memory data store that is cached on the cloud. It allows you to retrieve data that
-                    is often requested quickly.</td>
-            </tr>
-            <tr>
-                <td>Neptune</td>
-                <td>This is a graph database service. It has a purpose-built, high-performance graph database engine
-                    optimized for storing billions of relationships and traversing the graph in milliseconds.</td>
-            </tr>
+        <button type='button' class='collapsible'>Compute Services</button>
+        <div class='table-content'>
+            <table class='table-content'>
+                <tr>
+                    <th>Elastic Compute Cloud (EC2)</th>
+                    <th>Cloud Compute (2) => EC2. This service provides virtual servers upt to thousands of servers at a
+                        time. Pay-as-you-use</th>
+                </tr>
+                <tr>
+                    <td>EC2 Autoscaling</td>
+                    <td>This service scales the number of servers based on set parameters and demand. It also does
+                        monitoring, tearing down, and spinning up of EC2 servers as-needed.</td>
 
-        </table>
+                </tr>
+                <tr>
+                    <td>LightSail</td>
+                    <td>Provides compute, storage, and networking capacity and capabilities to deploy and manage
+                        websites and web applications in the cloud. It includes everything you need to launch your
+                        project quickly – virtual machines, containers, databases, CDN, load balancers, DNS management
+                        etc</td>
 
-        <h3 id='computer_services'>Compute Services</h3>
-        <hr>
-        <table>
-            <tr>
-                <th>Elastic Compute Cloud (EC2)</th>
-                <th>Cloud Compute (2) => EC2. This service provides virtual servers upt to thousands of servers at a
-                    time. Pay-as-you-use</th>
-            </tr>
-            <tr>
-                <td>EC2 Autoscaling</td>
-                <td>This service scales the number of servers based on set parameters and demand. It also does
-                    monitoring, tearing down, and spinning up of EC2 servers as-needed.</td>
+                </tr>
+                <tr>
+                    <td>Elastic Container Service (ECS)</td>
+                    <td>This is a container management service using <strong><i>Docker</i></strong>.</td>
 
-            </tr>
-            <tr>
-                <td>LightSail</td>
-                <td>Provides compute, storage, and networking capacity and capabilities to deploy and manage
-                    websites and web applications in the cloud. It includes everything you need to launch your
-                    project quickly – virtual machines, containers, databases, CDN, load balancers, DNS management
-                    etc</td>
+                </tr>
+                <tr>
+                    <td>Lambda</td>
+                    <td>serverless service that runs code <strong>(think functions)</strong> in the AWS cloud. You
+                        either upload or write some code and it will run it for you. This is similar to Google Scripts.
+                    </td>
 
-            </tr>
-            <tr>
-                <td>Elastic Container Service (ECS)</td>
-                <td>This is a container management service using <strong><i>Docker</i></strong>.</td>
+                </tr>
+            </table>
+        </div>
 
-            </tr>
-            <tr>
-                <td>Lambda</td>
-                <td>serverless service that runs code <strong>(think functions)</strong> in the AWS cloud. You
-                    either upload or write some code and it will run it for you. This is similar to Google Scripts.
-                </td>
+        <button type='button' class='collapsible'>Networking & Content Delivery Services (CDN)</button>
+        <div class='table-content'>
+            <table class='table-content'>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>CloudFront</td>
+                    <td>This is a global content delivery network (CDN) that has over 100 endpoints all over the world.
+                        It also protects against DDOS attacks. This service caches your data or application at an
+                        endpoint closer to your users.</td>
+                </tr>
+                <tr>
+                    <td>Virtual Private Cloud (VPC)</td>
+                    <td>This service provisions logically, isolated sections of the AWS cloud. AWS resources/services
+                        can be launched within the VPC. This is how the services stay secure because they're all
+                        encapsulated from the world wide web in these VPC's.</td>
+                </tr>
+                <tr>
+                    <td>Direct Connect</td>
+                    <td>This is a dedicated, highspeed, fiber optic internet connection that enterprise businesses
+                        requiring stability and security can use.</td>
+                </tr>
+                <tr>
+                    <td>Elastic Load Balancing (ELB)</td>
+                    <td>This service automatically distributes network traffic (incoming HTTP/HTTPS requests) across EC2
+                        compute instances and across multiple availability zones. This is highly avaialble and increases
+                        fault tolerances by balancing network volume. <strong><i>This service is not to be confused with
+                                EC2 Autoscaler. ELB distributes network traffic (and checks for the health of the server
+                                it's sending traffic to). Autoscaler manages the servers by spinning them up or tearing
+                                them down. </i></strong></td>
+                </tr>
+                <tr>
+                    <td>Route53</td>
+                    <td>This is a highly available, scalable Domain Name System (DNS) service. It routes network traffic
+                        to the AWS cloud</td>
+                </tr>
+                <tr>
+                    <td>API Gateway</td>
+                    <td>This service creates and secures API's. It can handle thousands of concurrent API calls and is
+                        serverless. <i>APIs act as the "front door" for applications to access data, business logic, or
+                            functionality from your backend services. Using API Gateway, you can create RESTful APIs and
+                            WebSocket APIs that enable real-time two-way communication applications.</i> <a
+                            href="https://aws.amazon.com/api-gateway/">AWS website</a></td>
+                </tr>
+            </table>
+        </div>
 
-            </tr>
-        </table>
+        <button type='button' class='collapsible'>Management Services</button>
 
-        <h3>Networking & Content Delivery Services (CDN)</h3>
-        <hr>
-        <table>
-            <tr>
-                <th>AWS Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>CloudFront</td>
-                <td>This is a global content delivery network (CDN) that has over 100 endpoints all over the world.
-                    It also protects against DDOS attacks. This service caches your data or application at an
-                    endpoint closer to your users.</td>
-            </tr>
-            <tr>
-                <td>Virtual Private Cloud (VPC)</td>
-                <td>This service provisions logically, isolated sections of the AWS cloud. AWS resources/services
-                    can be launched within the VPC. This is how the services stay secure because they're all
-                    encapsulated from the world wide web in these VPC's.</td>
-            </tr>
-            <tr>
-                <td>Direct Connect</td>
-                <td>This is a dedicated, highspeed, fiber optic internet connection that enterprise businesses
-                    requiring stability and security can use.</td>
-            </tr>
-            <tr>
-                <td>Elastic Load Balancing (ELB)</td>
-                <td>This service automatically distributes network traffic (incoming HTTP/HTTPS requests) across EC2
-                    compute instances and across multiple availability zones. This is highly avaialble and increases
-                    fault tolerances by balancing network volume. <strong><i>This service is not to be confused with
-                            EC2 Autoscaler. ELB distributes network traffic (and checks for the health of the server
-                            it's sending traffic to). Autoscaler manages the servers by spinning them up or tearing
-                            them down. </i></strong></td>
-            </tr>
-            <tr>
-                <td>Route53</td>
-                <td>This is a highly available, scalable Domain Name System (DNS) service. It routes network traffic
-                    to the AWS cloud</td>
-            </tr>
-            <tr>
-                <td>API Gateway</td>
-                <td>This service creates and secures API's. It can handle thousands of concurrent API calls and is
-                    serverless. <i>APIs act as the "front door" for applications to access data, business logic, or
-                        functionality from your backend services. Using API Gateway, you can create RESTful APIs and
-                        WebSocket APIs that enable real-time two-way communication applications.</i> <a
-                        href="https://aws.amazon.com/api-gateway/">AWS website</a></td>
-            </tr>
-        </table>
+        <div class='table-content'>
+            <table class='table-content'>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>CloudFormation</td>
+                    <td>This service uses text files to define infrastructure and these files are used to deploy
+                        reswources on the AWS cloud. Version control tools can be used to manage the code.</td>
+                </tr>
+                <tr>
+                    <td>CloudTrail</td>
+                    <td>This service monitors and logs AWS account activity for governance, compliance, operational and
+                        risk auditing purposes. Users', roles', and/or AWS services' are recorded as events. You can
+                        create trails to track any of these events. Note: This service monitors all of the API calls
+                        made from inside and outside of the cloud. It can be used to detect bad actors inside trying to
+                        damage the cloud infrastructure. It could automatically restrict their access.
+                        <hr>
+                        The difference. CloudWatch monitors <strong><i>performance</i></strong> and CloudTrail monitors
+                        <strong><i>actions</i></strong>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>CloudWatch</td>
+                    <td>This service monitors deployed cloud resources and applications. This service can trigger
+                        scaling operations and provide insight about deployed resources.</td>
+                </tr>
+                <tr>
+                    <td>Services Catalog</td>
+                    <td>This service is a catalog of resources that can be deployed to the cloud. It allows a company to
+                        govern and control compliance of its IT resources. It defines what is allowed to be deployed to
+                        the cloud which helps with compliance.</td>
+                </tr>
+                <tr>
+                    <td>Systems Manager</td>
+                    <td>This service allows you to view operational data about multiple AWS services and automates
+                        tasks. This reduces detection time and resolves operational problems.</td>
+                </tr>
+                <tr>
+                    <td>Config</td>
+                    <td>This service allows you to assess, audit, and evaluate the AWS resources' configurations. It
+                        uses includes auditing, security analysis, change management and control.</td>
+                </tr>
+                <tr>
+                    <td>OpsWorks</td>
+                    <td>This service provides managed instances of Chef and Puppet (IT software automation). Both Chef
+                        and Puppet can be used to configure and automate the deployment of AWS resources.</td>
+                </tr>
+                <tr>
+                    <td>Trusted Advisor</td>
+                    <td>This is an online expert system that analyses an AWS account and resources then it advises you
+                        on how improve performance and security.</td>
+                </tr>
+            </table>
+        </div>
 
-        <h3>Management Services</h3>
-        <hr>
-        <table>
-            <tr>
-                <th>AWS Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>CloudFormation</td>
-                <td>This service uses text files to define infrastructure and these files are used to deploy
-                    reswources on the AWS cloud. Version control tools can be used to manage the code.</td>
-            </tr>
-            <tr>
-                <td>CloudTrail</td>
-                <td>This service monitors and logs AWS account activity for governance, compliance, operational and
-                    risk auditing purposes. Users', roles', and/or AWS services' are recorded as events. You can
-                    create trails to track any of these events. Note: This service monitors all of the API calls
-                    made from inside and outside of the cloud. It can be used to detect bad actors inside trying to
-                    damage the cloud infrastructure. It could automatically restrict their access.
-                    <hr>
-                    The difference. CloudWatch monitors <strong><i>performance</i></strong> and CloudTrail monitors
-                    <strong><i>actions</i></strong>.
-                </td>
 
-            </tr>
-            <tr>
-                <td>CloudWatch</td>
-                <td>This service monitors deployed cloud resources and applications. This service can trigger
-                    scaling operations and provide insight about deployed resources.</td>
-            </tr>
-            <tr>
-                <td>Services Catalog</td>
-                <td>This service is a catalog of resources that can be deployed to the cloud. It allows a company to
-                    govern and control compliance of its IT resources. It defines what is allowed to be deployed to
-                    the cloud which helps with compliance.</td>
-            </tr>
-            <tr>
-                <td>Systems Manager</td>
-                <td>This service allows you to view operational data about multiple AWS services and automates
-                    tasks. This reduces detection time and resolves operational problems.</td>
-            </tr>
-            <tr>
-                <td>Config</td>
-                <td>This service allows you to assess, audit, and evaluate the AWS resources' configurations. It
-                    uses includes auditing, security analysis, change management and control.</td>
-            </tr>
-            <tr>
-                <td>OpsWorks</td>
-                <td>This service provides managed instances of Chef and Puppet (IT software automation). Both Chef
-                    and Puppet can be used to configure and automate the deployment of AWS resources.</td>
-            </tr>
-            <tr>
-                <td>Trusted Advisor</td>
-                <td>This is an online expert system that analyses an AWS account and resources then it advises you
-                    on how improve performance and security.</td>
-            </tr>
-        </table>
+        <button type='button' class="collapsible">Application Services</button>
+        <div class='table-content'>
+            <table>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Step Functions</td>
+                    <td>This service provides a visual workflow that coordinates components of distributed applications
+                        and microservices. This visualizes the workflow to define the steps to deploying an application.
+                        It is recommended for new applications.</td>
 
-        <h3>Application Services</h3>
-        <hr>
-        <table>
-            <tr>
-                <th>AWS Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Step Functions</td>
-                <td>This service provides a visual workflow that coordinates components of distributed applications
-                    and microservices. This visualizes the workflow to define the steps to deploying an application.
-                    It is recommended for new applications.</td>
+                </tr>
+                <tr>
+                    <td>Simple Workflow (SFW)</td>
+                    <td>This service coordinates multiple components of business applications.</td>
 
-            </tr>
-            <tr>
-                <td>Simple Workflow (SFW)</td>
-                <td>This service coordinates multiple components of business applications.</td>
+                </tr>
+                <tr>
+                    <td>Simple Notification Service (SNF)</td>
+                    <td>AWS Pricing Calculator</td>
 
-            </tr>
-            <tr>
-                <td>Simple Notification Service (SNF)</td>
-                <td>AWS Pricing Calculator</td>
+                </tr>
+                <tr>
+                    <td>Simple Queue Service (SQS)</td>
+                    <td>AWS Pricing Calculator</td>
 
-            </tr>
-            <tr>
-                <td>Simple Queue Service (SQS)</td>
-                <td>AWS Pricing Calculator</td>
+                </tr>
+                <tr>
+                    <td>Connect</td>
+                    <td>AWS Pricing Calculator</td>
 
-            </tr>
-            <tr>
-                <td>Connect</td>
-                <td>AWS Pricing Calculator</td>
+                </tr>
+                <tr>
+                    <td>Pinpoint</td>
+                    <td>AWS Pricing Calculator</td>
 
-            </tr>
-            <tr>
-                <td>Pinpoint</td>
-                <td>AWS Pricing Calculator</td>
+                </tr>
+                <tr>
+                    <td>Simple Email Service (SES)</td>
+                    <td>AWS Pricing Calculator</td>
 
-            </tr>
-            <tr>
-                <td>Simple Email Service (SES)</td>
-                <td>AWS Pricing Calculator</td>
+                </tr>
+            </table>
+        </div>
 
-            </tr>
-        </table>
 
-        <h3>Pricing Services</h3>
-        <hr>
-        <table>
-            <tr>
-                <th>AWS Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Pricing</td>
-                <td>AWS Pricing Calculator</td>
+        <button type='button' class="collapsible">Pricing Services</button>
 
-            </tr>
-        </table>
+        <div class='table-content'>
+            <table class='table-content'>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>Pricing</td>
+                    <td>AWS Pricing Calculator</td>
 
-        <h3>Storage Services</h3>
-        <hr>
-        <table>
+                </tr>
+            </table>
 
-            <tr>
-                <th>AWS Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
+        </div>
 
-                <td>S3</td>
-                <td>This is a serverless storage <strong><i>service</i></strong> that is hosted on the cloud. S3
-                    buckets store objects and objects are simply files. S3 is not storage alone, but it is a service
-                    that handles the movement of files around, deletions, and manages the files overall</td>
-            </tr>
-            <tr>
+        <button type='button' class="collapsible">Storage Services</button>
 
-                <td>S3 - Glacier</td>
-                <td>This is where S3 objects are moved to for long-term storage. Its purpose is to archive content.
-                    This is not a great option if retrieval performance is required in an application. As a
-                    developer you can create life-cycle rules to move S3 objects to Glacier. This is the cheapest of
-                    the storage services.</td>
-            </tr>
-            <tr>
-                <td>Elastic Block Storage (EBS)</td>
-                <td>This is a low-latency, highly available, block-type storage. It is purpose is to connect to EC2
-                    compute servers.
-                    <hr>
-                    <i>More on block storage: Block storage, sometimes referred to as block-level storage, is a
-                        technology that is used to store data files on Storage Area Networks (SANs) or cloud-based
-                        storage environments. Developers favor block storage for computing situations where they
-                        require
-                        fast, efficient, and reliable data transportation.
-                        Block storage breaks up data into blocks and then stores those blocks as separate pieces,
-                        each
-                        with a unique identifier. The SAN places those blocks of data wherever it is most efficient.
-                        That means it can store those blocks across different systems and each block can be
-                        configured
-                        (or partitioned) to work with different operating systems. <a
-                            href="https://www.ibm.com/cloud/learn/block-storage">IBM Block Storage</a></i>
-                </td>
-            </tr>
-            <tr>
-                <td>Elastic File System (EFS)</td>
-                <td>This is a network-attached storage (NAS). Meaning that multiple servers can connect to the same
-                    data source. NAS' are storage devices that can be access by multiple devices. There is usually
-                    some target drive like E:// or F://
-                    <hr>
-                    Here's the difference between EBS (SAN) vs EFS (NAS). SAN's is a cloud of multiple storage
-                    devices where blocks of data stored. NAS' are a single storage device that can be access across
-                    a network.
-                </td>
-            </tr>
-            <tr>
-                <td>Storage Gateway</td>
-                <td>This is a hybrid storage environment. Meaning it is a mix between on-premise data centers and
-                    cloud data centers. This service systematically moves data from the "on-prem" data center to the
-                    cloud.</td>
-            </tr>
-            <tr>
-                <td>Snowball</td>
-                <td>This is a petabytes, portable storage device used to physically migrate on-prem data to the
-                    cloud. A customer of AWS would download the data and then send it to AWS for upload to a desired
-                    AWS storage service</td>
-            </tr>
-        </table>
+        <div class='table-content'>
+            <table>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
 
-        <h3>Analytics and Machine Learning</h3>
-        <hr>
-        <table>
-            <tr>
-                <th>AWS Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
+                    <td>S3</td>
+                    <td>This is a serverless storage <strong><i>service</i></strong> that is hosted on the cloud. S3
+                        buckets store objects and objects are simply files. S3 is not storage alone, but it is a service
+                        that handles the movement of files around, deletions, and manages the files overall</td>
+                </tr>
+                <tr>
 
-            </tr>
-        </table>
+                    <td>S3 - Glacier</td>
+                    <td>This is where S3 objects are moved to for long-term storage. Its purpose is to archive content.
+                        This is not a great option if retrieval performance is required in an application. As a
+                        developer you can create life-cycle rules to move S3 objects to Glacier. This is the cheapest of
+                        the storage services.</td>
+                </tr>
+                <tr>
+                    <td>Elastic Block Storage (EBS)</td>
+                    <td>This is a low-latency, highly available, block-type storage. It is purpose is to connect to EC2
+                        compute servers.
+                        <hr>
+                        <i>More on block storage: Block storage, sometimes referred to as block-level storage, is a
+                            technology that is used to store data files on Storage Area Networks (SANs) or cloud-based
+                            storage environments. Developers favor block storage for computing situations where they
+                            require
+                            fast, efficient, and reliable data transportation.
+                            Block storage breaks up data into blocks and then stores those blocks as separate pieces,
+                            each
+                            with a unique identifier. The SAN places those blocks of data wherever it is most efficient.
+                            That means it can store those blocks across different systems and each block can be
+                            configured
+                            (or partitioned) to work with different operating systems. <a
+                                href="https://www.ibm.com/cloud/learn/block-storage">IBM Block Storage</a></i>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Elastic File System (EFS)</td>
+                    <td>This is a network-attached storage (NAS). Meaning that multiple servers can connect to the same
+                        data source. NAS' are storage devices that can be access by multiple devices. There is usually
+                        some target drive like E:// or F://
+                        <hr>
+                        Here's the difference between EBS (SAN) vs EFS (NAS). SAN's is a cloud of multiple storage
+                        devices where blocks of data stored. NAS' are a single storage device that can be access across
+                        a network.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Storage Gateway</td>
+                    <td>This is a hybrid storage environment. Meaning it is a mix between on-premise data centers and
+                        cloud data centers. This service systematically moves data from the "on-prem" data center to the
+                        cloud.</td>
+                </tr>
+                <tr>
+                    <td>Snowball</td>
+                    <td>This is a petabytes, portable storage device used to physically migrate on-prem data to the
+                        cloud. A customer of AWS would download the data and then send it to AWS for upload to a desired
+                        AWS storage service</td>
+                </tr>
+            </table>
+        </div>
 
-        <h3>Security, Identity, and Compliance</h3>
-        <hr>
-        <table>
-            <tr>
-                <th>AWS Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
+        <button type='button' class="collapsible">Analytics and Machine Learning</button>
+        <div class='table-content'>
+            <table class='table-content'>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
 
-            </tr>
-        </table>
+                </tr>
+            </table>
+        </div>
 
-        <h3>Developer, Media, Mobile, Migration, Business, IoT</h3>
-        <hr>
-        <table>
-            <tr>
-                <th>AWS Service</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
+        <button type='button' class="collapsible">Security, Identity, and Complianc</button>
+        <div class='table-content'>
+            <table class='table-content'>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
 
-            </tr>
-        </table>
+                </tr>
+            </table>
+        </div>
+
+        <button type='button' class="collapsible">Developer, Media, Mobile, Migration, Business, IoT</button>
+
+        <div class='table-content'>
+            <table class='table-content'>
+                <tr>
+                    <th>AWS Service</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+            </table>
+        </div>
 
 
         <p>Last updated: 2022-01-26</p>
-
     </div>
-    
+    </div>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122477728-2"></script>
+
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-122477728-2');
+    </script>
+
+    <script src="js/js.js" type="text/javascript"></script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
 </body>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122477728-2"></script>
-
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'UA-122477728-2');
-</script>
-
-<script src="js/js.js" type="text/javascript"></script>
-<!-- <script src="js/email.js" type="text/ajavascript"></script> -->
 
 </html>
