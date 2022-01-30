@@ -2,7 +2,7 @@
 @media only screen and (max-width: 8000px) {
     html {
         scroll-behavior: smooth;
-        background: #0b132b;
+        /* background: #0b132b; */
         /* background: linear-gradient(#05668D, rgb(42, 118, 148), #05668D); */
         padding: 2em 1em 2em 1em;
         height: 99vh;
@@ -195,8 +195,9 @@
 
     }
 
-    ul {
+    ul, ol,li {
         list-style-type: none;
+        color: black;
     }
 
     hr {
