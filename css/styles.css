@@ -1,41 +1,92 @@
 /* STYLING FOR LARGER DESKTOP SCREENS ******************************************/
-@media only screen and (max-width: 8000px) {
-    html {
-        scroll-behavior: smooth;
-        /* background: #0b132b; */
-        /* background: linear-gradient(#05668D, rgb(42, 118, 148), #05668D); */
-        padding: 2em 1em 2em 1em;
-        height: 99vh;
-        width: 100vw;
-    }   
+/* @media only screen and (max-width: 8000px) { */
 
-    body {
-        background-color: #0b132b;
-        width: 99vw;
-        height: 100vh;
-    }
-
-    .container {
-        display: grid;
-        grid-auto-rows: max-content auto;
-        grid-row-gap: 2%;
-        height: 100vh;
-        width: 100%;
-        padding-top: 3em;
-        z-index: 0;
-        margin: 5% 0% 0% 20%;
-        justify-content: center;
-    }
-
-
+    /* YOU'RE MISSING THE END BRACKET ONCE YOU UNCOMMENT THIS MEDIA QUERY */
     * {
         font-family: 'Montserrat', sans-serif;
-        color: white;
+        font-family: 'arial', sans-serif;
+        background-color: #fffefd;
+        color: rgb(51, 49, 49);
+        width: 100vw;
+        height: 100vh;
+        scroll-behavior: smooth;
         /* border: 1px dotted red; */
     }
 
+    body {
+        padding-top: .1px;
+        /* display: block; */
+    }  
+
+    .container {
+        display: block;
+        grid-auto-rows: max-content auto;
+        grid-row-gap: 2%;
+        /* height: 100vh;
+        width: 100vw; */
+        z-index: 0;
+        margin: 10% 0% 0% 0%;
+        justify-content: center;
+    }
+
+    header {
+        display: block;
+        position: fixed;
+        height: 8vh;
+        width: 100%;
+        /* padding: 0% 0% 0% 0%; */
+        z-index: 999;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 100%;
+        width: 100%;
+        padding: 5px 5px 5px 5px;
+    }
+
+    .header_name, .item1 {
+        font-size: 3vw;
+        height: 2vh;
+        text-align: left;
+        margin: 0%;
+    }
+
+
+    .fixedLinks, .item2 {
+        display: inline;
+        font-size: 1.5vw;
+        height: 10%;
+        width: 100%;
+        text-align: right;
+        margin: 0%;
+    }
+
+
+    .nav_link {
+        margin: 0% 2% 0% 2%;
+    }
+
+    #git, #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(21, 55, 247);
+        text-align: center;
+        height: 50%;
+    }
+
+
     a {
-        color: white;
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: black;
     }
     
 
@@ -90,44 +141,12 @@
         background-color: rgba(255, 255, 224, 0.034);
     }
 
-
-    
-    #git, #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
-        font-size: 3em;
-        font-weight: bold;
-        color: white;
-    }
-
-
     img {
         height: 100%;
         width: 100%;
         margin-bottom: 2%;
     }
-
-    .bottombox {
-        vertical-align: top;
-    }
-
-
-    .icons{
-        /* display: inline-block;
-        height: 20px;
-        width: 20px;
-        -webkit-filter: invert(100%); */
-    }
-
-
-    .fixedLinks {
-        display: inline-block;
-        position: fixed;
-        top: 10%;
-        width: 100%;
-        /* margin-top: 2%; */
-    }
-/*  */
-
-    
+ 
     #rating{
         display: grid;
         grid-row: 1;
@@ -150,54 +169,12 @@
         /* text-align: center; */
     }
 
-    .buttonicons{
-        display: inline;
-        height: 30px;
-        width: 30px;
-        /* -webkit-filter: invert(100%); */
-        background: none;
-        border: none;
-        grid-row: 2;
-        justify-items: center;
-        /* grid-column: 1/2; */
-    }
 
-    .buttonicons:after{
-        display: inline;
-        height: 30px;
-        width: 30px;
-        background: red;
-        border: none;
-        grid-row: 2;
-        justify-items: center;
-        transition: 2s;
-        transform: rotate(360deg);
-    }
-
-    .imgbutton{
-        display: inline;
-        height: 20px;
-        width: 20px;
-        -webkit-filter: invert(100%);
-        grid-row: 2;
-        grid-column: 1/2;
-        justify-self: center;
-        text-align: center;
-    }
-
-    #title {
-        color: white;
-        /* font-family: 'Kaushan Script', cursive; */
-        font-size: 2em;
-        text-align: left;
-        position: fixed;
-        margin: bottom;
-
-    }
 
     ul, ol,li {
         list-style-type: none;
         color: black;
+        display: block;
     }
 
     hr {
@@ -235,16 +212,9 @@
     }
     
     .boxes {
-        margin: 0% 0% 2% 0%;
+        margin: 0% 0% 0% 0%;
         /* border: 1px solid red; */
         display: inline-block;
-    }
-
-    span {
-        margin: 0%;
-        padding: 0%;
-        color: rgb(255, 50, 50);
-        font-weight: bold;
     }
 
     .iframeContainer{
@@ -266,8 +236,61 @@
         border: 0;
     }
 
+
+/* deprecated:
+
+    .bottombox {
+        vertical-align: top;
+    }
+
+    .buttonicons{
+        display: inline;
+        height: 30px;
+        width: 30px;
+        /* -webkit-filter: invert(100%); */
+        background: none;
+        border: none;
+        grid-row: 2;
+        justify-items: center;
+        /* grid-column: 1/2; */
+    }
+
+
+
+
     #invertedarrow{
         -webkit-transform: scaleY(-1);
         transform: scaleY(-1)
     }
+
+    .buttonicons:after{
+        display: inline;
+        height: 30px;
+        width: 30px;
+        background: red;
+        border: none;
+        grid-row: 2;
+        justify-items: center;
+        transition: 2s;
+        transform: rotate(360deg);
+    }
+
+    .imgbutton{
+        display: inline;
+        height: 20px;
+        width: 20px;
+        -webkit-filter: invert(100%);
+        grid-row: 2;
+        grid-column: 1/2;
+        justify-self: center;
+        text-align: center;
+    }
+
+
+
+
+
+
+
+    */
 
