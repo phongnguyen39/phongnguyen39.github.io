@@ -4,12 +4,12 @@
     /* YOU'RE MISSING THE END BRACKET ONCE YOU UNCOMMENT THIS MEDIA QUERY */
     * {
         font-family: 'Montserrat', sans-serif;
-        font-family: 'arial', sans-serif;
         background-color: #fffefd;
         color: rgb(51, 49, 49);
-
+        
         scroll-behavior: smooth;
     }
+
     html {
         width: 100vw;
         height: 100vh;
@@ -60,10 +60,11 @@
 
     .nav_link {
         margin: 0% 2% 0% 2%;
-        color: rgb(4, 52, 156);
+        color: rgb(29, 65, 88);
     }
     .container {
         width: 100%;
+        font-size: 1.5vw;
     }
 
     .page_intro, .item3{
@@ -102,7 +103,7 @@
     }
     
     .collapsible {
-        background-color: #777;
+        background-color: rgb(29, 65, 88);
         color: white;
         cursor: pointer;
         padding: 18px;
