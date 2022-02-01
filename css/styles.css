@@ -7,27 +7,19 @@
         font-family: 'arial', sans-serif;
         background-color: #fffefd;
         color: rgb(51, 49, 49);
+
+        scroll-behavior: smooth;
+    }
+    html {
         width: 100vw;
         height: 100vh;
-        scroll-behavior: smooth;
-        /* border: 1px dotted red; */
     }
 
     body {
         padding-top: .1px;
-        /* display: block; */
+        width: 100vw;
+        height: 100vh;
     }  
-
-    .container {
-        display: block;
-        grid-auto-rows: max-content auto;
-        grid-row-gap: 2%;
-        /* height: 100vh;
-        width: 100vw; */
-        z-index: 0;
-        margin: 10% 0% 0% 0%;
-        justify-content: center;
-    }
 
     header {
         display: block;
@@ -38,7 +30,7 @@
         z-index: 999;
     }
 
-    .grid-container {
+    .menu-container {
         display: grid;
         grid-template-columns: 30% 70%;
         grid-column-gap: 0px;
@@ -52,7 +44,8 @@
         font-size: 3vw;
         height: 2vh;
         text-align: left;
-        margin: 0%;
+        margin-left: 10px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
 
 
@@ -65,18 +58,37 @@
         margin: 0%;
     }
 
-
     .nav_link {
         margin: 0% 2% 0% 2%;
+        color: rgb(4, 52, 156);
+    }
+    .container {
+        width: 100%;
     }
 
-    #git, #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
+    .page_intro, .item3{
+        padding-top: 100px;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        /* height: 50px; */
+    }
+
+    .page_content, .item4{
+        height: 100vh;
+        width: 100%;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    /* #git, #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
         font-size: 2em;
         font-weight: bold;
         color: rgb(21, 55, 247);
         text-align: center;
         height: 50%;
-    }
+    } */
 
 
     a {
@@ -89,22 +101,18 @@
         color: black;
     }
     
-
-    .inline-button-group {
-        display: inline;
-    }
-
     .collapsible {
         background-color: #777;
         color: white;
         cursor: pointer;
         padding: 18px;
         width: 100%;
+        margin-bottom: 10px;
         border: none;
         border-radius: 5px;
         text-align: left;
         outline: none;
-        font-size: 15px;
+        font-size: 1vw;
     }
 
     .active, .collapsible:hover {
@@ -112,19 +120,18 @@
     }
 
     .table-content {
+        display: none;
         background-color: white;
-
+        /* height: 100%; */
+        width: 100%;
+        margin-bottom: 10px;
     }
-
-    strong, i {
-        color: black;
-    }
-    
 
     table {
         border: 1px solid gray;
         width: 100%;
         color: black;
+        table-layout: auto;
     }
 
     th,td,tr {
@@ -174,7 +181,7 @@
     ul, ol,li {
         list-style-type: none;
         color: black;
-        display: block;
+        /* display: block; */
     }
 
     hr {
@@ -237,60 +244,5 @@
     }
 
 
-/* deprecated:
 
-    .bottombox {
-        vertical-align: top;
-    }
-
-    .buttonicons{
-        display: inline;
-        height: 30px;
-        width: 30px;
-        /* -webkit-filter: invert(100%); */
-        background: none;
-        border: none;
-        grid-row: 2;
-        justify-items: center;
-        /* grid-column: 1/2; */
-    }
-
-
-
-
-    #invertedarrow{
-        -webkit-transform: scaleY(-1);
-        transform: scaleY(-1)
-    }
-
-    .buttonicons:after{
-        display: inline;
-        height: 30px;
-        width: 30px;
-        background: red;
-        border: none;
-        grid-row: 2;
-        justify-items: center;
-        transition: 2s;
-        transform: rotate(360deg);
-    }
-
-    .imgbutton{
-        display: inline;
-        height: 20px;
-        width: 20px;
-        -webkit-filter: invert(100%);
-        grid-row: 2;
-        grid-column: 1/2;
-        justify-self: center;
-        text-align: center;
-    }
-
-
-
-
-
-
-
-    */
 
