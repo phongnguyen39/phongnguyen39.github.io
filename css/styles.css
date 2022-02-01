@@ -6,8 +6,16 @@
         font-family: 'Montserrat', sans-serif;
         background-color: #fffefd;
         color: rgb(51, 49, 49);
-        
         scroll-behavior: smooth;
+    }
+
+    .hero_image {
+        background-image: url('../img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg');
+        height:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position:relative;
     }
 
     html {
@@ -47,7 +55,6 @@
         margin-left: 10px;
         font-family:Verdana, Geneva, Tahoma, sans-serif;
     }
-
 
     .fixedLinks, .item2 {
         display: inline;
@@ -218,12 +225,15 @@
     .sectionHeader{
         font-size: 5em;
     }
-    
-    .boxes {
-        margin: 0% 0% 0% 0%;
-        /* border: 1px solid red; */
-        display: inline-block;
+
+    .index_grid_container {
+        display: grid;
+        padding-top: 25%;
+        position: relative;
+        justify-content: center;
+        background-color:rgba(0,0,1,0);
     }
+
 
     .iframeContainer{
         position: relative;
@@ -243,6 +253,10 @@
         width: 100%;
         border: 0;
     }
+/* 
+    .hoveraffect:hover {
+        background-color: rgb(29, 65, 88);       
+    } */
 
 
 
