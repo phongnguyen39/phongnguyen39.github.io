@@ -4,12 +4,12 @@
     /* YOU'RE MISSING THE END BRACKET ONCE YOU UNCOMMENT THIS MEDIA QUERY */
     * {
         font-family: 'Montserrat', sans-serif;
-        background-color: #fffefd;
+        /* background-color: #fffefd; */
         color: rgb(51, 49, 49);
         scroll-behavior: smooth;
     }
 
-    .hero_image {
+    .index_hero_image {
         background-image: url('../img/abstract-smooth-empty-grey-studio-well-use-as-background-business-report-digital-website-template-backdrop.jpg');
         height:100%;
         background-position: center;
@@ -17,6 +17,15 @@
         background-size:cover;
         position:relative;
     }
+    
+    /* .aws_hero_image {
+        background-image: url('../img/aws_background.jpg');
+        height:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+        position:relative;
+    } */
 
     html {
         width: 100vw;
@@ -34,8 +43,10 @@
         position: fixed;
         height: 8vh;
         width: 100%;
-        /* padding: 0% 0% 0% 0%; */
+        padding-top: 5px;
         z-index: 999;
+        background: rgba(255,255,255,.9);
+        box-shadow: 0px 0px 10px 0px rgba(5, 0, 71, 0.2)
     }
 
     .menu-container {
@@ -82,6 +93,7 @@
         grid-row-start: 1;
         grid-row-end: 2;
         /* height: 50px; */
+        background-color: inherit;
     }
 
     .page_content, .item4{
@@ -90,6 +102,7 @@
         grid-row-start: 2;
         grid-row-end: 3;
         padding-top: 50px;
+        background-color: inherit;
     }
 
     /* #git, #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
@@ -233,12 +246,10 @@
 
     .index_grid_container {
         display: grid;
-        padding-top: 25%;
-        position: relative;
+        margin-top: 15%;
         justify-content: center;
         background-color: inherit;
     }
-
 
     .iframeContainer{
         position: relative;
