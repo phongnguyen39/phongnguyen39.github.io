@@ -72,6 +72,7 @@
     .container {
         width: 100%;
         font-size: 1.5vw;
+        background-color: inherit;
     }
 
     .page_intro, .item3{
@@ -88,6 +89,7 @@
         width: 100%;
         grid-row-start: 2;
         grid-row-end: 3;
+        padding-top: 50px;
     }
 
     /* #git, #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
@@ -109,7 +111,7 @@
         color: black;
     }
     
-    .collapsible {
+    .collapsible_button {
         background-color: rgb(29, 65, 88);
         color: white;
         cursor: pointer;
@@ -120,7 +122,7 @@
         border-radius: 5px;
         text-align: left;
         outline: none;
-        font-size: 1vw;
+        font-size: 2vw;
     }
 
     .active, .collapsible:hover {
@@ -130,10 +132,13 @@
     .table-content {
         display: none;
         background-color: white;
+        border: none;
         /* height: 100%; */
         width: 100%;
         margin-bottom: 10px;
-    }
+        padding: 10px;
+        box-shadow: 0px 3px 50px 0px rgba(0,0,0,1);
+    }   
 
     table {
         border: 1px solid gray;
@@ -231,7 +236,7 @@
         padding-top: 25%;
         position: relative;
         justify-content: center;
-        background-color:rgba(0,0,1,0);
+        background-color: inherit;
     }
 
 

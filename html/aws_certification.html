@@ -40,9 +40,9 @@
         <div class='page_intro item3'>
             <h3>AWS Cloud Practitioner Certification</h3>
             <p>While I was studying for my AWS CPC certification, the sheer number of AWS services within its ecosystem
-                is difficult to absorb in one go. Below is a summary of all of the AWS services. Along with this,
+                is difficult to absorb in one go. Below is a summary of all of the AWS services (alphabetical order). Along with this,
                 I'll provide some clarification on the subjects that I had trouble with too. Take note, I may mention an
-                AWS service more than once because it serves mutliple services and AWS services work in conjunction with
+                AWS service more than once because it serves multiple services and AWS services work in conjunction with
                 each other.</p>
 
             <p>Credit goes to BackSpace Academy's Udemy course for making all of this easier to learn.
@@ -53,11 +53,107 @@
 
 
         <div class='page_content item4'>
-            <button type='button' class="collapsible">Business
-                Case Services</button>
-            
-               
 
+            <button type='button' class="collapsible_button">Analytics</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Elastic Map Reduce (EMR)</td>
+                        <td>This is a Hadoop framework as a service used for big data analysis of S3 or DynamoDB data
+                            stores. Other frames that can be used too, such as Apache Spark, Hive, HBase, Presto and
+                            Flink.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Athena</td>
+                        <td>This service analyses date stored in S3 using SQL</td>
+                    </tr>
+                    <tr>
+                        <td>FinSpace</td>
+                        <td>This is a petabyte scale data management and analytics service built for the financial
+                            industry.
+                            It includes a library of over 1000 financial analysis functions.</td>
+                    </tr>
+                    <tr>
+                        <td>Kinesis</td>
+                        <td>This service collects, processes, and analyses <strong><i>real-time streaming
+                                    data</i></strong>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>QuickSight</td>
+                        <td>This is a business-intelligence (BI) reporting tool like Tableau or Bert.</td>
+                    </tr>
+                    <tr>
+                        <td>CloudSearch</td>
+                        <td>This is a search engine service that supports up to 34 languages. It provides a search
+                            solution
+                            for your website or application.</td>
+                    </tr>
+                    <tr>
+                        <td>OpenSearch (formerly ElastiSearch)</td>
+                        <td>This is a fully managed service for Elastic.Co's ElasticSearch framework (another search
+                            engine
+                            solution).</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button type='button' class="collapsible_button">Application Services</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Step Functions</td>
+                        <td>This service provides a visual workflow that coordinates components of distributed
+                            applications
+                            and microservices. This visualizes the workflow to define the steps to deploying an
+                            application.
+                            It is recommended for new applications.</td>
+
+                    </tr>
+                    <tr>
+                        <td>Simple Workflow (SFW)</td>
+                        <td>This service coordinates multiple components of business applications.</td>
+
+                    </tr>
+                    <tr>
+                        <td>Simple Notification Service (SNF)</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                    <tr>
+                        <td>Simple Queue Service (SQS)</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                    <tr>
+                        <td>Connect</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                    <tr>
+                        <td>Pinpoint</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                    <tr>
+                        <td>Simple Email Service (SES)</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <button type='button' class="collapsible_button">Business
+                Case Services</button>
                 <div class='table-content'>
 
                     <p>Using AWS affords an organization using its services six advantages:</p>
@@ -204,11 +300,136 @@
                         https://aws.amazon.com/blogs/publicsector/tco-cost-optimization-best-practices-for-managing-usage/
                     </p>
                 </div>
-      
 
-    
+                <button type='button' class="collapsible_button">Business Productivity and Desktop Streaming Applications</button>
+                <div class='table-content'>
+                    <table>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>WorkDocs</td>
+                            <td>This is a secure, fully managed file collaboration and management document service. This web
+                                client allows you to view and provide feedback on 35+ file types including Microsoft Office
+                                and
+                                .pdf. It is similar to Google Drive and Google Docs.</td>
+                        </tr>
+                        <tr>
+                            <td>WorkMail</td>
+                            <td>This is a secure, fully managed business email and calendar service.</td>
+                        </tr>
+                        <tr>
+                            <td>Chime</td>
+                            <td>This is an online meeting service like Microsoft Teams, Zoom, or Google Meeting.</td>
+                        </tr>
+                        <tr>
+                            <td>WorkSpaces</td>
+                            <td>This is a secure desktop-as-a-service. This provisions streaming, cloud-based Microsoft
+                                Windows
+                                desktops. This is the equivalent to Remote Desktop Services (RDS, not to be confused with
+                                AWS)
+                                of Citrix Xenapp.</td>
+                        </tr>
+                        <tr>
+                            <td>AppStream</td>
+                            <td>This is a secure streaming service that allows you to stream desktop applications from AWS
+                                to an
+                                HTML5 browser.</td>
+                        </tr>
+                    </table>
+                </div>
 
-            <button type='button' class='collapsible'>Data Services</button>
+            <button type='button' class="collapsible_button">Command Line Interface (CLI)</button>
+            <div class='table-content'>
+                <p>A special section has been carved out for AWS' CLI services. AWS' API that enables us to use the CLI. The
+                    API
+                    enables
+                    us to communicate with from a remote server to the AWS services in the AWS cloud (all tracked in
+                    CloudTrail).</p>
+                <p>
+                    The Management Console makes HTTP requests to the AWS backend. Same for when we use CLI, it makes HTTP
+                    requests.
+                    Wrapped around this API are different SDK’s. These are turned into libraries that can be used with
+                    different
+                    coding languages. All of API calls need to be auth’d by username and password.
+                </p>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>AWS CLI applicaton</td>
+                        <td>This is AWS's CLI that is available for Windows, Mac, or Linux</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Shell</td>
+                        <td>This is a cross-platform, standalone integrate shell environment written in Python.</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Tools</td>
+                        <td>This is the equivalent to Windows Powershell.</td>
+                    </tr>
+                    <tr>
+                        <td>AWS CloudShell</td>
+                        <td>This service provides shell environment access through the AWS Management Console. It has
+                            AWS
+                            CLI pre-installed. Thi ss more secure than just AWS CLI because the AWS Management Console
+                            requires username, password, and MFA.</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Cloud9 IDE</td>
+                        <td>This runs on EC2 access through the AWS Management Console with AWS CLI pre-installed. It
+                            allows
+                            for a tree view of files, enables drag and drop SFTP transfer of files. It is more secure
+                            since
+                            the IAM is not saved locally on a machine.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button type='button' class='collapsible_button'>Compute Services</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Elastic Compute Cloud (EC2)</th>
+                        <th>Cloud Compute (2) => EC2. This service provides virtual servers upt to thousands of servers
+                            at a
+                            time. Pay-as-you-use</th>
+                    </tr>
+                    <tr>
+                        <td>EC2 Autoscaling</td>
+                        <td>This service scales the number of servers based on set parameters and demand. It also does
+                            monitoring, tearing down, and spinning up of EC2 servers as-needed.</td>
+
+                    </tr>
+                    <tr>
+                        <td>LightSail</td>
+                        <td>Provides compute, storage, and networking capacity and capabilities to deploy and manage
+                            websites and web applications in the cloud. It includes everything you need to launch your
+                            project quickly – virtual machines, containers, databases, CDN, load balancers, DNS
+                            management
+                            etc</td>
+
+                    </tr>
+                    <tr>
+                        <td>Elastic Container Service (ECS)</td>
+                        <td>This is a container management service using <strong><i>Docker</i></strong>.</td>
+
+                    </tr>
+                    <tr>
+                        <td>Lambda</td>
+                        <td>serverless service that runs code <strong>(think functions)</strong> in the AWS cloud. You
+                            either upload or write some code and it will run it for you. This is similar to Google
+                            Scripts.
+                        </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <button type='button' class='collapsible_button'>Data Services</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -250,47 +471,7 @@
                 </table>
             </div>
 
-            <button type='button' class='collapsible'>Compute Services</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Elastic Compute Cloud (EC2)</th>
-                        <th>Cloud Compute (2) => EC2. This service provides virtual servers upt to thousands of servers
-                            at a
-                            time. Pay-as-you-use</th>
-                    </tr>
-                    <tr>
-                        <td>EC2 Autoscaling</td>
-                        <td>This service scales the number of servers based on set parameters and demand. It also does
-                            monitoring, tearing down, and spinning up of EC2 servers as-needed.</td>
-
-                    </tr>
-                    <tr>
-                        <td>LightSail</td>
-                        <td>Provides compute, storage, and networking capacity and capabilities to deploy and manage
-                            websites and web applications in the cloud. It includes everything you need to launch your
-                            project quickly – virtual machines, containers, databases, CDN, load balancers, DNS
-                            management
-                            etc</td>
-
-                    </tr>
-                    <tr>
-                        <td>Elastic Container Service (ECS)</td>
-                        <td>This is a container management service using <strong><i>Docker</i></strong>.</td>
-
-                    </tr>
-                    <tr>
-                        <td>Lambda</td>
-                        <td>serverless service that runs code <strong>(think functions)</strong> in the AWS cloud. You
-                            either upload or write some code and it will run it for you. This is similar to Google
-                            Scripts.
-                        </td>
-
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class='collapsible'>Networking & Content Delivery Services (CDN)</button>
+            <button type='button' class="collapsible_button">Developer Services</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -298,60 +479,135 @@
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td>CloudFront</td>
-                        <td>This is a global content delivery network (CDN) that has over 100 endpoints all over the
-                            world.
-                            It also protects against DDOS attacks. This service caches your data or application at an
-                            endpoint closer to your users.</td>
-                    </tr>
-                    <tr>
-                        <td>Virtual Private Cloud (VPC)</td>
-                        <td>This service provisions logically, isolated sections of the AWS cloud. AWS
-                            resources/services
-                            can be launched within the VPC. This is how the services stay secure because they're all
-                            encapsulated from the world wide web in these VPC's.</td>
-                    </tr>
-                    <tr>
-                        <td>Direct Connect</td>
-                        <td>This is a dedicated, highspeed, fiber optic internet connection that enterprise businesses
-                            requiring stability and security can use.</td>
-                    </tr>
-                    <tr>
-                        <td>Elastic Load Balancing (ELB)</td>
-                        <td>This service automatically distributes network traffic (incoming HTTP/HTTPS requests) across
-                            EC2
-                            compute instances and across multiple availability zones. This is highly avaialble and
-                            increases
-                            fault tolerances by balancing network volume. <strong><i>This service is not to be confused
-                                    with
-                                    EC2 Autoscaler. ELB distributes network traffic (and checks for the health of the
-                                    server
-                                    it's sending traffic to). Autoscaler manages the servers by spinning them up or
-                                    tearing
-                                    them down. </i></strong></td>
-                    </tr>
-                    <tr>
-                        <td>Route53</td>
-                        <td>This is a highly available, scalable Domain Name System (DNS) service. It routes network
-                            traffic
-                            to the AWS cloud</td>
-                    </tr>
-                    <tr>
-                        <td>API Gateway</td>
-                        <td>This service creates and secures API's. It can handle thousands of concurrent API calls and
+                        <td>Cloud9</td>
+                        <td>This is an integrated development environment. It deploys servers directly to AWS from an
+                            integrated dev environment. If you pursue the Associate Developer certification, then Cloud9
                             is
-                            serverless. <i>APIs act as the "front door" for applications to access data, business logic,
-                                or
-                                functionality from your backend services. Using API Gateway, you can create RESTful APIs
-                                and
-                                WebSocket APIs that enable real-time two-way communication applications.</i> <a
-                                href="https://aws.amazon.com/api-gateway/">AWS website</a></td>
+                            used extensively.</td>
+                    </tr>
+                    <tr>
+                        <td>Codestar</td>
+                        <td>This service develop and deploy applicatons to AWS. It manages the continuous integration
+                            and
+                            continuous delivery/deployment <strong><i>(CI/CD) pipeline</i></strong>. It comes with JIRA
+                            tracking</td>
+                    </tr>
+                    <tr>
+                        <td>X-Ray</td>
+                        <td>This service analyzes and debugs applications. It monitors app performance and the services
+                            the
+                            app relies on.</td>
+                    </tr>
+                    <tr>
+                        <td>CodeCommit</td>
+                        <td>This is AWS' git repository.</td>
+                    </tr>
+                    <tr>
+                        <td>CodePipeline</td>
+                        <td>This is a CI/CD service. It builds, tests and deploys code changes as they happen. This
+                            automates and reduces chances of errors happening.</td>
+                    </tr>
+                    <tr>
+                        <td>CodeBuild</td>
+                        <td>This service compiles source code, runs tests, produces software packages that can be
+                            deployed.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>CodeDeploy</td>
+                        <td>This automates software deployments for compute services, like EC2 and Lambda. This service
+                            can
+                            be used for on-premises instances.</td>
                     </tr>
                 </table>
             </div>
 
-            <button type='button' class='collapsible'>Management Services</button>
+            <button type='button' class="collapsible_button">Internet-of-Things (IoT)</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Internet-of-Things (IoT)</td>
+                        <td>This is a cloud platform that lets embedded devices, such as microcontrollers and Raspberry
+                            Pi
+                            securely interact with cloud applications.</td>
+                    </tr>
+                    <tr>
+                        <td>FreeROTS</td>
+                        <td>This is an operating system for microcontrollers, such as the PIC32 microchip. It allows for
+                            small, low-cost, low-power devices to connect to the AWS IoT.</td>
+                    </tr>
+                    <tr>
+                        <td>GreenGrass</td>
+                        <td>This software allows you to run local AWS Lambda functions, messaging data caching sync, and
+                            ML
+                            apps on AWS IoT. It extends services to deivces so they can act locally.</td>
+                    </tr>
+                    <tr>
+                        <td>GameLift</td>
+                        <td>This service deploys, manage, and scale dedicated game services.</td>
+                    </tr>
+                    <tr>
+                        <td>Lumberyard</td>
+                        <td>This is a game development environment and cross-platform AAA game engine.</td>
+                    </tr>
+                </table>
+            </div>
 
+            <button type='button' class="collapsible_button">Machine Learning</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>DeepLens</td>
+                        <td>This is a deep learning enabled video camera (hardware). It has a SDK that is integrated AWS
+                            ML
+                            services.</td>
+                    </tr>
+                    <tr>
+                        <td>SageMaker</td>
+                        <td>This service is used to build and train ML models and deploy them to the cloud. It can be
+                            used
+                            as a backend to your application.</td>
+                    </tr>
+                    <tr>
+                        <td>Rekognition</td>
+                        <td>This service offers deep learning analysis of images and videos</td>
+                    </tr>
+                    <tr>
+                        <td>Lex</td>
+                        <td>This service builds conversational chatbots. It is used for things like level 1 customer
+                            support.</td>
+                    </tr>
+                    <tr>
+                        <td>Polly</td>
+                        <td>This service provides natural-sounding text-to-speech for your applications.</td>
+                    </tr>
+                    <tr>
+                        <td>Comprehend</td>
+                        <td>This service analyses text for insights and relationships, like customer data or advanced
+                            searching of documents.</td>
+                    </tr>
+                    <tr>
+                        <td>Translate</td>
+                        <td>This is service that provides machine learning for translating different languages.</td>
+                    </tr>
+                    <tr>
+                        <td>Transcribe</td>
+                        <td>This is service that provides automatic speech recognition that analyses audio files stored
+                            on
+                            S3 and returns transcribed text.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button type='button' class='collapsible_button'>Management Services</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -416,8 +672,41 @@
                 </table>
             </div>
 
+            <button type='button' class="collapsible_button">Media Services</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    <tr>
+                        <td>Elemental MediaConvert</td>
+                        <td>This is a file-based video transcoding service. It converts video formats.</td>
+                    </tr>
+                    <tr>
+                        <td>MediaTailor</td>
+                        <td>This service prepares video content for delivery over the internet and prevents piracy
+                            through
+                            digital rights management.</td>
+                    </tr>
+                    <tr>
+                        <td>MediaLive</td>
+                        <td>This service provides broadcast-grade live video processing. It creates video streams for
+                            delivery to TV's and internet devices.</td>
+                    </tr>
+                    <tr>
+                        <td>MediaStore</td>
+                        <td>This is a AWS media-optimized storage service.</td>
+                    </tr>
+                    <tr>
+                        <td>Kinesis Video Streams</td>
+                        <td>This service streams video from devices connected to the AWS clooud for analytics ML and
+                            other
+                            processing applications.</td>
+                    </tr>
+                </table>
+            </div>
 
-            <button type='button' class="collapsible">Application Services</button>
+            <button type='button' class="collapsible_button">Migration Services</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -425,50 +714,117 @@
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td>Step Functions</td>
-                        <td>This service provides a visual workflow that coordinates components of distributed
-                            applications
-                            and microservices. This visualizes the workflow to define the steps to deploying an
-                            application.
-                            It is recommended for new applications.</td>
-
+                        <td>Application Discovery Service</td>
+                        <td>This service gathers information about an organizaton's on-prem data center to help plan a
+                            migration to AWS. The data is encrypted and stored on the Discovery Service's data store.
+                        </td>
                     </tr>
                     <tr>
-                        <td>Simple Workflow (SFW)</td>
-                        <td>This service coordinates multiple components of business applications.</td>
-
+                        <td>Database Migration Service</td>
+                        <td>This service orchestrates migrations of databases to AWS. It can migrate from one database
+                            type
+                            to another, too, like an Oracle db to Aurora.</td>
                     </tr>
                     <tr>
-                        <td>Simple Notification Service (SNF)</td>
-                        <td>AWS Pricing Calculator</td>
-
+                        <td>Server Migration Service</td>
+                        <td>This automates the migration of thousands of on-prem workloads to the cloud. It reduces cost
+                            and
+                            minimizes downtime.</td>
                     </tr>
                     <tr>
-                        <td>Simple Queue Service (SQS)</td>
-                        <td>AWS Pricing Calculator</td>
+                        <td>Snowball</td>
+                        <td>This is a portable, petabyte scale storage device used to migrate on-prem data to AWS.</td>
+                    </tr>
+                </table>
+            </div>
 
+            <button type='button' class="collapsible_button">Mobile Services</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
                     </tr>
                     <tr>
-                        <td>Connect</td>
-                        <td>AWS Pricing Calculator</td>
-
+                        <td>Mobile Hub</td>
+                        <td>This service allows you to configure AWS for mobile applications. It generates a cloud
+                            configuration file which stores information the s used to run the application.</td>
                     </tr>
                     <tr>
-                        <td>Pinpoint</td>
-                        <td>AWS Pricing Calculator</td>
-
+                        <td>Device Farm</td>
+                        <td>This is a mobile application testing service for Android, iOS, and web application. It can
+                            be
+                            used to test for a range of physical devices in the cloud.</td>
                     </tr>
                     <tr>
-                        <td>Simple Email Service (SES)</td>
-                        <td>AWS Pricing Calculator</td>
-
+                        <td>AppSync</td>
+                        <td>This is a GraphQL backend for mobile and web applications.</td>
                     </tr>
                 </table>
             </div>
 
 
-            <button type='button' class="collapsible">Pricing Services</button>
+            <button type='button' class='collapsible_button'>Networking & Content Delivery Services (CDN)</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>CloudFront</td>
+                        <td>This is a global content delivery network (CDN) that has over 100 endpoints all over the
+                            world.
+                            It also protects against DDOS attacks. This service caches your data or application at an
+                            endpoint closer to your users.</td>
+                    </tr>
+                    <tr>
+                        <td>Virtual Private Cloud (VPC)</td>
+                        <td>This service provisions logically, isolated sections of the AWS cloud. AWS
+                            resources/services
+                            can be launched within the VPC. This is how the services stay secure because they're all
+                            encapsulated from the world wide web in these VPC's.</td>
+                    </tr>
+                    <tr>
+                        <td>Direct Connect</td>
+                        <td>This is a dedicated, highspeed, fiber optic internet connection that enterprise businesses
+                            requiring stability and security can use.</td>
+                    </tr>
+                    <tr>
+                        <td>Elastic Load Balancing (ELB)</td>
+                        <td>This service automatically distributes network traffic (incoming HTTP/HTTPS requests) across
+                            EC2
+                            compute instances and across multiple availability zones. This is highly avaialble and
+                            increases
+                            fault tolerances by balancing network volume. <strong><i>This service is not to be confused
+                                    with
+                                    EC2 Autoscaler. ELB distributes network traffic (and checks for the health of the
+                                    server
+                                    it's sending traffic to). Autoscaler manages the servers by spinning them up or
+                                    tearing
+                                    them down. </i></strong></td>
+                    </tr>
+                    <tr>
+                        <td>Route53</td>
+                        <td>This is a highly available, scalable Domain Name System (DNS) service. It routes network
+                            traffic
+                            to the AWS cloud</td>
+                    </tr>
+                    <tr>
+                        <td>API Gateway</td>
+                        <td>This service creates and secures API's. It can handle thousands of concurrent API calls and
+                            is
+                            serverless. <i>APIs act as the "front door" for applications to access data, business logic,
+                                or
+                                functionality from your backend services. Using API Gateway, you can create RESTful APIs
+                                and
+                                WebSocket APIs that enable real-time two-way communication applications.</i> <a
+                                href="https://aws.amazon.com/api-gateway/">AWS website</a></td>
+                    </tr>
+                </table>
+            </div>
 
+            <button type='button' class="collapsible_button">Pricing Services</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -484,7 +840,79 @@
 
             </div>
 
-            <button type='button' class="collapsible">Storage Services</button>
+            <button type='button' class="collapsible_button">Security, Identity, and Compliance</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Artifact</td>
+                        <td>This service provides guidance on compliance and security documentation.</td>
+                    </tr>
+                    <tr>
+                        <td>Certificate Manager</td>
+                        <td>This service issues Secure Socket Layer (SSL)'s for HTTPS websites. This is used as part of
+                            Route53.</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Directory</td>
+                        <td>This is AWS' cloud-based directory service that offers hierarchies in multiple dimensions.
+                            Unlike LDAP-based directories that have a single hierarchy. Similar services are Microsoft
+                            Active Directory.</td>
+                    </tr>
+                    <tr>
+                        <td>Directory Service</td>
+                        <td>This is a fully managed Microsoft Active Directory in the AWS Cloud.</td>
+                    </tr>
+                    <tr>
+                        <td>Cloud HSM (hardware security module)</td>
+                        <td>This is a dedicated hardware security module in the AWS cloud. It is fully managed by AWS,
+                            so it
+                            reduces the costs instead of managing a HSM.</td>
+                    </tr>
+                    <tr>
+                        <td>Cognito</td>
+                        <td>This service adds single-sign on (SSO) authentication to your application.</td>
+                    </tr>
+                    <tr>
+                        <td>Identity and Access Management (IAM)</td>
+                        <td>This service manages user access to your AWS services/resources on your account. Users,
+                            roles,
+                            and groups have individual permissions.</td>
+                    </tr>
+                    <tr>
+                        <td>Organizations</td>
+                        <td>This offers policy-based management for multiple AWS accounts. This service works for large
+                            organizations with multiple accounts that want to manage them centrally.</td>
+                    </tr>
+                    <tr>
+                        <td>Inspector</td>
+                        <td>This is an automated security assessment service. It helps identify vulnerabilities within
+                            your
+                            AWS account.</td>
+                    </tr>
+                    <tr>
+                        <td>Key Management Services (KMS)</td>
+                        <td>This service creates and controls encryption keys for your data. It uses the HSM's to secure
+                            your keys. It used with S3, Redshift, and EBS.</td>
+                    </tr>
+                    <tr>
+                        <td>Shield</td>
+                        <td>This service protects a customer against distributed denial of service (DDoS) attacks. The
+                            standard version is automatically implemented on all AWS accounts.</td>
+                    </tr>
+                    <tr>
+                        <td>Web Application Firewall (WAF)</td>
+                        <td>This service provides a firewall that sits in front of a customers application to protect it
+                            against SQL injections and cross-site scripting.</td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <button type='button' class="collapsible_button">Storage Services</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -564,445 +992,6 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible">Analytics</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Elastic Map Reduce (EMR)</td>
-                        <td>This is a Hadoop framework as a service used for big data analysis of S3 or DynamoDB data
-                            stores. Other frames that can be used too, such as Apache Spark, Hive, HBase, Presto and
-                            Flink.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Athena</td>
-                        <td>This service analyses date stored in S3 using SQL</td>
-                    </tr>
-                    <tr>
-                        <td>FinSpace</td>
-                        <td>This is a petabyte scale data management and analytics service built for the financial
-                            industry.
-                            It includes a library of over 1000 financial analysis functions.</td>
-                    </tr>
-                    <tr>
-                        <td>Kinesis</td>
-                        <td>This service collects, processes, and analyses <strong><i>real-time streaming
-                                    data</i></strong>.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>QuickSight</td>
-                        <td>This is a business-intelligence (BI) reporting tool like Tableau or Bert.</td>
-                    </tr>
-                    <tr>
-                        <td>CloudSearch</td>
-                        <td>This is a search engine service that supports up to 34 languages. It provides a search
-                            solution
-                            for your website or application.</td>
-                    </tr>
-                    <tr>
-                        <td>OpenSearch (formerly ElastiSearch)</td>
-                        <td>This is a fully managed service for Elastic.Co's ElasticSearch framework (another search
-                            engine
-                            solution).</td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class="collapsible">Machine Learning</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>DeepLens</td>
-                        <td>This is a deep learning enabled video camera (hardware). It has a SDK that is integrated AWS
-                            ML
-                            services.</td>
-                    </tr>
-                    <tr>
-                        <td>SageMaker</td>
-                        <td>This service is used to build and train ML models and deploy them to the cloud. It can be
-                            used
-                            as a backend to your application.</td>
-                    </tr>
-                    <tr>
-                        <td>Rekognition</td>
-                        <td>This service offers deep learning analysis of images and videos</td>
-                    </tr>
-                    <tr>
-                        <td>Lex</td>
-                        <td>This service builds conversational chatbots. It is used for things like level 1 customer
-                            support.</td>
-                    </tr>
-                    <tr>
-                        <td>Polly</td>
-                        <td>This service provides natural-sounding text-to-speech for your applications.</td>
-                    </tr>
-                    <tr>
-                        <td>Comprehend</td>
-                        <td>This service analyses text for insights and relationships, like customer data or advanced
-                            searching of documents.</td>
-                    </tr>
-                    <tr>
-                        <td>Translate</td>
-                        <td>This is service that provides machine learning for translating different languages.</td>
-                    </tr>
-                    <tr>
-                        <td>Transcribe</td>
-                        <td>This is service that provides automatic speech recognition that analyses audio files stored
-                            on
-                            S3 and returns transcribed text.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class="collapsible">Security, Identity, and Complianc</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Artifact</td>
-                        <td>This service provides guidance on compliance and security documentation.</td>
-                    </tr>
-                    <tr>
-                        <td>Certificate Manager</td>
-                        <td>This service issues Secure Socket Layer (SSL)'s for HTTPS websites. This is used as part of
-                            Route53.</td>
-                    </tr>
-                    <tr>
-                        <td>Cloud Directory</td>
-                        <td>This is AWS' cloud-based directory service that offers hierarchies in multiple dimensions.
-                            Unlike LDAP-based directories that have a single hierarchy. Similar services are Microsoft
-                            Active Directory.</td>
-                    </tr>
-                    <tr>
-                        <td>Directory Service</td>
-                        <td>This is a fully managed Microsoft Active Directory in the AWS Cloud.</td>
-                    </tr>
-                    <tr>
-                        <td>Cloud HSM (hardware security module)</td>
-                        <td>This is a dedicated hardware security module in the AWS cloud. It is fully managed by AWS,
-                            so it
-                            reduces the costs instead of managing a HSM.</td>
-                    </tr>
-                    <tr>
-                        <td>Cognito</td>
-                        <td>This service adds single-sign on (SSO) authentication to your application.</td>
-                    </tr>
-                    <tr>
-                        <td>Identity and Access Management (IAM)</td>
-                        <td>This service manages user access to your AWS services/resources on your account. Users,
-                            roles,
-                            and groups have individual permissions.</td>
-                    </tr>
-                    <tr>
-                        <td>Organizations</td>
-                        <td>This offers policy-based management for multiple AWS accounts. This service works for large
-                            organizations with multiple accounts that want to manage them centrally.</td>
-                    </tr>
-                    <tr>
-                        <td>Inspector</td>
-                        <td>This is an automated security assessment service. It helps identify vulnerabilities within
-                            your
-                            AWS account.</td>
-                    </tr>
-                    <tr>
-                        <td>Key Management Services (KMS)</td>
-                        <td>This service creates and controls encryption keys for your data. It uses the HSM's to secure
-                            your keys. It used with S3, Redshift, and EBS.</td>
-                    </tr>
-                    <tr>
-                        <td>Shield</td>
-                        <td>This service protects a customer against distributed denial of service (DDoS) attacks. The
-                            standard version is automatically implemented on all AWS accounts.</td>
-                    </tr>
-                    <tr>
-                        <td>Web Application Firewall (WAF)</td>
-                        <td>This service provides a firewall that sits in front of a customers application to protect it
-                            against SQL injections and cross-site scripting.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class="collapsible">Developer Services</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Cloud9</td>
-                        <td>This is an integrated development environment. It deploys servers directly to AWS from an
-                            integrated dev environment. If you pursue the Associate Developer certification, then Cloud9
-                            is
-                            used extensively.</td>
-                    </tr>
-                    <tr>
-                        <td>Codestar</td>
-                        <td>This service develop and deploy applicatons to AWS. It manages the continuous integration
-                            and
-                            continuous delivery/deployment <strong><i>(CI/CD) pipeline</i></strong>. It comes with JIRA
-                            tracking</td>
-                    </tr>
-                    <tr>
-                        <td>X-Ray</td>
-                        <td>This service analyzes and debugs applications. It monitors app performance and the services
-                            the
-                            app relies on.</td>
-                    </tr>
-                    <tr>
-                        <td>CodeCommit</td>
-                        <td>This is AWS' git repository.</td>
-                    </tr>
-                    <tr>
-                        <td>CodePipeline</td>
-                        <td>This is a CI/CD service. It builds, tests and deploys code changes as they happen. This
-                            automates and reduces chances of errors happening.</td>
-                    </tr>
-                    <tr>
-                        <td>CodeBuild</td>
-                        <td>This service compiles source code, runs tests, produces software packages that can be
-                            deployed.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>CodeDeploy</td>
-                        <td>This automates software deployments for compute services, like EC2 and Lambda. This service
-                            can
-                            be used for on-premises instances.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class="collapsible">Media Services</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    <tr>
-                        <td>Elemental MediaConvert</td>
-                        <td>This is a file-based video transcoding service. It converts video formats.</td>
-                    </tr>
-                    <tr>
-                        <td>MediaTailor</td>
-                        <td>This service prepares video content for delivery over the internet and prevents piracy
-                            through
-                            digital rights management.</td>
-                    </tr>
-                    <tr>
-                        <td>MediaLive</td>
-                        <td>This service provides broadcast-grade live video processing. It creates video streams for
-                            delivery to TV's and internet devices.</td>
-                    </tr>
-                    <tr>
-                        <td>MediaStore</td>
-                        <td>This is a AWS media-optimized storage service.</td>
-                    </tr>
-                    <tr>
-                        <td>Kinesis Video Streams</td>
-                        <td>This service streams video from devices connected to the AWS clooud for analytics ML and
-                            other
-                            processing applications.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class="collapsible">Mobile Services</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Mobile Hub</td>
-                        <td>This service allows you to configure AWS for mobile applications. It generates a cloud
-                            configuration file which stores information the s used to run the application.</td>
-                    </tr>
-                    <tr>
-                        <td>Device Farm</td>
-                        <td>This is a mobile application testing service for Android, iOS, and web application. It can
-                            be
-                            used to test for a range of physical devices in the cloud.</td>
-                    </tr>
-                    <tr>
-                        <td>AppSync</td>
-                        <td>This is a GraphQL backend for mobile and web applications.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class="collapsible">Migration Services</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Application Discovery Service</td>
-                        <td>This service gathers information about an organizaton's on-prem data center to help plan a
-                            migration to AWS. The data is encrypted and stored on the Discovery Service's data store.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Database Migration Service</td>
-                        <td>This service orchestrates migrations of databases to AWS. It can migrate from one database
-                            type
-                            to another, too, like an Oracle db to Aurora.</td>
-                    </tr>
-                    <tr>
-                        <td>Server Migration Service</td>
-                        <td>This automates the migration of thousands of on-prem workloads to the cloud. It reduces cost
-                            and
-                            minimizes downtime.</td>
-                    </tr>
-                    <tr>
-                        <td>Snowball</td>
-                        <td>This is a portable, petabyte scale storage device used to migrate on-prem data to AWS.</td>
-                    </tr>
-                </table>
-            </div>
-
-
-            <button type='button' class="collapsible">Business Productivity and Desktop Streaming Applications</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>WorkDocs</td>
-                        <td>This is a secure, fully managed file collaboration and management document service. This web
-                            client allows you to view and provide feedback on 35+ file types including Microsoft Office
-                            and
-                            .pdf. It is similar to Google Drive and Google Docs.</td>
-                    </tr>
-                    <tr>
-                        <td>WorkMail</td>
-                        <td>This is a secure, fully managed business email and calendar service.</td>
-                    </tr>
-                    <tr>
-                        <td>Chime</td>
-                        <td>This is an online meeting service like Microsoft Teams, Zoom, or Google Meeting.</td>
-                    </tr>
-                    <tr>
-                        <td>WorkSpaces</td>
-                        <td>This is a secure desktop-as-a-service. This provisions streaming, cloud-based Microsoft
-                            Windows
-                            desktops. This is the equivalent to Remote Desktop Services (RDS, not to be confused with
-                            AWS)
-                            of Citrix Xenapp.</td>
-                    </tr>
-                    <tr>
-                        <td>AppStream</td>
-                        <td>This is a secure streaming service that allows you to stream desktop applications from AWS
-                            to an
-                            HTML5 browser.</td>
-                    </tr>
-                </table>
-            </div>
-
-
-            <button type='button' class="collapsible">Internet-of-Things (IoT)</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Internet-of-Things (IoT)</td>
-                        <td>This is a cloud platform that lets embedded devices, such as microcontrollers and Raspberry
-                            Pi
-                            securely interact with cloud applications.</td>
-                    </tr>
-                    <tr>
-                        <td>FreeROTS</td>
-                        <td>This is an operating system for microcontrollers, such as the PIC32 microchip. It allows for
-                            small, low-cost, low-power devices to connect to the AWS IoT.</td>
-                    </tr>
-                    <tr>
-                        <td>GreenGrass</td>
-                        <td>This software allows you to run local AWS Lambda functions, messaging data caching sync, and
-                            ML
-                            apps on AWS IoT. It extends services to deivces so they can act locally.</td>
-                    </tr>
-                    <tr>
-                        <td>GameLift</td>
-                        <td>This service deploys, manage, and scale dedicated game services.</td>
-                    </tr>
-                    <tr>
-                        <td>Lumberyard</td>
-                        <td>This is a game development environment and cross-platform AAA game engine.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class="collapsible">AWS Command Line Interface (CLI)</button>
-
-
-            <div class='table-content'>
-                <p>A special section has been carved out for AWS' CLI services. AWS' API that enables us to use the CLI. The
-                    API
-                    enables
-                    us to communicate with from a remote server to the AWS services in the AWS cloud (all tracked in
-                    CloudTrail).</p>
-                <p>
-                    The Management Console makes HTTP requests to the AWS backend. Same for when we use CLI, it makes HTTP
-                    requests.
-                    Wrapped around this API are different SDK’s. These are turned into libraries that can be used with
-                    different
-                    coding languages. All of API calls need to be auth’d by username and password.
-                </p>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>AWS CLI applicaton</td>
-                        <td>This is AWS's CLI that is available for Windows, Mac, or Linux</td>
-                    </tr>
-                    <tr>
-                        <td>AWS Shell</td>
-                        <td>This is a cross-platform, standalone integrate shell environment written in Python.</td>
-                    </tr>
-                    <tr>
-                        <td>AWS Tools</td>
-                        <td>This is the equivalent to Windows Powershell.</td>
-                    </tr>
-                    <tr>
-                        <td>AWS CloudShell</td>
-                        <td>This service provides shell environment access through the AWS Management Console. It has
-                            AWS
-                            CLI pre-installed. Thi ss more secure than just AWS CLI because the AWS Management Console
-                            requires username, password, and MFA.</td>
-                    </tr>
-                    <tr>
-                        <td>AWS Cloud9 IDE</td>
-                        <td>This runs on EC2 access through the AWS Management Console with AWS CLI pre-installed. It
-                            allows
-                            for a tree view of files, enables drag and drop SFTP transfer of files. It is more secure
-                            since
-                            the IAM is not saved locally on a machine.</td>
-                    </tr>
-                </table>
-            </div>
-
             <p>Last updated: 2022-01-30</p>
 
         </div>
@@ -1021,7 +1010,7 @@
         <script src="js/js.js" type="text/javascript"></script>
 
         <script>
-            var coll = document.getElementsByClassName("collapsible");
+            var coll = document.getElementsByClassName("collapsible_button");
             var i;
 
             for (i = 0; i < coll.length; i++) {
