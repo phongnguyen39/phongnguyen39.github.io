@@ -205,7 +205,7 @@
 
 
     ul, ol,li {
-        list-style-type: none;
+        list-style-type: circle;
         color: black;
         /* display: block; */
     }
