@@ -3,15 +3,22 @@ var request = new XMLHttpRequest();
 request.open('get', 'https://api.github.com/users/phongnguyen39', true);
 request.onload = function () {
     var data = JSON.parse(this.response);
-    if (data.message == "API rate limit exceeded for 73.71.99.20. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)") {
-        console.log("API Calls to GitHub exceeded")
-    }
-    else {
-        document.getElementById("funStat").innerHTML = " Just for fun... API call to Github | " + data.public_repos + " repos";
+    try {
+        console.log(data.message)
+        if (data.message.substring(0,23) != "API rate limit exceeded") {
+            document.getElementById("funStat").innerHTML = "<a href='https://github.com/phongnguyen39'>Just for fun... this is an API call to Github | " + data.public_repos + " repos</a>";
+        }
+        
+    } catch (error) {
+        var currentDateTime = new Date();
+
+        document.getElementById("funStat").innerHTML = currentDateTime;
     }
 }
 request.send();
 
+
+https://www.healthit.gov/data/open-api?source=hospital-mu-public-health-measures.csv
 
 // RATINGS ////////////////////////
 var ratingsUp = 0;
