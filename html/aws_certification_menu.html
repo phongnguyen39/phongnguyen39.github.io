@@ -64,12 +64,289 @@
 
         </div>
 
-
         <div class='page_content item4'>
+
+            <button type='button' class="collapsible_button">High-level Concepts to Understand</button>
+            <table>
+                <tr>
+                    <th>Concept</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Shared Responsibility Model</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Cloud Computing Models</td>
+                    <td>
+                        <ul>
+                            <li>Software-as-a-Service - End-users - subscribe to software apps available over the
+                                internet. (Gmail)</li>
+                            <li>Platform-as-a-Service - Software Developer - platform for clients to deploy/host their
+                                own applications. No need to setup the infrastructure.</li>
+                            <li>Infrastructure-as-a-Service - Infrastructure Architects - subscribe to hardware and
+                                network</li>
+                        </uL>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cloud Deployment models</td>
+                    <td>
+                        <ul>
+                            <li>On-premises - data centers are onsite. We'll see this in legacy systems or where
+                                security precludes them from going cloud (government)</li>
+                            <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
+                            <li>Cloud - all applications and data services are on the Internet.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Operational Excellence Pillars when designing AWS infrastructure</td>
+                    <td>
+                        <ul>
+                            <li>Perform operations as code</li>
+                            <li>Make frequent, small, reversible changes</li>
+                            <li>Refine operations procedures frequently</li>
+                            <li>Anticipate failure</li>
+                            <li>Learn from all operational failures</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Availability, Durability, Elasticity, vs Resiliency</td>
+                    <td>
+                        Each AWS service satisfies one of the following properties. Know the difference between each of them.
+                        <ul>
+                            <li>
+                                Availability - this is about having <strong><i>access to resources</i></strong> when we need them. We have multiple AZ's where data can be stored on that serves our customers in their locale.
+                            </li>
+                            <li>
+                                Durability - this is the <strong><i>replication of resources </i></strong> in the event of a critical failure.  There will be backups.
+                            </li>
+                            <li>
+                                Elasticity - this is the ability to <strong><i>acquire</i></strong> resources as you need them and <strong><i>release</i></strong> when you no longer need them.  This can be automatically be achieved with Elastic Load Balancers or the Autoscaler.
+                            </li>
+                            <li>
+                                Resiliency - this is the ability to <strong><i>recover</i></strong> from failures quickly.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Operational Excellence Pillars when designing AWS infrastructure</td>
+                    <td>
+                        <ul>
+                            <li>Perform operations as code</li>
+                            <li>Make frequent, small, reversible changes</li>
+                            <li>Refine operations procedures frequently</li>
+                            <li>Anticipate failure</li>
+                            <li>Learn from all operational failures</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cloud Computing Models</td>
+                    <td>
+                        <ul>
+                            <li>Software-as-a-Service - End-users - subscribe to software apps available over the
+                                internet. (Gmail)</li>
+                            <li>Platform-as-a-Service - Software Developer - platform for clients to deploy/host their
+                                own applications. No need to setup the infrastructure.</li>
+                            <li>Infrastructure-as-a-Service - Infrastructure Architects - subscribe to hardware and
+                                network</li>
+                        </uL>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cloud Deployment models</td>
+                    <td>
+                        <ul>
+                            <li>On-premises - data centers are onsite. We'll see this in legacy systems or where
+                                security precludes them from going cloud (government)</li>
+                            <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
+                            <li>Cloud - all applications and data services are on the Internet.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>IAM Access Levels</td>
+                    <td>
+                        From the highest to the lowest level of access controlled by the Identity Access Management
+                        (IAM)
+                        <ul>
+                            <li>Organizations - single organization can have multiple accounts</li>
+                            <li>Account - accounts consists of below. It's usually localized to a single AZ</li>
+                            <li>User Groups</li>
+                            <li>User Roles</li>
+                            <li>Users</li>
+                        </ul>
+                <tr>
+                    <td>Regions vs Availability Zones vs Local Zones vs Edge Locations</td>
+                    <td>
+                        <ul>
+                            <li>A region is usually localized to <strong><i>geographic location</i></strong>. For
+                                example, three regions in the
+                                U.S.: U.S. East Virginia, East Ohio, and West California. Within these regions can have
+                                multiple
+                                AZ's. These are AZ's are equivocal to data centers. A region must consist of at least
+                                two AZ's.
+                                It's further expanded when external partner data centers act as endpoint extensions of
+                                the AWS
+                                cloud. Note some services are only available to specific regions and AZ's.</li>
+                            <li>AZ - one or more discrete data centers within a Region.</li>
+                            <li>Local Zones - extensions of an AWS region that is geographically close to your users.
+                            </li>
+                            <li>Edge Location - think of this as an endpoint closest to your users. It requests data
+                                from a regional edge data cache. Like a distribution center sending out packages.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cloud Computing Models</td>
+                    <td>
+                        <ul>
+                            <li>Software-as-a-Service - End-users - subscribe to software apps available over
+                                the
+                                internet. (Gmail)</li>
+                            <li>Platform-as-a-Service - Software Developer - platform for clients to deploy/host
+                                their
+                                own applications. No need to setup the infrastructure.</li>
+                            <li>Infrastructure-as-a-Service - Infrastructure Architects - subscribe to hardware
+                                and
+                                network</li>
+                        </uL>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cloud Deployment models</td>
+                    <td>
+                        <ul>
+                            <li>On-premises - data centers are onsite. We'll see this in legacy systems or where
+                                security precludes them from going cloud (government)</li>
+                            <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
+                            <li>Cloud - all applications and data services are on the Internet.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>AWS Resource Groups</td>
+                    <td>Throughout the Management Console, the admin is able to tag EC2, RDS, and S3 instances. This
+                        tagging allows <strong><i>resource groups</i></strong> to be created. These resource groups are
+                        a collection of resources. From there, automated management tasks can be ran from the AWS
+                        Systems Manager Automation. It can monitored in Systems Manager for AWS Config compliance and
+                        other data. By default, the Management Console is organized by service, but this can be
+                        customized to organize by the resource group (tags).</td>
+                </tr>
+                <tr>
+                    <td>AWS Outposts</td>
+                    <td>This service extends AWS infrastructure, services, API's, and tools to any data center
+                        (including on-prem). This service supports the hybrid cloud deployment model.</td>
+                </tr>
+
+            </table>
+
+
+            <button type='button' class="collapsible_button">Analytics</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Elastic Map Reduce (EMR)</td>
+                        <td>This is a Hadoop framework as a service used for big data analysis of S3 or DynamoDB data
+                            stores. Other frames that can be used too, such as Apache Spark, Hive, HBase, Presto and
+                            Flink.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Athena</td>
+                        <td>This service analyses date stored in S3 using SQL</td>
+                    </tr>
+                    <tr>
+                        <td>FinSpace</td>
+                        <td>This is a petabyte scale data management and analytics service built for the financial
+                            industry.
+                            It includes a library of over 1000 financial analysis functions.</td>
+                    </tr>
+                    <tr>
+                        <td>Kinesis</td>
+                        <td>This service collects, processes, and analyses <strong><i>real-time streaming
+                                    data</i></strong>.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>QuickSight</td>
+                        <td>This is a business-intelligence (BI) reporting tool like Tableau or Bert.</td>
+                    </tr>
+                    <tr>
+                        <td>CloudSearch</td>
+                        <td>This is a search engine service that supports up to 34 languages. It provides a search
+                            solution
+                            for your website or application.</td>
+                    </tr>
+                    <tr>
+                        <td>OpenSearch (formerly ElastiSearch)</td>
+                        <td>This is a fully managed service for Elastic.Co's ElasticSearch framework (another search
+                            engine
+                            solution).</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button type='button' class="collapsible_button">Application Services</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Step Functions</td>
+                        <td>This service provides a visual workflow that coordinates components of distributed
+                            applications
+                            and microservices. This visualizes the workflow to define the steps to deploying an
+                            application.
+                            It is recommended for new applications.</td>
+
+                    </tr>
+                    <tr>
+                        <td>Simple Workflow (SFW)</td>
+                        <td>This service coordinates multiple components of business applications.</td>
+
+                    </tr>
+                    <tr>
+                        <td>Simple Notification Service (SNF)</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                    <tr>
+                        <td>Simple Queue Service (SQS)</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                    <tr>
+                        <td>Connect</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                    <tr>
+                        <td>Pinpoint</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                    <tr>
+                        <td>Simple Email Service (SES)</td>
+                        <td>AWS Pricing Calculator</td>
+
+                    </tr>
+                </table>
+            </div>
+
 
             <button type='button' class="collapsible_button">Business
                 Case Services</button>
-
             <div class='table-content'>
 
                 <p>Using AWS affords an organization using its services six advantages:</p>
@@ -183,9 +460,17 @@
                                 <li>Basic - offers basic customer service only, no technical support.</li>
                                 <li>Developer - available during business hours for technical support, < 12 hrs response
                                         to critical failures.</li>
-                                <li>Business - 24/7 technical support, < 1 hr response to critical failures.</li>
+                                <li>Business - 24/7 technical support, < 1 hr response to critical failures. Includes a
+                                        TAM</li>
                                 <li>Enterprise - 24/7 technical support from a Senior Engineer, < 15 min. response to
-                                        crtical failures</li>
+                                        critical failures Includes a TAM and Concierge support</li>
+                            </ol>
+                            These services are available at all support levels for free:
+                            <ol>
+                                <li>AWS Discussion Forums</li>
+                                <li>Customer Service and Communities</li>
+                                <li>Trusted Advisor</li>
+                                <li>Personal Health Dashboard</li>
                             </ol>
                         </td>
                     </tr>
@@ -217,6 +502,46 @@
                 </p>
             </div>
 
+            <button type='button' class="collapsible_button">Business Productivity and Desktop Streaming
+                Applications</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>WorkDocs</td>
+                        <td>This is a secure, fully managed file collaboration and management document service. This web
+                            client allows you to view and provide feedback on 35+ file types including Microsoft Office
+                            and
+                            .pdf. It is similar to Google Drive and Google Docs.</td>
+                    </tr>
+                    <tr>
+                        <td>WorkMail</td>
+                        <td>This is a secure, fully managed business email and calendar service.</td>
+                    </tr>
+                    <tr>
+                        <td>Chime</td>
+                        <td>This is an online meeting service like Microsoft Teams, Zoom, or Google Meeting.</td>
+                    </tr>
+                    <tr>
+                        <td>WorkSpaces</td>
+                        <td>This is a secure desktop-as-a-service. This provisions streaming, cloud-based Microsoft
+                            Windows
+                            desktops. This is the equivalent to Remote Desktop Services (RDS, not to be confused with
+                            AWS)
+                            of Citrix Xenapp.</td>
+                    </tr>
+                    <tr>
+                        <td>AppStream</td>
+                        <td>This is a secure streaming service that allows you to stream desktop applications from AWS
+                            to an
+                            HTML5 browser.</td>
+                    </tr>
+                </table>
+            </div>
+
             <button type='button' class='collapsible_button'>Data Services</button>
             <div class='table-content'>
                 <table>
@@ -244,9 +569,9 @@
                     </tr>
                     <tr>
                         <td>ElastiCache</td>
-                        <td>This is an in-memory data store that is cached on the cloud. It allows you to retrieve data
+                        <td>This is an in-memory data store that is cached on the cloud. It allows you to quickly retrieve data
                             that
-                            is often requested quickly.</td>
+                            is often requested.</td>
                     </tr>
                     <tr>
                         <td>Neptune</td>
@@ -266,7 +591,12 @@
                         <th>Elastic Compute Cloud (EC2)</th>
                         <th>Cloud Compute (2) => EC2. This service provides virtual servers upt to thousands of servers
                             at a
-                            time. Pay-as-you-use</th>
+                            time. Pay-as-you-use.
+                            <hr>Session Manager is a functionality within AWS Systems Manager that manages EC2
+                            instances, onprem instances and VM's
+                            <hr>EC2 Instance Connect - this service connects Linux instances using a browser-based
+                            client.
+                        </th>
                     </tr>
                     <tr>
                         <td>EC2 Autoscaling</td>
@@ -311,14 +641,18 @@
                         <td>This is a global content delivery network (CDN) that has over 100 endpoints all over the
                             world.
                             It also protects against DDOS attacks. This service caches your data or application at an
-                            endpoint closer to your users.</td>
+                            endpoint closer to your users. It does so by caching static content at data centers closer
+                            to users. It also supports pre-recorded and live events at low-latency, so it's not just
+                            static content.</td>
                     </tr>
                     <tr>
                         <td>Virtual Private Cloud (VPC)</td>
                         <td>This service provisions logically, isolated sections of the AWS cloud. AWS
                             resources/services
                             can be launched within the VPC. This is how the services stay secure because they're all
-                            encapsulated from the world wide web in these VPC's.</td>
+                            encapsulated from the world wide web in these VPC's.
+                            <hr>VPC Peering is a service that is used to connect two or more VPC's.
+                        </td>
                     </tr>
                     <tr>
                         <td>Direct Connect</td>
@@ -329,7 +663,7 @@
                         <td>Elastic Load Balancing (ELB)</td>
                         <td>This service automatically distributes network traffic (incoming HTTP/HTTPS requests) across
                             EC2
-                            compute instances and across multiple availability zones. This is highly avaialble and
+                            compute instances and across multiple availability zones. This is highly available and
                             increases
                             fault tolerances by balancing network volume. <strong><i>This service is not to be confused
                                     with
@@ -422,62 +756,19 @@
                             you
                             on how to optimize:
                             <ul>
-                                <li>costs - advise you on deleting unused and idle resources, or use reserved capacity</li>
-                                <li>performance - check on service quota, monitor overutilized EC2 instances, and provisioned throughput</li>
-                                <li>security - like examining permissions, enabling AWS security features, or identify security gaps</li>
-                                <li>fault tolerance - increase availability and redundancy, such as Auto Scaling, health checks, multiple AZ's, backups</li>
-                                <li>service limits - check services that use more than 80 percent of a service quota. Check results based on a snapshot.  There may be a 24 latency because of this snapshot.</li>
+                                <li>costs - advise you on deleting unused and idle resources, or use reserved capacity
+                                </li>
+                                <li>performance - check on service quota, monitor overutilized EC2 instances, and
+                                    provisioned throughput</li>
+                                <li>security - like examining permissions, enabling AWS security features, or identify
+                                    security gaps</li>
+                                <li>fault tolerance - increase availability and redundancy, such as Auto Scaling, health
+                                    checks, multiple AZ's, backups</li>
+                                <li>service limits - check services that use more than 80 percent of a service quota.
+                                    Check results based on a snapshot. There may be a 24 latency because of this
+                                    snapshot.</li>
                             </ul>
                         </td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class="collapsible_button">Application Services</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Step Functions</td>
-                        <td>This service provides a visual workflow that coordinates components of distributed
-                            applications
-                            and microservices. This visualizes the workflow to define the steps to deploying an
-                            application.
-                            It is recommended for new applications.</td>
-
-                    </tr>
-                    <tr>
-                        <td>Simple Workflow (SFW)</td>
-                        <td>This service coordinates multiple components of business applications.</td>
-
-                    </tr>
-                    <tr>
-                        <td>Simple Notification Service (SNF)</td>
-                        <td>AWS Pricing Calculator</td>
-
-                    </tr>
-                    <tr>
-                        <td>Simple Queue Service (SQS)</td>
-                        <td>AWS Pricing Calculator</td>
-
-                    </tr>
-                    <tr>
-                        <td>Connect</td>
-                        <td>AWS Pricing Calculator</td>
-
-                    </tr>
-                    <tr>
-                        <td>Pinpoint</td>
-                        <td>AWS Pricing Calculator</td>
-
-                    </tr>
-                    <tr>
-                        <td>Simple Email Service (SES)</td>
-                        <td>AWS Pricing Calculator</td>
-
                     </tr>
                 </table>
             </div>
@@ -574,56 +865,11 @@
                         <td>This is a petabytes, portable storage device used to physically migrate on-prem data to the
                             cloud. A customer of AWS would download the data and then send it to AWS for upload to a
                             desired
-                            AWS storage service</td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class="collapsible_button">Analytics</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Elastic Map Reduce (EMR)</td>
-                        <td>This is a Hadoop framework as a service used for big data analysis of S3 or DynamoDB data
-                            stores. Other frames that can be used too, such as Apache Spark, Hive, HBase, Presto and
-                            Flink.
+                            AWS storage service
+                            <hr> Note: This is not be confused with Snowmobile (exabyte). It is a vehicle can move
+                            larger amounts of data and provides AWS personnel. Snowball (petabyte) is a single hardware
+                            device.
                         </td>
-                    </tr>
-                    <tr>
-                        <td>Athena</td>
-                        <td>This service analyses date stored in S3 using SQL</td>
-                    </tr>
-                    <tr>
-                        <td>FinSpace</td>
-                        <td>This is a petabyte scale data management and analytics service built for the financial
-                            industry.
-                            It includes a library of over 1000 financial analysis functions.</td>
-                    </tr>
-                    <tr>
-                        <td>Kinesis</td>
-                        <td>This service collects, processes, and analyses <strong><i>real-time streaming
-                                    data</i></strong>.
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>QuickSight</td>
-                        <td>This is a business-intelligence (BI) reporting tool like Tableau or Bert.</td>
-                    </tr>
-                    <tr>
-                        <td>CloudSearch</td>
-                        <td>This is a search engine service that supports up to 34 languages. It provides a search
-                            solution
-                            for your website or application.</td>
-                    </tr>
-                    <tr>
-                        <td>OpenSearch (formerly ElastiSearch)</td>
-                        <td>This is a fully managed service for Elastic.Co's ElasticSearch framework (another search
-                            engine
-                            solution).</td>
                     </tr>
                 </table>
             </div>
@@ -744,7 +990,9 @@
                     <tr>
                         <td>Web Application Firewall (WAF)</td>
                         <td>This service provides a firewall that sits in front of a customers application to protect it
-                            against SQL injections and cross-site scripting.</td>
+                            against SQL injections and cross-site scripting. Firewall rules can be configured across
+                            accounts and application in AWS Organizations. It allows for consistency since a single rule
+                            can be applied as new applicatons are created.</td>
                     </tr>
                 </table>
             </div>
@@ -891,46 +1139,6 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">Business Productivity and Desktop Streaming
-                Applications</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>WorkDocs</td>
-                        <td>This is a secure, fully managed file collaboration and management document service. This web
-                            client allows you to view and provide feedback on 35+ file types including Microsoft Office
-                            and
-                            .pdf. It is similar to Google Drive and Google Docs.</td>
-                    </tr>
-                    <tr>
-                        <td>WorkMail</td>
-                        <td>This is a secure, fully managed business email and calendar service.</td>
-                    </tr>
-                    <tr>
-                        <td>Chime</td>
-                        <td>This is an online meeting service like Microsoft Teams, Zoom, or Google Meeting.</td>
-                    </tr>
-                    <tr>
-                        <td>WorkSpaces</td>
-                        <td>This is a secure desktop-as-a-service. This provisions streaming, cloud-based Microsoft
-                            Windows
-                            desktops. This is the equivalent to Remote Desktop Services (RDS, not to be confused with
-                            AWS)
-                            of Citrix Xenapp.</td>
-                    </tr>
-                    <tr>
-                        <td>AppStream</td>
-                        <td>This is a secure streaming service that allows you to stream desktop applications from AWS
-                            to an
-                            HTML5 browser.</td>
-                    </tr>
-                </table>
-            </div>
-
             <button type='button' class="collapsible_button">Internet-of-Things (IoT)</button>
             <div class='table-content'>
                 <table>
@@ -1017,206 +1225,44 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">High-level Concepts to Understand</button>
-            <table>
-                <tr>
-                    <th>Concept</th>
-                    <th>Details</th>
-                </tr>
-                <tr>
-                    <td>Shared Responsibility Model</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Regions vs Availability Zones</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Cloud Computing Models</td>
-                    <td>
-                        <ul>
-                            <li>Software-as-a-Service - End-users - subscribe to software apps available over the
-                                internet. (Gmail)</li>
-                            <li>Platform-as-a-Service - Software Developer - platform for clients to deploy/host their
-                                own applications. No need to setup the infrastructure.</li>
-                            <li>Infrastructure-as-a-Service - Infrastructure Architects - subscribe to hardware and
-                                network</li>
-                        </uL>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Cloud Deployment models</td>
-                    <td>
-                        <ul>
-                            <li>On-premises - data centers are onsite. We'll see this in legacy systems or where
-                                security precludes them from going cloud (government)</li>
-                            <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
-                            <li>Cloud - all applications and data services are on the Internet.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Operational Excellence Pillars when designing AWS infrastructure</td>
-                    <td>
-                        <ul>
-                            <li>Perform operations as code</li>
-                            <li>Make frequent, small, reversible changes</li>
-                            <li>Refine operations procedures frequently</li>
-                            <li>Anticipate failure</li>
-                            <li>Learn from all operational failures</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </td>
-                    <td>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Durability, Elastiticity, Availability, Resiliency</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Operational Excellence Pillars when designing AWS infrastructure</td>
-                    <td>
-                        <ul>
-                            <li>Perform operations as code</li>
-                            <li>Make frequent, small, reversible changes</li>
-                            <li>Refine operations procedures frequently</li>
-                            <li>Anticipate failure</li>
-                            <li>Learn from all operational failures</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Regions vs Availability Zones</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Cloud Computing Models</td>
-                    <td>
-                        <ul>
-                            <li>Software-as-a-Service - End-users - subscribe to software apps available over the
-                                internet. (Gmail)</li>
-                            <li>Platform-as-a-Service - Software Developer - platform for clients to deploy/host their
-                                own applications. No need to setup the infrastructure.</li>
-                            <li>Infrastructure-as-a-Service - Infrastructure Architects - subscribe to hardware and
-                                network</li>
-                        </uL>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Cloud Deployment models</td>
-                    <td>
-                        <ul>
-                            <li>On-premises - data centers are onsite. We'll see this in legacy systems or where
-                                security precludes them from going cloud (government)</li>
-                            <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
-                            <li>Cloud - all applications and data services are on the Internet.</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>IAM Access Levels</td>
-                    <td>
-                        From the highest to the lowest level of access controlled by the Identity Access Management
-                        (IAM)
-                        <ul>
-                            <li>Organizations - single organization can have multiple accounts</li>
-                            <li>Account - accounts consists of below. It's usually localized to a single AZ</li>
-                            <li>User Groups</li>
-                            <li>User Roles</li>
-                            <li>Users</li>
-                <tr>
-                    <td>Regions vs Availability Zones</td>
-                    <td>A region is usually localized to a certain part of a country. For example, three regions in the
-                        U.S.: U.S. East Virginia, East Ohio, and West California. Within these regions can have multiple
-                        AZ's. These are AZ's are equivocal to data centers. A region must consist of at least two AZ's.
-                        It's further expanded when external partner data centers act as endpoint extensions of the AWS
-                        cloud. Note some services are only available to specific regions and AZ's.</td>
-                </tr>
-                <tr>
-                    <td>Cloud Computing Models</td>
-                    <td>
-                        <ul>
-                            <li>Software-as-a-Service - End-users - subscribe to software apps available over
-                                the
-                                internet. (Gmail)</li>
-                            <li>Platform-as-a-Service - Software Developer - platform for clients to deploy/host
-                                their
-                                own applications. No need to setup the infrastructure.</li>
-                            <li>Infrastructure-as-a-Service - Infrastructure Architects - subscribe to hardware
-                                and
-                                network</li>
-                        </uL>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Cloud Deployment models</td>
-                    <td>
-                        <ul>
-                            <li>On-premises - data centers are onsite. We'll see this in legacy systems or where
-                                security precludes them from going cloud (government)</li>
-                            <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
-                            <li>Cloud - all applications and data services are on the Internet.</li>
-                        </ul>
-                    </td>
-                </tr>
-
-            </table>
-
             <button type='button' class="collapsible_button">Common Use Cases of the Services</button>
-            <table>
-                <tr>
-                    <th>Use Cases for AWS Services</th>
-                    <th>Description</th>
-                </tr>
-                <tr>
-                    <td>Hybrid Storage Deployment Model</td>
-                    <td>
-                        <ul>
-                            <li>An on-prem data center that uses sends data to the cloud and stores it on S3 for
-                                durability and availability in case of disaster recovery.</li>
-                            <li>This same on-prem data center goes down, then a Snowball device can be sent to move the
-                                data over to the final place, S3.</li>
-                            <li>Storage Gateway, this service systematically moves data from on-prem to the cloud via
-                                the <strong><i>Direct Connect Service (AWS' high-speed internet)</i></strong></li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Trusted Advisor</td>
-                    <td>This service requires a business, enterprise account to be able to use it. It is a service that
-                        provides advice on cost, performance, fault tolerance, and service limits across all of an
-                        accounts resources and regions. We can have specific Trusted Advisors setup for different parts
-                        of an AWS Organization. We just have to create the organizations and setup Trusted Advisors
-                        corresponding to it.</td>
-                </tr>
-
-
-            </table>
-
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Use Cases for AWS Services</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Hybrid Storage Deployment Model</td>
+                        <td>
+                            <ul>
+                                <li>An on-prem data center that uses sends data to the cloud and stores it on S3 for
+                                    durability and availability in case of disaster recovery.</li>
+                                <li>This same on-prem data center goes down, then a Snowball device can be sent to move
+                                    the
+                                    data over to the final place, S3.</li>
+                                <li>Storage Gateway, this service systematically moves data from on-prem to the cloud
+                                    via
+                                    the <strong><i>Direct Connect Service (AWS' high-speed internet)</i></strong></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trusted Advisor</td>
+                        <td>This service requires a business, enterprise account to be able to use it. It is a service
+                            that
+                            provides advice on cost, performance, fault tolerance, and service limits across all of an
+                            accounts resources and regions. We can have specific Trusted Advisors setup for different
+                            parts
+                            of an AWS Organization. We just have to create the organizations and setup Trusted Advisors
+                            corresponding to it.</td>
+                    </tr>
+                </table>
+            </div>
 
             <p>Last updated: 2022-01-30</p>
 
         </div>
-
-
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-122477728-2"></script>
