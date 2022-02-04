@@ -4,9 +4,9 @@
     /* YOU'RE MISSING THE END BRACKET ONCE YOU UNCOMMENT THIS MEDIA QUERY */
     * {
         font-family: 'Montserrat', sans-serif;
-        /* background-color: #fffefd; */
         color: rgb(51, 49, 49);
         scroll-behavior: smooth;
+        /* border: 1px dotted red; */
     }
 
     .index_hero_image {
@@ -41,7 +41,7 @@
     header {
         display: block;
         position: fixed;
-        height: 8vh;
+        height: 7vh;
         width: 100%;
         padding-top: 5px;
         z-index: 999;
@@ -195,19 +195,19 @@
         color: rgb(29, 65, 88);
     }
     .container {
-        width: 100%;
+        /* width: 100vw; */
         font-size: 1.5vw;
-        background-color: inherit;
+        max-width: auto;
+        /* background-color: inherit; */
     }
 
     .page_intro, .item3{
-        padding-top: 100px;
+        padding-top: 150px;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
-        /* height: 50px; */
-        background-color: inherit;
+        max-width: auto;
     }
 
     .page_content, .item4{
@@ -216,7 +216,7 @@
         grid-row-start: 2;
         grid-row-end: 3;
         padding-top: 50px;
-        background-color: inherit;
+        max-width: auto;
     }
 
     /* #git, #edu, #aboutme,#resume, #languages, #safe_beacon, #stack,  #baya, #onev, #pacman{
@@ -250,11 +250,24 @@
         text-align: left;
         outline: none;
         font-size: 2vw;
+        z-index: 800;
     }
 
-    .active, .collapsible:hover {
-          background-color: #555;
+    .sticky_button >button {
+      font-size:x-large;
+      color: white;
+      position:fixed;
+      bottom:auto;
+      margin: 120px 0px 0px 95%;
+      height:auto;
+      width:auto;
+      border: none;
+      box-shadow: 0px 2px 9px 0px gray;
+      background:rgb(70, 117, 146)
+      /* background: linear-gradient(orange,rgb(255, 204, 110),orange); */
+      /* z-index: 100; */
     }
+
 
     .table-content {
         display: none;
@@ -263,8 +276,8 @@
         /* height: 100%; */
         width: 100%;
         margin-bottom: 10px;
-        padding: 10px;
-        box-shadow: 0px 3px 50px 0px rgba(0,0,0,1);
+        padding: 15px;
+        box-shadow: 0px 5px 8px 0px gray;
     }   
 
     table {
@@ -343,7 +356,7 @@
         text-align: center;
         display: inline-block;
         vertical-align: top;
-        box-shadow: 5px 5px 20px rgb(1, 6, 15);
+        box-shadow: 0px 5px 5px 0px rgb(1, 6, 15);
         margin: 1%;
         border: 1px solid black;
         min-height: 550px;
