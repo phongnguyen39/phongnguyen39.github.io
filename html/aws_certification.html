@@ -60,8 +60,7 @@
                 AWS service more than once because it serves mutliple services and AWS services work in conjunction with
                 each other.</p>
 
-            <p>Credit goes to BackSpace Academy's Udemy course for making all of this easier to learn.
-                https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884
+            <p>Credit goes to BackSpace Academy's Udemy course for making all of this easier to learn, <a href='https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884'  target='_blank' style='color:blue;'>Udemy</a>.
             </p>
 
         </div>
@@ -390,39 +389,30 @@
                     </tr>
                     <tr>
                         <td>Simple Workflow (SFW)</td>
-                        <td>This service coordinates multiple components of business applications. Similar to Step Functions.</td>
+                        <td>This service coordinates multiple components of business applications. Similar to Step
+                            Functions.</td>
 
                     </tr>
                     <tr>
                         <td>Simple Notification Service (SNF)</td>
-                        <td>This is a fully managed pub-sub (publication-subscription) messaging service.  For example, a user creates a topic on your application, other users subscribe to the topic, and they may publish a message to that topic.  Subscribed users will receive the message.  This service pushes notifications to mobile devices too.</td>
+                        <td>This is a fully managed pub-sub (publication-subscription) messaging service. For example, a
+                            user creates a topic on your application, other users subscribe to the topic, and they may
+                            publish a message to that topic. Subscribed users will receive the message. This service
+                            pushes notifications to mobile devices too.</td>
 
                     </tr>
                     <tr>
                         <td>Simple Queue Service (SQS)</td>
-                        <td>AWS Pricing Calculator</td>
-
-                    </tr>
-                    <tr>
-                        <td>Connect</td>
-                        <td>AWS Pricing Calculator</td>
-
-                    </tr>
-                    <tr>
-                        <td>Pinpoint</td>
-                        <td>AWS Pricing Calculator</td>
-
-                    </tr>
-                    <tr>
-                        <td>Simple Email Service (SES)</td>
-                        <td>AWS Pricing Calculator</td>
+                        <td>This is a fully managed message queuing service that decouples applications from demand
+                            requests. This allows messages to build up in a queue until the processing server is ready
+                            for the demand load.</td>
 
                     </tr>
                 </table>
             </div>
 
             <button type='button' class="collapsible_button">Business
-                Case</button>
+                Case and Pricing</button>
             <div class='table-content'>
 
                 <p>Using AWS affords an organization using its services six advantages:</p>
@@ -624,6 +614,31 @@
                 </table>
             </div>
 
+            <button type='button' class="collapsible_button">Customer Engagement</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <td>Connect</td>
+                        <td>This is a self-service contact center from AWS. It has a pay-as-you-go pricing model. You
+                            can build this contact center with a drag and drop GUI. This GUI can be used to create
+                            process flows that define customer interactions without coding.</td>
+                    </tr>
+                    <tr>
+                        <td>Pinpoint</td>
+                        <td>This service sends email, SMS, and mobile push notifications for marketing campaigns or
+                            direct messages to customers. For example, if your application receives an order for your
+                            business this service would send a message to the customer as confirmation.</td>
+
+                    </tr>
+                    <tr>
+                        <td>Simple Email Service (SES)</td>
+                        <td>This service sends to bulk of customers email, such as notifications about discounts on
+                            business' services.</td>
+
+                    </tr>
+                </table>
+            </div>
+
             <button type='button' class='collapsible_button'>Compute</button>
             <div class='table-content'>
                 <table>
@@ -639,14 +654,18 @@
                         </th>
                     </tr>
                     <tr>
-                        <td>Special topic
-                            <hr>EC2 Instance Purchasing Options
+                        <td>EC2 Instance Purchasing Options
                         </td>
                         <td>
                             <ul>
                                 <li>On-demand instances</li>
+                                <li>Savings Plans</li>
                                 <li>Reserved instances</li>
                                 <li>Spot instances</li>
+                                <li>Dedicated Hosts</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                         </td>
                     </tr>
@@ -1108,22 +1127,6 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">Pricing</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Pricing</td>
-                        <td>AWS Pricing Calculator</td>
-
-                    </tr>
-                </table>
-
-            </div>
-
             <button type='button' class="collapsible_button">Security, Identity, and Compliance</button>
             <div class='table-content'>
                 <table>
@@ -1331,7 +1334,7 @@
             gtag('config', 'UA-122477728-2');
         </script>
 
-        <script src="../js/js.js" type="text/javascript"></script>
+        <!-- <script src="../js/js.js" type="text/javascript"></script> -->
 
         <script>
             var coll = document.getElementsByClassName("collapsible_button");

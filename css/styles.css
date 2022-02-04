@@ -254,7 +254,7 @@
     }
 
     .sticky_button >button {
-      font-size:x-large;
+      font-size:large;
       color: white;
       position:fixed;
       bottom:auto;
