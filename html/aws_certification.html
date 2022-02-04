@@ -252,7 +252,8 @@
                         <td>Regions vs Availability Zones vs Local Zones vs Edge Locations</td>
                         <td>
                             <ul>
-                                <li>A region is usually localized to <strong><i>geographic location</i></strong>. For
+                                <li>A region is a cluster of data centers in a <strong><i>geographic
+                                            location</i></strong>. For
                                     example, three regions in the
                                     U.S.: U.S. East Virginia, East Ohio, and West California. Within these regions can
                                     have
@@ -271,6 +272,7 @@
                                 <li>Edge Location - think of this as an endpoint closest to your users. It requests data
                                     from a regional edge data cache. Like a distribution center sending out packages.
                                 </li>
+                                <li>Wavelength zone - mobile 5G enabled area where an AWS application is stored.</li>
                             </ul>
                         </td>
                     </tr>
@@ -388,12 +390,12 @@
                     </tr>
                     <tr>
                         <td>Simple Workflow (SFW)</td>
-                        <td>This service coordinates multiple components of business applications.</td>
+                        <td>This service coordinates multiple components of business applications. Similar to Step Functions.</td>
 
                     </tr>
                     <tr>
                         <td>Simple Notification Service (SNF)</td>
-                        <td>AWS Pricing Calculator</td>
+                        <td>This is a fully managed pub-sub (publication-subscription) messaging service.  For example, a user creates a topic on your application, other users subscribe to the topic, and they may publish a message to that topic.  Subscribed users will receive the message.  This service pushes notifications to mobile devices too.</td>
 
                     </tr>
                     <tr>
@@ -1001,6 +1003,12 @@
                         <td>AppSync</td>
                         <td>This is a GraphQL backend for mobile and web applications.</td>
                     </tr>
+                    <tr>
+                        <td>WaveLength</td>
+                        <td>This service allows your application to be stored on a local mobile ISP's data center.
+                            Enabling you to use the 5G network and reduce latency of your applications. The data center
+                            your application is stored at becomes a <strong><i>wavelength zone</i></strong></td>
+                    </tr>
                 </table>
             </div>
 
@@ -1272,7 +1280,7 @@
                     </tr>
                 </table>
             </div>
-            
+
             <button type='button' class="collapsible_button">Common Use Cases</button>
             <div class='table-content'>
                 <table>
@@ -1353,10 +1361,10 @@
 
                 collapsibles.addEventListener('click');
 
-                
-                
+
+
                 collapsibles.classList.toggle('inactive');
-                
+
                 if (clickCount % 2 == 0) {
                     for (i = 0; i < collapsibles.length; i++) {
                         collapsibles[i].style.display = 'block';
