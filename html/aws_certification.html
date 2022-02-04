@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.ico" /> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,20 @@
 
 <header>
     <div class='menu-container'>
-        <h1 class="header_name item1"><a href='../index.html'>PHONG NGUYEN</a></h1>
+        <h1 class="header_name item1"><a href='../index.html'>
+                <span>P</span>
+                <span>H</span>
+                <span>O</span>
+                <span>N</span>
+                <span>G</span>
+                <span> </span>
+                <span>N</span>
+                <span>G</span>
+                <span>U</span>
+                <span>Y</span>
+                <span>E</span>
+                <span>N</span>
+            </a></h1>
         <div class="fixedLinks item2">
             <a class='nav_link' href="https://github.com/phongnguyen39" target='_self'>Github</a>
             <a class='nav_link' href="../html/projects.html" target='_self'>Projects</a>
@@ -35,14 +48,16 @@
 </header>
 
 <body>
+    <div class='sticky_button'><button type='button' onclick='toggle()' class="collapse_all">+ / -</button></div>
+
     <div class='container'>
 
         <div class='page_intro item3'>
             <h3>AWS Cloud Practitioner Certification</h3>
             <p>While I was studying for my AWS CPC certification, the sheer number of AWS services within its ecosystem
-                is difficult to absorb in one go. Below is a summary of all of the AWS services (alphabetical order). Along with this,
+                is difficult to absorb in one go. Below is a summary of all of the AWS services. Along with this,
                 I'll provide some clarification on the subjects that I had trouble with too. Take note, I may mention an
-                AWS service more than once because it serves multiple services and AWS services work in conjunction with
+                AWS service more than once because it serves mutliple services and AWS services work in conjunction with
                 each other.</p>
 
             <p>Credit goes to BackSpace Academy's Udemy course for making all of this easier to learn.
@@ -51,8 +66,260 @@
 
         </div>
 
-
         <div class='page_content item4'>
+
+            <button type='button' class="collapsible_button">Command Line Interface (CLI)</button>
+            <div class='table-content'>
+                <p>A special section has been carved out for AWS' CLI services. AWS' API that enables us to use the CLI.
+                    The
+                    API
+                    enables
+                    us to communicate with from a remote server to the AWS services in the AWS cloud (all tracked in
+                    CloudTrail).</p>
+                <p>
+                    The Management Console makes HTTP requests to the AWS backend. Same for when we use CLI, it makes
+                    HTTP
+                    requests.
+                    Wrapped around this API are different SDK’s. These are turned into libraries that can be used with
+                    different
+                    coding languages. All of API calls need to be auth’d by username and password.
+                </p>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>AWS CLI applicaton</td>
+                        <td>This is AWS's CLI that is available for Windows, Mac, or Linux</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Shell</td>
+                        <td>This is a cross-platform, standalone integrate shell environment written in Python.</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Tools</td>
+                        <td>This is the equivalent to Windows Powershell.</td>
+                    </tr>
+                    <tr>
+                        <td>AWS CloudShell</td>
+                        <td>This service provides shell environment access through the AWS Management Console. It has
+                            AWS
+                            CLI pre-installed. Thi ss more secure than just AWS CLI because the AWS Management Console
+                            requires username, password, and MFA.</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Cloud9 IDE</td>
+                        <td>This runs on EC2 access through the AWS Management Console with AWS CLI pre-installed. It
+                            allows
+                            for a tree view of files, enables drag and drop SFTP transfer of files. It is more secure
+                            since
+                            the IAM is not saved locally on a machine.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button type='button' class="collapsible_button">High-level Concepts to Understand</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Concept</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Shared Responsibility Model</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Computing Models</td>
+                        <td>
+                            <ul>
+                                <li>Software-as-a-Service - End-users - subscribe to software apps available over the
+                                    internet. (Gmail)</li>
+                                <li>Platform-as-a-Service - Software Developer - platform for clients to deploy/host
+                                    their
+                                    own applications. No need to setup the infrastructure.</li>
+                                <li>Infrastructure-as-a-Service - Infrastructure Architects - subscribe to hardware and
+                                    network</li>
+                            </uL>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Deployment models</td>
+                        <td>
+                            <ul>
+                                <li>On-premises - data centers are onsite. We'll see this in legacy systems or where
+                                    security precludes them from going cloud (government)</li>
+                                <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
+                                <li>Cloud - all applications and data services are on the Internet.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Operational Excellence Pillars when designing AWS infrastructure</td>
+                        <td>
+                            <ul>
+                                <li>Perform operations as code</li>
+                                <li>Make frequent, small, reversible changes</li>
+                                <li>Refine operations procedures frequently</li>
+                                <li>Anticipate failure</li>
+                                <li>Learn from all operational failures</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Availability, Durability, Elasticity, vs Resiliency</td>
+                        <td>
+                            Each AWS service satisfies one of the following properties. Know the difference between each
+                            of
+                            them.
+                            <ul>
+                                <li>
+                                    Availability - this is about having <strong><i>access to resources</i></strong> when
+                                    we
+                                    need them. We have multiple AZ's where data can be stored on that serves our
+                                    customers
+                                    in their locale.
+                                </li>
+                                <li>
+                                    Durability - this is the <strong><i>replication of resources </i></strong> in the
+                                    event
+                                    of a critical failure. There will be backups.
+                                </li>
+                                <li>
+                                    Elasticity - this is the ability to <strong><i>acquire</i></strong> resources as you
+                                    need them and <strong><i>release</i></strong> when you no longer need them. This can
+                                    be
+                                    automatically be achieved with Elastic Load Balancers or the Autoscaler.
+                                </li>
+                                <li>
+                                    Resiliency - this is the ability to <strong><i>recover</i></strong> from failures
+                                    quickly.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Operational Excellence Pillars when designing AWS infrastructure</td>
+                        <td>
+                            <ul>
+                                <li>Perform operations as code</li>
+                                <li>Make frequent, small, reversible changes</li>
+                                <li>Refine operations procedures frequently</li>
+                                <li>Anticipate failure</li>
+                                <li>Learn from all operational failures</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Computing Models</td>
+                        <td>
+                            <ul>
+                                <li>Software-as-a-Service - End-users - subscribe to software apps available over the
+                                    internet. (Gmail)</li>
+                                <li>Platform-as-a-Service - Software Developer - platform for clients to deploy/host
+                                    their
+                                    own applications. No need to setup the infrastructure.</li>
+                                <li>Infrastructure-as-a-Service - Infrastructure Architects - subscribe to hardware and
+                                    network</li>
+                            </uL>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Deployment models</td>
+                        <td>
+                            <ul>
+                                <li>On-premises - data centers are onsite. We'll see this in legacy systems or where
+                                    security precludes them from going cloud (government)</li>
+                                <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
+                                <li>Cloud - all applications and data services are on the Internet.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>IAM Access Levels</td>
+                        <td>
+                            From the highest to the lowest level of access controlled by the Identity Access Management
+                            (IAM)
+                            <ul>
+                                <li>Organizations - single organization can have multiple accounts</li>
+                                <li>Account - accounts consists of below. It's usually localized to a single AZ</li>
+                                <li>User Groups</li>
+                                <li>User Roles</li>
+                                <li>Users</li>
+                            </ul>
+                    <tr>
+                        <td>Regions vs Availability Zones vs Local Zones vs Edge Locations</td>
+                        <td>
+                            <ul>
+                                <li>A region is usually localized to <strong><i>geographic location</i></strong>. For
+                                    example, three regions in the
+                                    U.S.: U.S. East Virginia, East Ohio, and West California. Within these regions can
+                                    have
+                                    multiple
+                                    AZ's. These are AZ's are equivocal to data centers. A region must consist of at
+                                    least
+                                    two AZ's.
+                                    It's further expanded when external partner data centers act as endpoint extensions
+                                    of
+                                    the AWS
+                                    cloud. Note some services are only available to specific regions and AZ's.</li>
+                                <li>AZ - one or more discrete data centers within a Region.</li>
+                                <li>Local Zones - extensions of an AWS region that is geographically close to your
+                                    users.
+                                </li>
+                                <li>Edge Location - think of this as an endpoint closest to your users. It requests data
+                                    from a regional edge data cache. Like a distribution center sending out packages.
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Computing Models</td>
+                        <td>
+                            <ul>
+                                <li>Software-as-a-Service - End-users - subscribe to software apps available over
+                                    the
+                                    internet. (Gmail)</li>
+                                <li>Platform-as-a-Service - Software Developer - platform for clients to deploy/host
+                                    their
+                                    own applications. No need to setup the infrastructure.</li>
+                                <li>Infrastructure-as-a-Service - Infrastructure Architects - subscribe to hardware
+                                    and
+                                    network</li>
+                            </uL>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cloud Deployment models</td>
+                        <td>
+                            <ul>
+                                <li>On-premises - data centers are onsite. We'll see this in legacy systems or where
+                                    security precludes them from going cloud (government)</li>
+                                <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
+                                <li>Cloud - all applications and data services are on the Internet.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AWS Resource Groups</td>
+                        <td>Throughout the Management Console, the admin is able to tag EC2, RDS, and S3 instances. This
+                            tagging allows <strong><i>resource groups</i></strong> to be created. These resource groups
+                            are
+                            a collection of resources. From there, automated management tasks can be ran from the AWS
+                            Systems Manager Automation. It can monitored in Systems Manager for AWS Config compliance
+                            and
+                            other data. By default, the Management Console is organized by service, but this can be
+                            customized to organize by the resource group (tags).</td>
+                    </tr>
+                    <tr>
+                        <td>AWS Outposts</td>
+                        <td>This service extends AWS infrastructure, services, API's, and tools to any data center
+                            (including on-prem). This service supports the hybrid cloud deployment model.</td>
+                    </tr>
+
+                </table>
+            </div>
 
             <button type='button' class="collapsible_button">Analytics</button>
             <div class='table-content'>
@@ -103,7 +370,7 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">Application Services</button>
+            <button type='button' class="collapsible_button">Application</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -153,250 +420,233 @@
             </div>
 
             <button type='button' class="collapsible_button">Business
-                Case Services</button>
-                <div class='table-content'>
-
-                    <p>Using AWS affords an organization using its services six advantages:</p>
-                    <ol>
-                        <li>Trade capital expense for variable expense.</li>
-                        <li>Benefit from massive economies of scale.</li>
-                        <li>Stop guessing capacity.</li>
-                        <li>Increase speed and agility.</li>
-                        <li>Stop spending money on running and maintaining data centers</li>
-                        <li>Go global in minutes.</li>
-                    </ol>
-                    <p>There are four key values for building a business case for an organization to migrate to AWS:</p>
-                    <ol>
-                        <li>Cost Savings - an organization's budget could be used for other elsewhere</li>
-                        <li>Staff productivity - an organization's IT team can work on higher-value objectives</li>
-                        <li>Operational resilience - AWS is more reliable, available and secure</li>
-                        <li>Business agility - AWS allows an organization more time to innovate and reduce the time to
-                            go-to-market
-                            with these innovations.</li>
-                    </ol>
-                    <p>The Business Case services below help an organization to plan a migration and see AWS' values.</p>
-
-                    <table>
-                        <tr>
-                            <th>Service</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr>
-                            <td>Pricing Calculator</td>
-                            <td>This service calculates the monthly and annual cost of potentially using AWS resources.
-                                Formerly
-                                called,
-                                'Simple Monthly Calculator'</td>
-                        </tr>
-                        <tr>
-                            <td>Price List API</td>
-                            <td>
-                                There are two API's used to query prices of your AWS resources:
-                                <hr>
-                                AWS Price List Bulk (query API) - This is a bulk pull of all AWS services. It's output
-                                is a
-                                JSON/CSV file. It retains a history of versions of the price list.
-                                <hr>
-                                AWS Price List Query API (bulk API) - This API can pull information about specific AWS
-                                resources
-                                that the query API above cannot, such as EC2 instances with 64 vCPUs, 256 GB of memory,
-                                installed on SQL Server in Mumbai. It doesn't retain historical prices
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Total Cost of Ownership (TCO)</td>
-                            <td>This service estimates all of the expenses involved in purchasing and operating
-                                equipment
-                                over
-                                its life cycle. This includes:
-                                <hr>server (software, licensing)
-                                <hr>storage (hardware, backware, and administrative)
-                                <hr>network (load balancing, administrative costs)
-                                <hr>IT labor costs (Server Admin. and Virtualization Admin)
-                                <hr>power and space
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Migration Evaluator (formerly TSO Logic)</td>
-                            <td>This is a complimentary service. It logs all of an organization's on-prem systems. The
-                                logs
-                                are
-                                then used to to create data-driven business case for migrating to AWS. An AWS server is
-                                setup
-                                on-prem, collects real-time data. It stores it in a MongoDB. Those packages are sent to
-                                a S3
-                                bucket. Migration Evaluator will produce a TCO and compares it to AWS solutions.</td>
-                        </tr>
-                        <tr>
-                            <td>Prescriptive Guidance</td>
-                            <td>This service provides strategies and guides from AWS and AWS partners on how to speed up
-                                a
-                                migration.</td>
-                        </tr>
-                        <tr>
-                            <td>Inspector</td>
-                            <td>This is an automated security assessment service. It reduces cost and increases
-                                effectiveness of
-                                security assessment and compliance. Discounts are applied when used in volume.</td>
-                        </tr>
-                        <tr>
-                            <td>Compliance</td>
-                            <td>This is a suite of compliance and compliant enabling services (notice the distinction).
-                                AWS
-                                supports Compliant (SOC1, SOC2, SOC3, ISO, etc) and Compliance (HIPAA) standards.</td>
-                        </tr>
-                        <tr>
-                            <td>Config</td>
-                            <td>This is a Configuration Management Service (CMS) service that assesses, audits,
-                                evalulates
-                                the
-                                configuration of AWS resources based on pre-built rules. After the rules are set it
-                                continues to
-                                monitor and record. It can be applied to network and software. The rules are organized
-                                into
-                                a
-                                conformance pack. We can check the <strong><i>Cloud Governance Dashboard</i></strong>
-                                for
-                                changes across accounts and regions. It integrates with AWS Organizations.</td>
-                        </tr>
-                        <tr>
-                            <td>Support Plans</td>
-                            <td>
-                                There are four levels that will certainly will appear on the exam.
-                                <ol>
-                                    <li>Basic - offers basic customer service only, no technical support.</li>
-                                    <li>Developer - available during business hours for technical support, < 12 hrs
-                                            response to critical failures.</li>
-                                    <li>Business - 24/7 technical support, < 1 hr response to critical failures.</li>
-                                    <li>Enterprise - 24/7 technical support from a Senior Engineer, < 15 min. response
-                                            to crtical failures</li>
-                                </ol>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Professional Services</td>
-                            <td>This is a collaboration between the client, AWS experts, AWS Partner Network (APN), and
-                                the
-                                AWS
-                                Professional Services team. This service offers practical, technical expertise on the
-                                AWS
-                                services.</td>
-                        </tr>
-                        <tr>
-                            <td>Managed Services</td>
-                            <td>This services helps with migration and operational assistance by AWS Cloud experts. It
-                                leverages
-                                a library of autoamtions, configurations and run books. It enhances security and cost
-                                optimization.</td>
-                        </tr>
-                        <tr>
-                            <td>IQ for Expert</td>
-                            <td>This is an on-demand job board for AWS certified practitioners where they can pick up
-                                customer
-                                jobs.</td>
-                        </tr>
-                    </table>
-                    <p>For a summary of the cost management tools see:
-                        https://aws.amazon.com/blogs/publicsector/tco-cost-optimization-best-practices-for-managing-usage/
-                    </p>
-                </div>
-
-                <button type='button' class="collapsible_button">Business Productivity and Desktop Streaming Applications</button>
-                <div class='table-content'>
-                    <table>
-                        <tr>
-                            <th>Service</th>
-                            <th>Description</th>
-                        </tr>
-                        <tr>
-                            <td>WorkDocs</td>
-                            <td>This is a secure, fully managed file collaboration and management document service. This web
-                                client allows you to view and provide feedback on 35+ file types including Microsoft Office
-                                and
-                                .pdf. It is similar to Google Drive and Google Docs.</td>
-                        </tr>
-                        <tr>
-                            <td>WorkMail</td>
-                            <td>This is a secure, fully managed business email and calendar service.</td>
-                        </tr>
-                        <tr>
-                            <td>Chime</td>
-                            <td>This is an online meeting service like Microsoft Teams, Zoom, or Google Meeting.</td>
-                        </tr>
-                        <tr>
-                            <td>WorkSpaces</td>
-                            <td>This is a secure desktop-as-a-service. This provisions streaming, cloud-based Microsoft
-                                Windows
-                                desktops. This is the equivalent to Remote Desktop Services (RDS, not to be confused with
-                                AWS)
-                                of Citrix Xenapp.</td>
-                        </tr>
-                        <tr>
-                            <td>AppStream</td>
-                            <td>This is a secure streaming service that allows you to stream desktop applications from AWS
-                                to an
-                                HTML5 browser.</td>
-                        </tr>
-                    </table>
-                </div>
-
-            <button type='button' class="collapsible_button">Command Line Interface (CLI)</button>
+                Case</button>
             <div class='table-content'>
-                <p>A special section has been carved out for AWS' CLI services. AWS' API that enables us to use the CLI. The
-                    API
-                    enables
-                    us to communicate with from a remote server to the AWS services in the AWS cloud (all tracked in
-                    CloudTrail).</p>
-                <p>
-                    The Management Console makes HTTP requests to the AWS backend. Same for when we use CLI, it makes HTTP
-                    requests.
-                    Wrapped around this API are different SDK’s. These are turned into libraries that can be used with
-                    different
-                    coding languages. All of API calls need to be auth’d by username and password.
-                </p>
+
+                <p>Using AWS affords an organization using its services six advantages:</p>
+                <ol>
+                    <li>Trade capital expense for variable expense.</li>
+                    <li>Benefit from massive economies of scale.</li>
+                    <li>Stop guessing capacity.</li>
+                    <li>Increase speed and agility.</li>
+                    <li>Stop spending money on running and maintaining data centers</li>
+                    <li>Go global in minutes.</li>
+                </ol>
+                <p>There are four key values for building a business case for an organization to migrate to AWS:</p>
+                <ol>
+                    <li>Cost Savings - an organization's budget could be used for other elsewhere</li>
+                    <li>Staff productivity - an organization's IT team can work on higher-value objectives</li>
+                    <li>Operational resilience - AWS is more reliable, available and secure</li>
+                    <li>Business agility - AWS allows an organization more time to innovate and reduce the time to
+                        go-to-market
+                        with these innovations.</li>
+                </ol>
+                <p>The Business Case services below help an organization to plan a migration and see AWS' values.</p>
+
                 <table>
                     <tr>
                         <th>Service</th>
                         <th>Description</th>
                     </tr>
                     <tr>
-                        <td>AWS CLI applicaton</td>
-                        <td>This is AWS's CLI that is available for Windows, Mac, or Linux</td>
+                        <td>Cost Explorer</td>
+                        <td>This service allows you to visualize, understand, and manage costs and usage of the AWS
+                            resource over time. It is a subset of the Budget service. Reports can be created from here.
+                        </td>
                     </tr>
                     <tr>
-                        <td>AWS Shell</td>
-                        <td>This is a cross-platform, standalone integrate shell environment written in Python.</td>
+                        <td>Pricing Calculator</td>
+                        <td>This service calculates the monthly and annual cost of potentially using AWS resources.
+                            Formerly
+                            called,
+                            'Simple Monthly Calculator'</td>
                     </tr>
                     <tr>
-                        <td>AWS Tools</td>
-                        <td>This is the equivalent to Windows Powershell.</td>
+                        <td>Price List API</td>
+                        <td>
+                            There are two API's used to query prices of your AWS resources:
+                            <hr>
+                            AWS Price List Bulk (query API) - This is a bulk pull of all AWS services. It's output
+                            is a
+                            JSON/CSV file. It retains a history of versions of the price list.
+                            <hr>
+                            AWS Price List Query API (bulk API) - This API can pull information about specific AWS
+                            resources
+                            that the query API above cannot, such as EC2 instances with 64 vCPUs, 256 GB of memory,
+                            installed on SQL Server in Mumbai. It doesn't retain historical prices
+                        </td>
                     </tr>
                     <tr>
-                        <td>AWS CloudShell</td>
-                        <td>This service provides shell environment access through the AWS Management Console. It has
+                        <td>Total Cost of Ownership (TCO)</td>
+                        <td>This service estimates all of the expenses involved in purchasing and operating
+                            equipment
+                            over
+                            its life cycle. This includes:
+                            <hr>server (software, licensing)
+                            <hr>storage (hardware, backware, and administrative)
+                            <hr>network (load balancing, administrative costs)
+                            <hr>IT labor costs (Server Admin. and Virtualization Admin)
+                            <hr>power and space
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Migration Evaluator (formerly TSO Logic)</td>
+                        <td>This is a complimentary service. It logs all of an organization's on-prem systems. The
+                            logs
+                            are
+                            then used to to create data-driven business case for migrating to AWS. An AWS server is
+                            setup
+                            on-prem, collects real-time data. It stores it in a MongoDB. Those packages are sent to
+                            a S3
+                            bucket. Migration Evaluator will produce a TCO and compares it to AWS solutions.</td>
+                    </tr>
+                    <tr>
+                        <td>Prescriptive Guidance</td>
+                        <td>This service provides strategies and guides from AWS and AWS partners on how to speed up
+                            a
+                            migration.</td>
+                    </tr>
+                    <tr>
+                        <td>Inspector</td>
+                        <td>This is an automated security assessment service. It reduces cost and increases
+                            effectiveness of
+                            security assessment and compliance. Discounts are applied when used in volume.</td>
+                    </tr>
+                    <tr>
+                        <td>Compliance</td>
+                        <td>This is a suite of compliance and compliant enabling services (notice the distinction).
                             AWS
-                            CLI pre-installed. Thi ss more secure than just AWS CLI because the AWS Management Console
-                            requires username, password, and MFA.</td>
+                            supports Compliant (SOC1, SOC2, SOC3, ISO, etc) and Compliance (HIPAA) standards.</td>
                     </tr>
                     <tr>
-                        <td>AWS Cloud9 IDE</td>
-                        <td>This runs on EC2 access through the AWS Management Console with AWS CLI pre-installed. It
-                            allows
-                            for a tree view of files, enables drag and drop SFTP transfer of files. It is more secure
-                            since
-                            the IAM is not saved locally on a machine.</td>
+                        <td>Config</td>
+                        <td>This is a Configuration Management Service (CMS) service that assesses, audits,
+                            evalulates
+                            the
+                            configuration of AWS resources based on pre-built rules. After the rules are set it
+                            continues to
+                            monitor and record. It can be applied to network and software. The rules are organized
+                            into
+                            a
+                            conformance pack. We can check the <strong><i>Cloud Governance Dashboard</i></strong>
+                            for
+                            changes across accounts and regions. It integrates with AWS Organizations.</td>
+                    </tr>
+                    <tr>
+                        <td>Support Plans</td>
+                        <td>
+                            There are four levels that will certainly will appear on the exam.
+                            <ol>
+                                <li>Basic - offers basic customer service only, no technical support.</li>
+                                <li>Developer - available during business hours for technical support, < 12 hrs response
+                                        to critical failures.</li>
+                                <li>Business - 24/7 technical support, < 1 hr response to critical failures. Includes a
+                                        TAM</li>
+                                <li>Enterprise - 24/7 technical support from a Senior Engineer, < 15 min. response to
+                                        critical failures Includes a TAM and Concierge support</li>
+                            </ol>
+                            These services are available at all support levels for free:
+                            <ol>
+                                <li>AWS Discussion Forums</li>
+                                <li>Customer Service and Communities</li>
+                                <li>Trusted Advisor</li>
+                                <li>Personal Health Dashboard</li>
+                            </ol>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Professional</td>
+                        <td>This is a collaboration between the client, AWS experts, AWS Partner Network (APN), and
+                            the
+                            AWS
+                            Professional Services team. This service offers practical, technical expertise on the
+                            AWS
+                            services.</td>
+                    </tr>
+                    <tr>
+                        <td>Managed</td>
+                        <td>This services helps with migration and operational assistance by AWS Cloud experts. It
+                            leverages
+                            a library of autoamtions, configurations and run books. It enhances security and cost
+                            optimization.</td>
+                    </tr>
+                    <tr>
+                        <td>IQ for Expert</td>
+                        <td>This is an on-demand job board for AWS certified practitioners where they can pick up
+                            customer
+                            jobs.</td>
+                    </tr>
+                </table>
+                <p>For a summary of the cost management tools see:
+                    https://aws.amazon.com/blogs/publicsector/tco-cost-optimization-best-practices-for-managing-usage/
+                </p>
+            </div>
+
+            <button type='button' class="collapsible_button">Business Productivity and Desktop Streaming
+                Applications</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>WorkDocs</td>
+                        <td>This is a secure, fully managed file collaboration and management document service. This web
+                            client allows you to view and provide feedback on 35+ file types including Microsoft Office
+                            and
+                            .pdf. It is similar to Google Drive and Google Docs.</td>
+                    </tr>
+                    <tr>
+                        <td>WorkMail</td>
+                        <td>This is a secure, fully managed business email and calendar service.</td>
+                    </tr>
+                    <tr>
+                        <td>Chime</td>
+                        <td>This is an online meeting service like Microsoft Teams, Zoom, or Google Meeting.</td>
+                    </tr>
+                    <tr>
+                        <td>WorkSpaces</td>
+                        <td>This is a secure desktop-as-a-service. This provisions streaming, cloud-based Microsoft
+                            Windows
+                            desktops. This is the equivalent to Remote Desktop Services (RDS, not to be confused with
+                            AWS)
+                            of Citrix Xenapp.</td>
+                    </tr>
+                    <tr>
+                        <td>AppStream</td>
+                        <td>This is a secure streaming service that allows you to stream desktop applications from AWS
+                            to an
+                            HTML5 browser.</td>
                     </tr>
                 </table>
             </div>
 
-            <button type='button' class='collapsible_button'>Compute Services</button>
+            <button type='button' class='collapsible_button'>Compute</button>
             <div class='table-content'>
                 <table>
                     <tr>
                         <th>Elastic Compute Cloud (EC2)</th>
                         <th>Cloud Compute (2) => EC2. This service provides virtual servers upt to thousands of servers
                             at a
-                            time. Pay-as-you-use</th>
+                            time. Pay-as-you-use.
+                            <hr>Session Manager is a functionality within AWS Systems Manager that manages EC2
+                            instances, onprem instances and VM's
+                            <hr>EC2 Instance Connect - this service connects Linux instances using a browser-based
+                            client.
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Special topic
+                            <hr>EC2 Instance Purchasing Options
+                        </td>
+                        <td>
+                            <ul>
+                                <li>On-demand instances</li>
+                                <li>Reserved instances</li>
+                                <li>Spot instances</li>
+                            </ul>
+                        </td>
                     </tr>
                     <tr>
                         <td>EC2 Autoscaling</td>
@@ -429,7 +679,7 @@
                 </table>
             </div>
 
-            <button type='button' class='collapsible_button'>Data Services</button>
+            <button type='button' class='collapsible_button'>Data</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -456,9 +706,10 @@
                     </tr>
                     <tr>
                         <td>ElastiCache</td>
-                        <td>This is an in-memory data store that is cached on the cloud. It allows you to retrieve data
+                        <td>This is an in-memory data store that is cached on the cloud. It allows you to quickly
+                            retrieve data
                             that
-                            is often requested quickly.</td>
+                            is often requested.</td>
                     </tr>
                     <tr>
                         <td>Neptune</td>
@@ -471,7 +722,8 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">Developer Services</button>
+
+            <button type='button' class="collapsible_button">Developer</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -557,57 +809,7 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">Machine Learning</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>DeepLens</td>
-                        <td>This is a deep learning enabled video camera (hardware). It has a SDK that is integrated AWS
-                            ML
-                            services.</td>
-                    </tr>
-                    <tr>
-                        <td>SageMaker</td>
-                        <td>This service is used to build and train ML models and deploy them to the cloud. It can be
-                            used
-                            as a backend to your application.</td>
-                    </tr>
-                    <tr>
-                        <td>Rekognition</td>
-                        <td>This service offers deep learning analysis of images and videos</td>
-                    </tr>
-                    <tr>
-                        <td>Lex</td>
-                        <td>This service builds conversational chatbots. It is used for things like level 1 customer
-                            support.</td>
-                    </tr>
-                    <tr>
-                        <td>Polly</td>
-                        <td>This service provides natural-sounding text-to-speech for your applications.</td>
-                    </tr>
-                    <tr>
-                        <td>Comprehend</td>
-                        <td>This service analyses text for insights and relationships, like customer data or advanced
-                            searching of documents.</td>
-                    </tr>
-                    <tr>
-                        <td>Translate</td>
-                        <td>This is service that provides machine learning for translating different languages.</td>
-                    </tr>
-                    <tr>
-                        <td>Transcribe</td>
-                        <td>This is service that provides automatic speech recognition that analyses audio files stored
-                            on
-                            S3 and returns transcribed text.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <button type='button' class='collapsible_button'>Management Services</button>
+            <button type='button' class='collapsible_button'>Management</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -665,14 +867,85 @@
                     </tr>
                     <tr>
                         <td>Trusted Advisor</td>
-                        <td>This is an online expert system that analyses an AWS account and resources then it advises
+                        <td>This is service analyses an AWS account and resources then it advises
                             you
-                            on how improve performance and security.</td>
+                            on how to optimize:
+                            <ul>
+                                <li>costs - advise you on deleting unused and idle resources, or use reserved capacity
+                                </li>
+                                <li>performance - check on service quota, monitor overutilized EC2 instances, and
+                                    provisioned throughput</li>
+                                <li>security - like examining permissions, enabling AWS security features, or identify
+                                    security gaps</li>
+                                <li>fault tolerance - increase availability and redundancy, such as Auto Scaling, health
+                                    checks, multiple AZ's, backups</li>
+                                <li>service limits - check services that use more than 80 percent of a service quota.
+                                    Check results based on a snapshot. There may be a 24 latency because of this
+                                    snapshot.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Personal Health Dashboard - This service is free for all support tiers. It provides alerts
+                            and guidance for AWS events. Service Health DaShboard shows the general status of AWS
+                            services. PHI is more proactive. This allows you to quickly diagnose and resolve issues.
+                        </td>
                     </tr>
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">Media Services</button>
+            <button type='button' class="collapsible_button">Machine Learning</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>DeepLens</td>
+                        <td>This is a deep learning enabled video camera (hardware). It has a SDK that is integrated AWS
+                            ML
+                            services.</td>
+                    </tr>
+                    <tr>
+                        <td>SageMaker</td>
+                        <td>This service is used to build and train ML models and deploy them to the cloud. It can be
+                            used
+                            as a backend to your application.</td>
+                    </tr>
+                    <tr>
+                        <td>Rekognition</td>
+                        <td>This service offers deep learning analysis of images and videos</td>
+                    </tr>
+                    <tr>
+                        <td>Lex</td>
+                        <td>This service builds conversational chatbots. It is used for things like level 1 customer
+                            support.</td>
+                    </tr>
+                    <tr>
+                        <td>Polly</td>
+                        <td>This service provides natural-sounding text-to-speech for your applications.</td>
+                    </tr>
+                    <tr>
+                        <td>Comprehend</td>
+                        <td>This service analyses text for insights and relationships, like customer data or advanced
+                            searching of documents.</td>
+                    </tr>
+                    <tr>
+                        <td>Translate</td>
+                        <td>This is service that provides machine learning for translating different languages.</td>
+                    </tr>
+                    <tr>
+                        <td>Transcribe</td>
+                        <td>This is service that provides automatic speech recognition that analyses audio files stored
+                            on
+                            S3 and returns transcribed text.</td>
+                    </tr>
+                </table>
+            </div>
+
+
+            <button type='button' class="collapsible_button">Media</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -706,7 +979,32 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">Migration Services</button>
+            <button type='button' class="collapsible_button">Mobile</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Service</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Mobile Hub</td>
+                        <td>This service allows you to configure AWS for mobile applications. It generates a cloud
+                            configuration file which stores information the s used to run the application.</td>
+                    </tr>
+                    <tr>
+                        <td>Device Farm</td>
+                        <td>This is a mobile application testing service for Android, iOS, and web application. It can
+                            be
+                            used to test for a range of physical devices in the cloud.</td>
+                    </tr>
+                    <tr>
+                        <td>AppSync</td>
+                        <td>This is a GraphQL backend for mobile and web applications.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button type='button' class="collapsible_button">Migration</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -738,32 +1036,6 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">Mobile Services</button>
-            <div class='table-content'>
-                <table>
-                    <tr>
-                        <th>Service</th>
-                        <th>Description</th>
-                    </tr>
-                    <tr>
-                        <td>Mobile Hub</td>
-                        <td>This service allows you to configure AWS for mobile applications. It generates a cloud
-                            configuration file which stores information the s used to run the application.</td>
-                    </tr>
-                    <tr>
-                        <td>Device Farm</td>
-                        <td>This is a mobile application testing service for Android, iOS, and web application. It can
-                            be
-                            used to test for a range of physical devices in the cloud.</td>
-                    </tr>
-                    <tr>
-                        <td>AppSync</td>
-                        <td>This is a GraphQL backend for mobile and web applications.</td>
-                    </tr>
-                </table>
-            </div>
-
-
             <button type='button' class='collapsible_button'>Networking & Content Delivery Services (CDN)</button>
             <div class='table-content'>
                 <table>
@@ -776,14 +1048,18 @@
                         <td>This is a global content delivery network (CDN) that has over 100 endpoints all over the
                             world.
                             It also protects against DDOS attacks. This service caches your data or application at an
-                            endpoint closer to your users.</td>
+                            endpoint closer to your users. It does so by caching static content at data centers closer
+                            to users. It also supports pre-recorded and live events at low-latency, so it's not just
+                            static content.</td>
                     </tr>
                     <tr>
                         <td>Virtual Private Cloud (VPC)</td>
                         <td>This service provisions logically, isolated sections of the AWS cloud. AWS
                             resources/services
                             can be launched within the VPC. This is how the services stay secure because they're all
-                            encapsulated from the world wide web in these VPC's.</td>
+                            encapsulated from the world wide web in these VPC's.
+                            <hr>VPC Peering is a service that is used to connect two or more VPC's.
+                        </td>
                     </tr>
                     <tr>
                         <td>Direct Connect</td>
@@ -794,7 +1070,7 @@
                         <td>Elastic Load Balancing (ELB)</td>
                         <td>This service automatically distributes network traffic (incoming HTTP/HTTPS requests) across
                             EC2
-                            compute instances and across multiple availability zones. This is highly avaialble and
+                            compute instances and across multiple availability zones. This is highly available and
                             increases
                             fault tolerances by balancing network volume. <strong><i>This service is not to be confused
                                     with
@@ -824,7 +1100,7 @@
                 </table>
             </div>
 
-            <button type='button' class="collapsible_button">Pricing Services</button>
+            <button type='button' class="collapsible_button">Pricing</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -906,13 +1182,14 @@
                     <tr>
                         <td>Web Application Firewall (WAF)</td>
                         <td>This service provides a firewall that sits in front of a customers application to protect it
-                            against SQL injections and cross-site scripting.</td>
+                            against SQL injections and cross-site scripting. Firewall rules can be configured across
+                            accounts and application in AWS Organizations. It allows for consistency since a single rule
+                            can be applied as new applicatons are created.</td>
                     </tr>
                 </table>
             </div>
 
-
-            <button type='button' class="collapsible_button">Storage Services</button>
+            <button type='button' class="collapsible_button">Storage</button>
             <div class='table-content'>
                 <table>
                     <tr>
@@ -987,7 +1264,46 @@
                         <td>This is a petabytes, portable storage device used to physically migrate on-prem data to the
                             cloud. A customer of AWS would download the data and then send it to AWS for upload to a
                             desired
-                            AWS storage service</td>
+                            AWS storage service
+                            <hr> Note: This is not be confused with Snowmobile (exabyte). It is a vehicle can move
+                            larger amounts of data and provides AWS personnel. Snowball (petabyte) is a single hardware
+                            device.
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <button type='button' class="collapsible_button">Common Use Cases</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Use Cases for AWS</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Hybrid Storage Deployment Model</td>
+                        <td>
+                            <ul>
+                                <li>An on-prem data center that uses sends data to the cloud and stores it on S3 for
+                                    durability and availability in case of disaster recovery.</li>
+                                <li>This same on-prem data center goes down, then a Snowball device can be sent to move
+                                    the
+                                    data over to the final place, S3.</li>
+                                <li>Storage Gateway, this service systematically moves data from on-prem to the cloud
+                                    via
+                                    the <strong><i>Direct Connect Service (AWS' high-speed internet)</i></strong></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Trusted Advisor</td>
+                        <td>This service requires a business, enterprise account to be able to use it. It is a service
+                            that
+                            provides advice on cost, performance, fault tolerance, and service limits across all of an
+                            accounts resources and regions. We can have specific Trusted Advisors setup for different
+                            parts
+                            of an AWS Organization. We just have to create the organizations and setup Trusted Advisors
+                            corresponding to it.</td>
                     </tr>
                 </table>
             </div>
@@ -1007,7 +1323,7 @@
             gtag('config', 'UA-122477728-2');
         </script>
 
-        <script src="js/js.js" type="text/javascript"></script>
+        <script src="../js/js.js" type="text/javascript"></script>
 
         <script>
             var coll = document.getElementsByClassName("collapsible_button");
@@ -1015,6 +1331,7 @@
 
             for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function () {
+                    console.log(coll[i])
                     this.classList.toggle("inactive");
                     var content = this.nextElementSibling;
                     if (content.style.display === "block") {
@@ -1025,6 +1342,37 @@
                 });
             }
         </script>
+
+        <script>
+            function toggle() {
+                var collapsibles = document.getElementsByClassName("table-content");
+                var i;
+                console.log('action')
+
+                var clickCount = 0;
+
+                collapsibles.addEventListener('click');
+
+                
+                
+                collapsibles.classList.toggle('inactive');
+                
+                if (clickCount % 2 == 0) {
+                    for (i = 0; i < collapsibles.length; i++) {
+                        collapsibles[i].style.display = 'block';
+                    }
+                }
+
+                else if (clickCount % 2 == 1) {
+                    for (i = 0; i < collapsibles.length; i++) {
+                        collapsibles[i].style.display = 'none';
+                    }
+                }
+                clickCount++;
+                console.log(clickCount)
+            }
+        </script>
+
 
 </body>
 
