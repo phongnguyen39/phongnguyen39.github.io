@@ -162,11 +162,20 @@
                             <ul>
                                 <li>Operational Excellence Pillar - 
                                     <li>Automation through Infrastructure as Code - Cloudformation</li>
-                                    <li>Observability - monitoring through collection, analytics, and action.   
-                                        <li>Collection has three levels of metrics: Infrastructure (Cloudwatch, Cloudwatch Logs), Application (CloudWatch Custom Metrics), Account-level (CloudTrail)</li>
+                                    <li>Observability - monitoring through collection, analytics, and action.
+                                        <ul>
+                                        <li>Collection: Infrastructure (Cloudwatch, Cloudwatch Logs), Application (CloudWatch Custom Metrics), Account-level (CloudTrail)</li>
                                         <li>Analytics: CloudWatch Logs Insight, Athena (S3), RDS (structured data), RedShift (peta-byte-scale datawarehouse), ElastiSearch (log-based data).</li> 
+                                        <li>Action: Monitoring & Alarming (CloudWatch Alarms), Dashboards (CloudWatch dashboards), and KPI's to make data-driven decisions.</li>
+                                    </ul>   
                                 </li>
-                                <li>Security Pillar - protect information and sysytems.  Maintain confidentiality and integrity of data by managing user permissions and detect security events.</li>
+                                <li>Security Pillar - protect information and systems.  Maintain confidentiality and integrity of data by managing user permissions and detect security events.  The shared responsibility model talks about how AWS is responsible <strong><i>for the</i></strong> of the cloud.  The customer is responsible for the security <strong><i>in the</i>cloud</strong>. Think of zero trust when thinking about security.
+                                    <ul>
+                                        <li>IAM</li>
+                                        <li>Network Security</li>
+                                        <li>Data encryption</li>
+                                    </ul>
+                                </li>
                                 <li>Reliability Pillar - recover quickly from failure through distributed system design, recovery planning and adapting to changes.</li>
                                 <li>Performance Efficiency Pillar - structure and streamline allocation of IT/computing resources by selecting the optimized resource types and sizes required for your workload. MOnitor and maintain efficiency of your business. </li>
                                 <li>Cost Optimization Pillar - Avoid excess costs by understanding spend, controlling fund allocation, and selecting the right type and quantity of resources.</li>
