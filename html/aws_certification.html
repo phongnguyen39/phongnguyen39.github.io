@@ -169,10 +169,10 @@
                                         <li>Action: Monitoring & Alarming (CloudWatch Alarms), Dashboards (CloudWatch dashboards), and KPI's to make data-driven decisions.</li>
                                     </ul>   
                                 </li>
-                                <li>Security Pillar - protect information and systems.  Maintain confidentiality and integrity of data by managing user permissions and detect security events.  The shared responsibility model talks about how AWS is responsible <strong><i>for the</i></strong> of the cloud.  The customer is responsible for the security <strong><i>in the</i>cloud</strong>. Think of zero trust when thinking about security.
+                                <li>Security Pillar - protect information and systems.  Maintain confidentiality and integrity of data by managing user permissions and detect security events.  The shared responsibility model talks about how AWS is responsible <strong><i>for the</i></strong> of the cloud.  The customer is responsible for the security <strong><i>in the</i>cloud</strong>. Think of zero trust when thinking about security where everything is a threat and so we should secure the cloud at all levels. 
                                     <ul>
-                                        <li>IAM</li>
-                                        <li>Network Security</li>
+                                        <li>IAM - grant the least privileges to principals (who), actions (what), and resources (which) in the IAM policies.  Policies can be broken down by identity-based (IAM users, groups) and resource-based (S3, KMS, and SES only).  There are more types of policies but these are the main ones discussed.</li>
+                                        <li>Network Security - defense in depth approach is taken where security of the network is taken at all levels internally and externally.  Network level security - VPC (subnets, route tables, and Internet Gateway - component that allows communication between internal resources inside the VPC and the internet). Included here are ALB's and the WAF. ALB's can act like a proxy service that handles internet-facing traffic and cuts off direct connections from public access.  Resource level security - use security groups to create virtual firewalls to enforce ingress and egress of traffic for resources.  Security groups can be applied to EC2 instances, RDS and Lambda.</li>
                                         <li>Data encryption</li>
                                     </ul>
                                 </li>
@@ -1186,6 +1186,10 @@
                                 and
                                 WebSocket APIs that enable real-time two-way communication applications.</i> <a
                                 href="https://aws.amazon.com/api-gateway/">AWS website</a></td>
+                    </tr>
+                    <tr>
+                        <td>Internet Gateway</td>
+                        <td>This component of the VPC allows resources to communicate with each other inside the VPC and the internet.  It serves two purposes: to provide a target in your VPC route tables for internet-routable traffic, and to perform network address translation (NAT) for instances that have been assigned public IPv4 addresses. </td>
                     </tr>
                 </table>
             </div>
