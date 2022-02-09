@@ -173,11 +173,26 @@
                                     <ul>
                                         <li>IAM - grant the least privileges to principals (who), actions (what), and resources (which) in the IAM policies.  Policies can be broken down by identity-based (IAM users, groups) and resource-based (S3, KMS, and SES only).  There are more types of policies but these are the main ones discussed.</li>
                                         <li>Network Security - defense in depth approach is taken where security of the network is taken at all levels internally and externally.  Network level security - VPC (subnets, route tables, and Internet Gateway - component that allows communication between internal resources inside the VPC and the internet). Included here are ALB's and the WAF. ALB's can act like a proxy service that handles internet-facing traffic and cuts off direct connections from public access.  Resource level security - use security groups to create virtual firewalls to enforce ingress and egress of traffic for resources.  Security groups can be applied to EC2 instances, RDS and Lambda.</li>
-                                        <li>Data encryption</li>
+                                        <li>Data encryption - data encryption is applied in transit and at rest.  In transit is when data is passing between systems (HTTPS).  At rest are within systems through the use of AWS Key Management Service (KMS).</li>
                                     </ul>
                                 </li>
-                                <li>Reliability Pillar - recover quickly from failure through distributed system design, recovery planning and adapting to changes.</li>
-                                <li>Performance Efficiency Pillar - structure and streamline allocation of IT/computing resources by selecting the optimized resource types and sizes required for your workload. MOnitor and maintain efficiency of your business. </li>
+                                <li>Reliability Pillar - recover quickly from failure through distributed system design, recovery planning and adapting to changes.
+                                    <ul>
+                                        <li>Fault Isolation - isolate issues through the use of redundant, independent components through the use of fault isolation zones. This can be applied through:
+                                            <ul>
+                                                <li>Resource and Request - partitioning of resources and requests into cells that are independent of each other.  It can be partitioned by dimensions like resource ID's.  Shuffle sharding is applied here.</li>
+                                                <li>AZ - independent data centers that contain redundant deployments of your services across AZ's.</li>
+                                                <li>Region - This is most isolated of all.  It's a completely autonomous data center.  Redundant copies of your services are deployed across regions. Regions has more overhead when redundant because there is no shared infrastructure between regions. With the use of Route53, DynamoDB Global Tables and S3 Cross-Region replication can be applied to achieve redundancy.</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>Performance Efficiency Pillar - structure and streamline allocation of IT/computing resources by selecting the optimized resource types and sizes required for your workload. Monitor and maintain efficiency of your business.
+                                    <ul>
+                                        <li>Selection</li>
+                                        <li>Scaling</li>
+                                    </ul>
+                                </li>
                                 <li>Cost Optimization Pillar - Avoid excess costs by understanding spend, controlling fund allocation, and selecting the right type and quantity of resources.</li>
                                 <li>Sustainability Pillar - minimize environment impact of running cloud workloads through the used of the shared responsibility model and maximizing utilization to minimize required resources.</li>
                             </ul>
