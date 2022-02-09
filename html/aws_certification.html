@@ -60,7 +60,9 @@
                 AWS service more than once because it serves mutliple services and AWS services work in conjunction with
                 each other.</p>
 
-            <p>Credit goes to BackSpace Academy's Udemy course for making all of this easier to learn, <a href='https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884'  target='_blank' style='color:blue;'>Udemy</a>.
+            <p>Credit goes to BackSpace Academy's Udemy course for making all of this easier to learn, <a
+                    href='https://www.udemy.com/course/aws-certified-associate-architect-developer-sysops-admin/learn/lecture/7020884'
+                    target='_blank' style='color:blue;'>Udemy</a>.
             </p>
 
         </div>
@@ -151,6 +153,24 @@
                                     security precludes them from going cloud (government)</li>
                                 <li>Hybrid - a hybrid between hybrid and cloud. Financial institutions. </li>
                                 <li>Cloud - all applications and data services are on the Internet.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AWS Well-Architected Six Pillars</td>
+                        <td>
+                            <ul>
+                                <li>Operational Excellence Pillar - 
+                                    <li>Automation through Infrastructure as Code - Cloudformation</li>
+                                    <li>Observability - monitoring through collection, analytics, and action.   
+                                        <li>Collection has three levels of metrics: Infrastructure (Cloudwatch, Cloudwatch Logs), Application (CloudWatch Custom Metrics), Account-level (CloudTrail)</li>
+                                        <li>Analytics: CloudWatch Logs Insight, Athena (S3), RDS (structured data), RedShift (peta-byte-scale datawarehouse), ElastiSearch (log-based data).</li> 
+                                </li>
+                                <li>Security Pillar - protect information and sysytems.  Maintain confidentiality and integrity of data by managing user permissions and detect security events.</li>
+                                <li>Reliability Pillar - recover quickly from failure through distributed system design, recovery planning and adapting to changes.</li>
+                                <li>Performance Efficiency Pillar - structure and streamline allocation of IT/computing resources by selecting the optimized resource types and sizes required for your workload. MOnitor and maintain efficiency of your business. </li>
+                                <li>Cost Optimization Pillar - Avoid excess costs by understanding spend, controlling fund allocation, and selecting the right type and quantity of resources.</li>
+                                <li>Sustainability Pillar - minimize environment impact of running cloud workloads through the used of the shared responsibility model and maximizing utilization to minimize required resources.</li>
                             </ul>
                         </td>
                     </tr>
@@ -415,7 +435,7 @@
                 Case and Pricing</button>
             <div class='table-content'>
 
-                <p>Using AWS affords an organization using its services six advantages:</p>
+                <p>Six advantages or benefits of AWS Cloud Computing:</p>
                 <ol>
                     <li>Trade capital expense for variable expense.</li>
                     <li>Benefit from massive economies of scale.</li>
@@ -658,14 +678,17 @@
                         </td>
                         <td>
                             <ul>
-                                <li>On-demand instances</li>
-                                <li>Savings Plans</li>
-                                <li>Reserved instances</li>
-                                <li>Spot instances</li>
-                                <li>Dedicated Hosts</li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+                                <li>On-demand instances - pay-by-the-second for EC2 instances</li>
+                                <li>Savings Plans- pay an agreed rate (USD per hour) for a term of 1 or 3 years. This is
+                                    optimal if you know what your demand will be.</li>
+                                <li>Reserved instances - based on the instance configuration, instance type, and Region
+                                    being used, you commit to a fixed price for 1 or 3 years.</li>
+                                <li>Spot instances - request un-used EC2 instances.</li>
+                                <li>Dedicated Hosts - pay, by the hour, for instances that are fully dedicated to you.
+                                    This hardware is single-tenant meaning that it is for you only. The hardware is not
+                                    shared.</li>
+                                <li>Capacity Reservations - you can reserve capacity for your EC2 instances in a
+                                    specific AZ for any length of time.</li>
                             </ul>
                         </td>
                     </tr>
@@ -791,6 +814,36 @@
                         <td>This automates software deployments for compute services, like EC2 and Lambda. This service
                             can
                             be used for on-premises instances.</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button type='button' class="collapsible_button">Hybrid Cloud Deployment Model</button>
+            <div class='table-content'>
+                <table>
+                    <tr>
+                        <th>Services</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Compute</td>
+                        <td>Outposts, Wavelength, Local Zones, Snow, ECS Anywhere, EKS Anywhere</td>
+                    </tr>
+                    <tr>
+                        <td>Storage</td>
+                        <td>Storage Gateway, Backup, DataSync, Transfer for SFTP</td>>
+                    </tr>
+                    <tr>
+                        <td>Networking</td>
+                        <td>Direct Connect, Route53 Resolver</td>
+                    </tr>
+                    <tr>
+                        <td>Management</td>
+                        <td>Directory Service, IAM, Systems Manager, OpsWorks, Code Deploy, CloudWatch, X-Ray</td>
+                    </tr>
+                    <tr>
+                        <td>VMware</td>
+                        <td>VMWare Cloud on AWS, RDS on VMware</td>
                     </tr>
                 </table>
             </div>
@@ -1091,7 +1144,8 @@
                     <tr>
                         <td>Direct Connect</td>
                         <td>This is a dedicated, highspeed, fiber optic internet connection that enterprise businesses
-                            requiring stability and security can use.</td>
+                            requiring stability and security can use. Data stays in AWS' cloud and never touches the
+                            public internet.</td>
                     </tr>
                     <tr>
                         <td>Elastic Load Balancing (ELB)</td>
@@ -1207,6 +1261,13 @@
                         <th>Service</th>
                         <th>Description</th>
                     </tr>
+                    <tr>
+                        <td>Backup</td>
+                        <td>This service centralizes and automates data protection across the AWS services and hybrid
+                            workloads. A single policy can be applied across the services ensuring that your in
+                            compliance when new services are brought on and protects your data.</td>
+                    </tr>
+
                     <tr>
 
                         <td>S3</td>
