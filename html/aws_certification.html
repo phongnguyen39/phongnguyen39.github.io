@@ -769,15 +769,39 @@
                         </td>
                         <td>
                             <ul>
-                                <li>On-demand instances - pay-by-the-second for EC2 instances</li>
-                                <li>Spot instances - request un-used EC2 instances.</li>
-                                <li>Reserved instances - based on the instance configuration, instance type, and Region
-                                    being used, you commit to a fixed price for 1 or 3 years.</li>
-                                <li>Dedicated Hosts - pay, by the hour, for instances that are fully dedicated to you.
+                                <li>On-demand instances (Least commitment)- pay-by-the-second or by the hour. Good for
+                                    spiky, unpredicted workloads. Lowest commitment good for MVPs and cannot be
+                                    interrupted.
+                                    <ul>
+                                        <li>Pay-as-you-go (PAYG) model. Pay for what is used by hour or second. This is
+                                            the default when launching an EC2 instance</li>
+                                        <li>per-second: Linux, Windows, Windows w/ SQL Enterprise, Windows w/ SQL
+                                            Standard, and Windows with SQL Web instances</li>
+                                        <li>per-hour: all other EC2 instance types</li>
+                                        <li>Capacity Reservations - you can reserve capacity for your EC2 instances in a
+                                            specific AZ for any length of time.</li>
+                                    </ul>
+                                </li>
+                                <li>Spot instances (Biggest savings - 90% savings)- request un-used EC2 instances. Can
+                                    handle interruptions since higher priority customers will pull away resources. Good
+                                    for non-critical background jobs.</li>
+                                <li>Reserved instances (Best long-term - 75% off)- best for long-term savings, good for
+                                    steady/predictable usage. Commit to a fixed price for 1 or 3 years. Unused reserved
+                                    instances can be sold.
+                                    <ul>
+                                        <li>aka, RI</li>
+                                        <li>Reduced pricing = Term * Class Offering * RI Attributes * Payment option</li>
+                                        <li>Term: 1) Non-renewable, must set new terms, existing instances roll back to
+                                            Pay-as-you-go (on-demand) and 2) The longer the term, the greater the savings</li>
+                                        <li>Class: the less flexible the EC2 class, the greater the savings:  1) Standard class offers up to 75% savings compared to on-demand and the RI attributes are modifiable.  2) Convertible class offers up to 54% savings compared to on-demand.  RI's can be exchanged based on RI attributes if greater than or equal value.</li>
+
+                                    </ul>
+                                </li>
+                                <li>Dedicated Hosts (Most expensive) - pay, by the hour, for instances that are fully
+                                    dedicated to you.
                                     This hardware is single-tenant meaning that it is for you only. The hardware is not
                                     shared.</li>
-                                <li>Capacity Reservations - you can reserve capacity for your EC2 instances in a
-                                    specific AZ for any length of time.</li>
+
                                 <li>Savings Plans- pay an agreed rate (USD per hour) for a term of 1 or 3 years. This is
                                     optimal if you know what your demand will be.</li>
                             </ul>
