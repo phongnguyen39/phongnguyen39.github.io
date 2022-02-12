@@ -796,6 +796,49 @@
                                         <li>Class: the less flexible the EC2 class, the greater the savings:  1) Standard class offers up to 75% savings compared to on-demand and the RI attributes are modifiable.  2) Convertible class offers up to 54% savings compared to on-demand.  RI's can be exchanged based on RI attributes if greater than or equal value.</li>
                                         <li>Payment options: greater upfront payments the greater the savings.  1) All upfront 2) Partial upfront - portion upfront, the remaining hours are billed at discounted rate through the term 3) No upfront - billed discounted hourly rate for every hour in term even if RI is unused.</li>
                                         <li>RI can be shared between multiple accounts in an AWS organization and they can be sold on the AWS Reserved Instance Marketplace.</li>
+                                        <li>RI Attributes or Instance Attributes are limited based on class offering and affect the final price.
+                                            <ol>
+                                                <li>Instance type: m4.large which is composed of the instance family and instance size.</li>
+                                                <li>Region: Region where the RI is purchased</li>
+                                                <li>Tenancy: shared (default) or single-tenant (dedicated) hardware</li>
+                                                <li>Platform: the OS, e.g. Windows or Linux</li>
+                                            </ol>
+                                        </li>
+                                        <li>Regional vs. Zonal RI
+                                            <table>
+                                                <tr>
+                                                    <th>RI Feature</th>
+                                                    <th>Regional</th>
+                                                    <th>Zonal</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Does it reserve capacity?</td>
+                                                    <td>No</td>
+                                                    <td>Yes, in the specified AZ</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Where are the RI discounts applied?</td>
+                                                    <td>To the instance usage in any AZ in the region</td>
+                                                    <td>To the instance in the selected AZ (no AZ flexibility)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>What instance types receive discounts respective to each scope?</td>
+                                                    <td>To the instance family, regardless of size and only applies to linux/unix RI with default tenancy.</td>
+                                                    <td>No instance size flexibility.  Discounts applied to the specific instance type and size only.</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Can RI instances be queued?</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                </tr>
+                                            </table>
+                                            <ul>
+                                                <li>Regional or Zonal is also called the scope of the RI.  Scope isn't factored into the price.</li>
+                                                <li>Regional - purchase for a region.  Capacity is not reserved.</li>
+                                                <li>Zonal - purchase for an AZ.  Capacity is reserved in specificed AZ.</li>
+                    
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
                                 <li>Dedicated Hosts (Most expensive) - pay, by the hour, for instances that are fully
