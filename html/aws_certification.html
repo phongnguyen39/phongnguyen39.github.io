@@ -768,7 +768,7 @@
                         <td>EC2 Instance Purchasing Options (Pricing Models)
                         </td>
                         <td>
-                            <ul>
+                            <ol>
                                 <li>On-demand instances (Least commitment)- pay-by-the-second or by the hour. Good for
                                     spiky, unpredicted workloads. Lowest commitment good for MVPs and cannot be
                                     interrupted.
@@ -790,19 +790,55 @@
                                     instances can be sold.
                                     <ul>
                                         <li>aka, RI</li>
-                                        <li>Reduced pricing = Term * Class Offering * RI Attributes * Payment option</li>
+                                        <li>Reduced pricing = Term * Class Offering * RI Attributes * Payment option
+                                        </li>
                                         <li>Term: 1) Non-renewable, must set new terms, existing instances roll back to
-                                            Pay-as-you-go (on-demand) and 2) The longer the term, the greater the savings</li>
-                                        <li>Class: the less flexible the EC2 class, the greater the savings:  1) Standard class offers up to 75% savings compared to on-demand and the RI attributes are modifiable.  2) Convertible class offers up to 54% savings compared to on-demand.  RI's can be exchanged based on RI attributes if greater than or equal value.</li>
-                                        <li>Payment options: greater upfront payments the greater the savings.  1) All upfront 2) Partial upfront - portion upfront, the remaining hours are billed at discounted rate through the term 3) No upfront - billed discounted hourly rate for every hour in term even if RI is unused.</li>
-                                        <li>RI can be shared between multiple accounts in an AWS organization and they can be sold on the AWS Reserved Instance Marketplace.</li>
-                                        <li>RI Attributes or Instance Attributes are limited based on class offering and affect the final price.
+                                            Pay-as-you-go (on-demand) and 2) The longer the term, the greater the
+                                            savings</li>
+                                        <li>Class: the less flexible the EC2 class, the greater the savings: 1) Standard
+                                            class offers up to 75% savings compared to on-demand and the RI attributes
+                                            are modifiable. 2) Convertible class offers up to 54% savings compared to
+                                            on-demand. RI's can be exchanged based on RI attributes if greater than or
+                                            equal value.</li>
+                                        <li>Payment options: greater upfront payments the greater the savings. 1) All
+                                            upfront 2) Partial upfront - portion upfront, the remaining hours are billed
+                                            at discounted rate through the term 3) No upfront - billed discounted hourly
+                                            rate for every hour in term even if RI is unused.</li>
+                                        <li>RI can be shared between multiple accounts in an AWS organization and they
+                                            can be sold on the AWS Reserved Instance Marketplace.</li>
+                                        <li>RI Attributes or Instance Attributes are limited based on class offering and
+                                            affect the final price.
                                             <ol>
-                                                <li>Instance type: m4.large which is composed of the instance family and instance size.</li>
+                                                <li>Instance type: m4.large which is composed of the instance family and
+                                                    instance size.</li>
                                                 <li>Region: Region where the RI is purchased</li>
                                                 <li>Tenancy: shared (default) or single-tenant (dedicated) hardware</li>
                                                 <li>Platform: the OS, e.g. Windows or Linux</li>
                                             </ol>
+                                        </li>
+                                        <li>Standard vs Convertible RI 
+                                            <table>
+                                                <tr>
+                                                    <th></th>
+                                                    <th>Standard RI</th>
+                                                    <th>Convertible RI</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>Are RI attributes modifiable?</td>
+                                                    <td>Yes - change AZ within same region, scope of the zonal RI to Regional or vice versa,, instance size, network from EC2-CLassic to VPC and vice versa</td>
+                                                    <td>No</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Can the RI be exchanged?</td>
+                                                    <td>No</td>
+                                                    <td>Yes - During the term, it can be for one convertible RI to another with new RI attributes, e.g. instance family, type, platform, scope, tenancy</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Sold on the RI marketplace?</td>
+                                                    <td>Yes</td>
+                                                    <td>No</td>
+                                                </tr>
+                                            </table>
                                         </li>
                                         <li>Regional vs. Zonal RI
                                             <table>
@@ -822,9 +858,12 @@
                                                     <td>To the instance in the selected AZ (no AZ flexibility)</td>
                                                 </tr>
                                                 <tr>
-                                                    <td>What instance types receive discounts respective to each scope?</td>
-                                                    <td>To the instance family, regardless of size and only applies to linux/unix RI with default tenancy.</td>
-                                                    <td>No instance size flexibility.  Discounts applied to the specific instance type and size only.</td>
+                                                    <td>What instance types receive discounts respective to each scope?
+                                                    </td>
+                                                    <td>To the instance family, regardless of size and only applies to
+                                                        linux/unix RI with default tenancy.</td>
+                                                    <td>No instance size flexibility. Discounts applied to the specific
+                                                        instance type and size only.</td>
                                                 </tr>
                                                 <tr>
                                                     <td>Can RI instances be queued?</td>
@@ -833,10 +872,11 @@
                                                 </tr>
                                             </table>
                                             <ul>
-                                                <li>Regional or Zonal is also called the scope of the RI.  Scope isn't factored into the price.</li>
-                                                <li>Regional - purchase for a region.  Capacity is not reserved.</li>
-                                                <li>Zonal - purchase for an AZ.  Capacity is reserved in specificed AZ.</li>
-                    
+                                                <li>Regional or Zonal is also called the scope of the RI. Scope isn't
+                                                    factored into the price.</li>
+                                                <li>Regional - purchase for a region. Capacity is not reserved.</li>
+                                                <li>Zonal - purchase for an AZ. Capacity is reserved in specificed AZ.
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -848,7 +888,7 @@
 
                                 <li>Savings Plans- pay an agreed rate (USD per hour) for a term of 1 or 3 years. This is
                                     optimal if you know what your demand will be.</li>
-                            </ul>
+                            </ol>
                         </td>
                     </tr>
                     <tr>
