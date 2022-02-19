@@ -782,7 +782,7 @@
                                             specific AZ for any length of time.</li>
                                     </ul>
                                 </li>
-                                <li>Spot instances (Biggest savings - 90% savings)- request un-used EC2 instances. Can
+                                <li>Spot instances (Biggest savings - 90% savings)- request un-used EC2 instances. Your application should be able to 
                                     handle interruptions since higher priority customers will pull away resources. Good
                                     for non-critical background jobs.</li>
                                 <li>Reserved instances (Best long-term - 75% off)- best for long-term savings, good for
@@ -816,7 +816,7 @@
                                                 <li>Platform: the OS, e.g. Windows or Linux</li>
                                             </ol>
                                         </li>
-                                        <li>Standard vs Convertible RI 
+                                        <li>Standard vs Convertible RI</li> 
                                             <table>
                                                 <tr>
                                                     <th></th>
@@ -839,7 +839,7 @@
                                                     <td>No</td>
                                                 </tr>
                                             </table>
-                                        </li>
+                                        <li>RI Marketplace - unused RIs can be sold after being active for 30 days.</li>
                                         <li>Regional vs. Zonal RI
                                             <table>
                                                 <tr>
@@ -885,7 +885,6 @@
                                     dedicated to you.
                                     This hardware is single-tenant meaning that it is for you only. The hardware is not
                                     shared.</li>
-
                                 <li>Savings Plans- pay an agreed rate (USD per hour) for a term of 1 or 3 years. This is
                                     optimal if you know what your demand will be.</li>
                             </ol>
@@ -1358,7 +1357,30 @@
                                     server
                                     it's sending traffic to). Autoscaler manages the servers by spinning them up or
                                     tearing
-                                    them down. </i></strong></td>
+                                    them down. </i></strong>
+                                    <table>
+                                        <tr>
+                                            <td>Types of Load Balancers</td>
+                                            <td>Description</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Application Load Balancer</td>
+                                            <td>Routes decisions at the application layer (HTTP/HTTPS) requests, supports path-based routing, and can route requests to multiple ports in cluster of a container instance.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Network Load Balancer</td>
+                                            <td>Routes decisions at the transport layer (TCP/SSL). After a load balancer connects, it selects a target from the target group for the defrault rule using a flow hash routing algorithm.  It establishes a TCP connection with the selected target port specified in the listener configuration.  It forwards the requests with the headers being left intact.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Classic Load Balancer</td>
+                                            <td>A Classic Load Balancer makes routing decisions at either the transport layer (TCP/SSL) or the application layer (HTTP/HTTPS). Classic Load Balancers currently require a fixed relationship between the load balancer port and the container instance port. </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gateway Load balancer</td>
+                                            <td>Gateway Load Balancers allow you to deploy, scale, and manage virtual appliances, such as firewalls, intrusion detection and prevention systems, and deep packet inspection systems. It combines a transparent network gateway (that is, a single entry and exit point for all traffic) and distributes traffic while scaling your virtual appliances with the demand. A Gateway Load Balancer operates at the third layer of the Open Systems Interconnection (OSI) model, the network layer.</td>
+                                        </tr>
+                                    </table>
+                                </td>
                     </tr>
                     <tr>
                         <td>Route53</td>
